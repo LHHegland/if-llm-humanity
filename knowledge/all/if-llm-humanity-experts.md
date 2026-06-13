@@ -88,7 +88,6 @@ Common human topic references mapped to canonical handles (i.e., IDs and namespa
 ### Primary File Index
 
 Common human topic reference and canonical handle (i.e., ID and namespaced tag) mapped to primary knowledge file:
-- 'GPT RBI Humanity 202601310149.md' → Humanity  → HUMANITY → [[HUMANITY:ROOT]]
 
 
 ## Humanity

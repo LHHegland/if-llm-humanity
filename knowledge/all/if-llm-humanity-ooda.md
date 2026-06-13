@@ -20,11 +20,13 @@
 ## Index
 
 Common human topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
+
 - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
-- Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]] 
+- Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
 - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
 - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
 - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
+- Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
 
 
 ### Primary File Index
@@ -105,7 +107,7 @@ TAGS: [[HUMANITY:OODA]] [[OODA]]
   - **Update failure (stuck loop):** New evidence shows your approach is not working, but pride/fatigue keeps you repeating the same action.
 - Examples of Using [[HUMANITY:VALUES]]
   - **Add a deliberate pause before Decide/Act (SHOULD):** Use one breath, a 10-second rule, or “draft but don’t send” for charged messages to reduce impulsive harm ([[HUMANITY:REGULATION]]; [[HUMANITY:TEMPERANCE]]).
-  - **Run an orientation humility check (SHOULD):** Ask: “What else could be true?” and “What evidence would change my mind?” to counter assumption-lock ([[HUMANITY:HUMILITY]]; [[HUMANITY:OPEN_MINDEDNESS]]).
+  - **Run an orientation humility check (SHOULD):** Ask: “What else could be true?” and “What evidence would change my mind?” to counter assumption-lock ([[HUMANITY:HUMILITY]]; [[HUMANITY:OPENNESS]]).
   - **Use basic verification for important choices (SHOULD):** Confirm time/place/amount; check original sources; separate “observed” from “inferred” ([[HUMANITY:THINKING]]).
   - **Close the loop with a micro after-action review (MAY):** “What happened? What did I miss? What will I change next time?” and capture one [[HUMANITY:LESSONS]] item (a checklist or rule).
   - **Use [[HUMANITY:INTERDEPENDENCE]] for high-stakes decisions (SHOULD):** Ask a trusted person to sanity-check your Observe/Orient/Decide before acting; treat feedback as new observation ([[HUMANITY:INTERDEPENDENCE]]; [[HUMANITY:WISDOM]]).
@@ -289,7 +291,7 @@ TAGS: [[HUMANITY:ORIENT]] [[ORIENT]]
     3. **Generate alternatives (MUST):** Write 1–2 plausible alternatives (including a benign/neutral explanation when appropriate).
     4. **List assumptions:** Identify what you are assuming (intent, causality, base rates, “typical” behavior).
     5. **Bias and harm check (SHOULD):**
-       - Check for [[HUMANITY:STEREOTYPES]] or [[HUMANITY:PREJUDICE]] shaping interpretation.
+       - Check for [[HUMANITY:STEREOTYPES]] or [[HUMANITY:PREJUDICES]] shaping interpretation.
        - Ask: “Would I interpret this the same way if the person were from a different group?”
     6. **Evidence check (SHOULD):**
        - Identify one missing data point that would most reduce uncertainty.
@@ -309,13 +311,13 @@ TAGS: [[HUMANITY:ORIENT]] [[ORIENT]]
 - **Constraints**
   - Orientation is inherently model-based and therefore error-prone; you MUST avoid treating your first story as fact.
   - Orientation quality degrades when [[HUMANITY:REGULATION]] is low (anger, panic, shame, exhaustion); you SHOULD slow down in those states.
-  - Orientation is a common entry point for [[HUMANITY:STEREOTYPES]] and [[HUMANITY:PREJUDICE]]; you MUST include a basic bias check when people are involved.
+  - Orientation is a common entry point for [[HUMANITY:STEREOTYPES]] and [[HUMANITY:PREJUDICES]]; you MUST include a basic bias check when people are involved.
   - If you cannot reduce uncertainty, you SHOULD choose a later decision that is lower-risk or reversible.
 - **Decision Rules (IF/THEN)**
   - **IF** you cannot cleanly separate “observed” from “interpreted,” **THEN** return to [[HUMANITY:OBSERVE]] and restate facts.
   - **IF** you feel strong emotion or depletion, **THEN** insert a regulation pause and lower confidence in your interpretation.
   - **IF** the interpretation depends on someone’s intent, **THEN** prefer a clarifying question over a confrontational conclusion.
-  - **IF** you notice [[HUMANITY:STEREOTYPE]]-based generalizations (“those people always…”), **THEN** stop and rebuild [[HUMANITY:ORIENT]] from direct evidence and base rates.
+  - **IF** you notice [[HUMANITY:STEREOTYPES]]-based generalizations (“those people always…”), **THEN** stop and rebuild [[HUMANITY:ORIENT]] from direct evidence and base rates.
   - **IF** stakes are high, **THEN** add verification and/or a second perspective ([[HUMANITY:INTERDEPENDENCE]]) before committing.
   - **IF** new evidence arrives, **THEN** update the working model immediately (do not defend the old model).
 - **Ontological Relationships**
@@ -330,7 +332,7 @@ TAGS: [[HUMANITY:ORIENT]] [[ORIENT]]
     - **Affects:** decision quality, fairness, and downstream conflict risk; quality of [[HUMANITY:ACTIVITIES]].
     - **Affected by:** stress, fatigue, time pressure, social threat, misinformation exposure, and prior beliefs.
   - **Vulnerable to / Creates Vulnerabilities for**
-    - **Vulnerable to:** [[HUMANITY:FALLIBILITY]], [[HUMANITY:STEREOTYPES]], [[HUMANITY:PREJUDICE]], motivated reasoning, and overconfidence.
+    - **Vulnerable to:** [[HUMANITY:FALLIBILITY]], [[HUMANITY:STEREOTYPES]], [[HUMANITY:PREJUDICES]], motivated reasoning, and overconfidence.
     - **Creates vulnerabilities for:** harm from misattributed intent; escalation; unfair decisions; repeated errors if models do not update.
   - **Reduces Risks for / Risks Reduced by**
     - **Reduces risks for:** impulsive/conflict-driven decisions by clarifying context and uncertainty before acting.
@@ -378,7 +380,7 @@ TAGS: [[HUMANITY:DECIDE]] [[DECIDE]]
        - worst plausible downside.
     4. **Values check (MUST):** Identify which [[HUMANITY:VALUES]] you are prioritizing (e.g., safety, fairness, honesty, compassion, prudence).
     5. **Bias and discrimination check (SHOULD when people are affected):**
-       - Check for [[HUMANITY:STEREOTYPES]] / [[HUMANITY:PREJUDICE]].
+       - Check for [[HUMANITY:STEREOTYPES]] / [[HUMANITY:PREJUDICES]].
        - Ask: “Would I choose the same option if the person were from a different group?”
        - If risk exists, choose a more evidence-based or reversible option.
     6. **Reversibility check (MUST):** Prefer reversible actions under uncertainty; reserve irreversible actions for high confidence or urgent safety needs.
@@ -396,7 +398,7 @@ TAGS: [[HUMANITY:DECIDE]] [[DECIDE]]
   - **Primary purpose:** convert a working model and constraints into a **clear next step** that minimizes avoidable harm.
 - **Constraints**
   - Decision quality degrades under low [[HUMANITY:RESOURCES]] (fatigue, time pressure) and strong [[HUMANITY:TEMPTATIONS]].
-  - Decisions that affect people are vulnerable to [[HUMANITY:STEREOTYPES]] and [[HUMANITY:PREJUDICE]] and can result in [[HUMANITY:DISCRIMINATION]] if unchecked.
+  - Decisions that affect people are vulnerable to [[HUMANITY:STEREOTYPES]] and [[HUMANITY:PREJUDICES]] and can result in [[HUMANITY:DISCRIMINATION]] if unchecked.
   - You MUST not “opt out” by indefinite delay; if you cannot decide fully, decide on a safe placeholder action and a time to revisit.
 - **Decision Rules (IF/THEN)**
   - **IF** stakes are high (safety, major money, legal risk, relationship rupture), **THEN** slow down: verify, consult a trusted person ([[HUMANITY:INTERDEPENDENCE]]), and prefer reversible steps.
@@ -417,7 +419,7 @@ TAGS: [[HUMANITY:DECIDE]] [[DECIDE]]
     - **Affects:** outcomes of [[HUMANITY:ACTIVITIES]]; likelihood of satisfying [[HUMANITY:NEEDS]]; risk of [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]].
     - **Affected by:** [[HUMANITY:MOTIVATORS]], [[HUMANITY:TEMPTATIONS]], resource depletion, social pressure, and time constraints.
   - **Vulnerable to / Creates Vulnerabilities for**
-    - **Vulnerable to:** impulsivity, paralysis, overconfidence, motivated reasoning, [[HUMANITY:STEREOTYPES]], [[HUMANITY:PREJUDICE]].
+    - **Vulnerable to:** impulsivity, paralysis, overconfidence, motivated reasoning, [[HUMANITY:STEREOTYPES]], [[HUMANITY:PREJUDICES]].
     - **Creates vulnerabilities for:** harm from poorly chosen irreversible actions; unfair outcomes and potential [[HUMANITY:DISCRIMINATION]] if bias checks are skipped.
   - **Reduces Risks for / Risks Reduced by**
     - **Reduces risks for:** avoidable harm by forcing explicit tradeoffs, reversibility, and reassessment triggers.

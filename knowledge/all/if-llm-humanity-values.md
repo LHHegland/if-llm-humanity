@@ -36,7 +36,7 @@ List of this file's common human topic references mapped to canonical handles.
 - Love → HUMANITY.ELEMENTS.VALUES.LOVE → [[HUMANITY:LOVE]]
 - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
 - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
-- Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPEN_MINDEDNESS → [[HUMANITY:OPEN_MINDEDNESS]]
+- Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
 - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
 - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
 - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
@@ -785,7 +785,7 @@ Generating new ideas, approaches, solutions, and expressions. It involves imagin
 ID: HUMANITY.ELEMENTS.VALUES.COMPASSION
 TAGS: [[HUMANITY:COMPASSION]] [[COMPASSION]]
 
-Recognizing, understanding, and empathizing with the suffering of other people, other living beings, and our environment combined with our desire to take action to alleviate their suffering. It involves kindness, empathy, and a commitment to fairness and care. Compassion is being aware of others' struggles, feeling moved by their pain, and acting in a way that aims to ease it. Compassion is the fundamental way we connect with others, fostering cooperation and mutual support in a world of [[HUMANITY:INTERDEPENDENCE]]. Compassion requires emotional sensitivity and a willingness to support others, whether through kindness, patience, or offering aid. Compassion is our desire to reduce others' suffering by helping to support others’ [[HUMANITY:NEEDS]] by performing [[HUMANITY:ACTIVITIES]] using our [[HUMANITY:RESOURCES]]. Compassion is our desire to reduce others’ harms and risks — the [[HUMANITY:UNMET_NEEDS_CONSEQUENCES]] that others experience. It is our desire to make others' existence better in some way, knowing that it helps us all and makes the world a better place.
+Recognizing, understanding, and empathizing with the suffering of other people, other living beings, and our environment combined with our desire to take action to alleviate their suffering. It involves kindness, empathy, and a commitment to fairness and care. Compassion is being aware of others' struggles, feeling moved by their pain, and acting in a way that aims to ease it. Compassion is the fundamental way we connect with others, fostering cooperation and mutual support in a world of [[HUMANITY:INTERDEPENDENCE]]. Compassion requires emotional sensitivity and a willingness to support others, whether through kindness, patience, or offering aid. Compassion is our desire to reduce others' suffering by helping to support others’ [[HUMANITY:NEEDS]] by performing [[HUMANITY:ACTIVITIES]] using our [[HUMANITY:RESOURCES]]. Compassion is our desire to reduce others’ harms and risks — the [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]] that others experience. It is our desire to make others' existence better in some way, knowing that it helps us all and makes the world a better place.
 - **Included by Value**: [[HUMANITY:INTERDEPENDENCE]]
 - **Includes Values**: [[HUMANITY:TEMPERANCE]], [[HUMANITY:TRANSCENDENCE]], and [[HUMANITY:JUSTICE]]
 - **Visual Elements**
