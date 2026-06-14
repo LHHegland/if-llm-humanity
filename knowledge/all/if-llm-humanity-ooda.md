@@ -1,25 +1,129 @@
-# File Header
+# Humanity's Observe → Orient → Decide →  Act (OODA) Process — Information-Following Large Language Model Knowledge (*if-llm-humanity-ooda.md*)
 
-- **Name**: GPT RBI Humanity OODA 
-- **Version**: 2026-01-31 06:01 UTC by LHH
-- **Purpose**: TBD 
+## File Header
+
+- **Name:** Humanity's Observe → Orient → Decide →  Act (OODA) Process — Information-Following Large Language Model Knowledge (*if-llm-humanity-ooda.md*)
+- **Version:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Last Reviewed:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Owner:** [Lance Hegland](lance.hegland@gmail.com)
+
+- **Purpose:** TBD
+- **Audience:** Average, diverse people in the United States of America today.
 - **Features**
   - TBD
 - **Scope**
-  - TBD
+  - **Covers:** TBD
+  - **Out of Scope:** TBD
 - **Use Cases**
-  - **Supported**
-    - TBD
-  - **Not Supported**
-    - TBD
+  - **Supported:** TBD
+  - **Not Supported:** TBD
 
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-values.md`
+- **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
+- **Known Gaps / Limitations**
+  - TBD
 
-# Relevant Background Information
+- **Changelog**
+  - 2026-06-14 07:13 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed for best practices.
+  - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
 
+## Namespace, Tag, Alias, and Reference Rules
+
+- This is a simplified framework for reasoning and prompting relating to Humanity.
+- When relevant, cite concepts as: File → ID → Heading path. For example, when discussing meal planning, cite [[HUMANITY:IADLS]] (ID: HUMANITY.ELEMENTS.ACTIVITIES.IADLS) under Humanity → Elements → Activities → IADLS
+- When referencing an entry, prefer canonical tags like [[HUMANITY:IADLS]] over aliases like [[IADLS]] when precision matters.
+- Tag Policy
+  - Canonical tag format: [[HUMANITY:<LEAF>]] where <LEAF> matches the ID leaf (…ADLS → [[HUMANITY:ADLS]]).
+  - Alias tags: uppercase, no namespace (e.g., [[ADLS]] [[ADL]])
+  - No alias unless it's truly synonymous.
+- If a referenced concept isn't found, be explicit about what you did and didn't find; state clearly:
+  - "I didn't find *X* as a named concept in the Index or headings of the file."
+  - "Closest match in-file is *Y* (with the tag/ID)."
+  - Then proceed using *Y*.
+- First check `## Index` for the closest topic handle.
+- If the exact concept isn't present, map it to the nearest defined parent concept (Resources/Activities/Needs/ADLs/IADLs).
+- Say explicitly when something is not found in the file, then continue with general knowledge labeled as such.
+- If the concept will likely recur, suggest an ID + canonical tag + alias tag addition consistent with the file.
 
 ## Index
 
-Common human topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
+Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
+
+### Domain Knowledge Index
+
+Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
+
+Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
+
+- `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
+- `if-llm-humanity.md`
+  - Humanity → HUMANITY → [[HUMANITY:ROOT]]
+  - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
+  - Elements → HUMANITY.ELEMENTS → [[HUMANITY:ELEMENTS]]
+  - Coping → HUMANITY.ELEMENTS.COPING → [[HUMANITY:COPING]]
+  - Concerns → HUMANITY.ELEMENTS.CONCERNS → [[HUMANITY:CONCERNS]]
+  - Lessons Learned → HUMANITY.ELEMENTS.LESSONS → [[HUMANITY:LESSONS]]
+  - Unalienable Rights → HUMANITY.ELEMENTS.RIGHTS → [[HUMANITY:RIGHTS]]
+  - Vision → HUMANITY.ELEMENTS.VISION → [[HUMANITY:VISION]]
+  - Mission → HUMANITY.ELEMENTS.MISSION → [[HUMANITY:MISSION]]
+- `if-llm-humanity-experts.md`
+  - Experts → HUMANITY.ELEMENTS.EXPERTS → [[HUMANITY:EXPERTS]]
+  - Reasoning and Behavior Experts → HUMANITY.ELEMENTS.EXPERTS.REASONING → [[HUMANITY:REASONING_EXPERTS]]
+  - Communication Experts → HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION → [[HUMANITY:COMMUNICATION_EXPERTS]]
+  - Application Experts → HUMANITY.ELEMENTS.EXPERTS.APPLICATION → [[HUMANITY:APPLICATION_EXPERTS]]
+  - History Experts → HUMANITY.ELEMENTS.EXPERTS.HISTORY → [[HUMANITY:HISTORY_EXPERTS]]
+- `if-llm-humanity-fallibility.md`
+  - Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
+  - Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS → [[HUMANITY:TEMPTATIONS]]
+  - Consequences of Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES → [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]
+  - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
+  - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
+  - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
+- `if-llm-humanity-narm.md`
+  - Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
+  - Consequences of Unmet Needs → HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS → [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
+  - Activities → HUMANITY.ELEMENTS.ACTIVITIES → [[HUMANITY:ACTIVITIES]]
+  - Activities of Daily Living (ADLs) → HUMANITY.ELEMENTS.ACTIVITIES.ADLS → [[HUMANITY:ADLS]]
+  - Instrumental Activities of Daily Living (IADLs) → HUMANITY.ELEMENTS.ACTIVITIES.IADLS → [[HUMANITY:IADLS]]
+  - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
+  - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
+  - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
+- `if-llm-humanity-values.md`
+  - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
+  - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
+  - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
+  - Love → HUMANITY.ELEMENTS.VALUES.LOVE → [[HUMANITY:LOVE]]
+  - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
+  - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
+  - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
+  - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
+  - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
+  - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
+  - Compassion → HUMANITY.ELEMENTS.VALUES.COMPASSION → [[HUMANITY:COMPASSION]]
+  - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
+  - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
+  - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
+  - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
+  - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
+  - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
+  - Gratitude → HUMANITY.ELEMENTS.VALUES.GRATITUDE → [[HUMANITY:GRATITUDE]]
+  - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
+  - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
+  - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
+  - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
+  - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
+  - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
+  - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
+  - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
+  - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
+  - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
+  - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]
+  - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
+  - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
+
+### Local Knowledge Index
+
+The following is a list of this file's common topic references mapped to canonical handles.
 
 - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
 - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
@@ -28,25 +132,17 @@ Common human topic references mapped to canonical handles (i.e., IDs and namespa
 - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
 - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
 
-
-### Primary File Index
-
-Common human topic reference and canonical handle (i.e., ID and namespaced tag) mapped to primary knowledge file:
-- 'GPT RBI Humanity 202601310149.md' → Humanity  → HUMANITY → [[HUMANITY:ROOT]]
-
-
 ## Humanity
 
-
 ### Elements
-
 
 #### Processing (OODA: Observe → Orient → Decide →  Act)
 
 ID: HUMANITY.ELEMENTS.OODA
-TAGS: [[HUMANITY:OODA]] [[OODA]]
+TAGS: [[HUMANITY:OODA]]
 
 **Processing (OODA)** is a repeating control loop that converts **current signals** into a **next action** and then updates based on results.
+
 - **Examples**
   - **Driving in traffic (seconds loop):** You observe brake lights → orient (rain + merge) → decide (slow + increase following distance) → act (ease off gas) → observe again.
   - **Grocery shopping on a budget (minutes loop):** You observe prices + pantry state → orient (payday timing; cash limits) → decide (swap to store brands; prioritize staples) → act (change items; track total) → observe again.
@@ -112,13 +208,13 @@ TAGS: [[HUMANITY:OODA]] [[OODA]]
   - **Close the loop with a micro after-action review (MAY):** “What happened? What did I miss? What will I change next time?” and capture one [[HUMANITY:LESSONS]] item (a checklist or rule).
   - **Use [[HUMANITY:INTERDEPENDENCE]] for high-stakes decisions (SHOULD):** Ask a trusted person to sanity-check your Observe/Orient/Decide before acting; treat feedback as new observation ([[HUMANITY:INTERDEPENDENCE]]; [[HUMANITY:WISDOM]]).
 
-
 ##### Observe
 
 ID: HUMANITY.ELEMENTS.OODA.OBSERVE
-TAGS: [[HUMANITY:OBSERVE]] [[OBSERVE]]
+TAGS: [[HUMANITY:OBSERVE]]
 
 **Observe** is the repeating practice of **noticing and gathering information** about what is happening **outside you** (environment, people, systems) and **inside you** (body state, emotions, thoughts) using [[HUMANITY:SENSES]]. The purpose is to produce **reliable inputs** for [[HUMANITY:ORIENT]] and the rest of [[HUMANITY:OODA]]. Because of [[HUMANITY:FALLIBILITY]], observation MUST include basic error-checking (missing, distorted, or biased signals).
+
 - **Examples**
   - **Driving/commuting (seconds):** You notice brake lights, lane changes, road slickness, and your own fatigue level.
   - **Doctor visit / caregiving (minutes):** You track symptoms (pain, fever, mood), note what changed since yesterday, and notice side effects after medication.
@@ -188,13 +284,13 @@ TAGS: [[HUMANITY:OBSERVE]] [[OBSERVE]]
   - **[[HUMANITY:INTERDEPENDENCE]] (shared verification):** You ask a trusted person to sanity-check numbers, tone, or risk signals before acting.
   - **[[HUMANITY:TEMPERANCE]] + [[HUMANITY:REGULATION]] (impulse control):** You pause when angry or afraid, then re-observe before concluding.
 
-
 ##### Senses
 
 ID: HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES
-TAGS: [[HUMANITY:SENSES]] [[SENSES]]
+TAGS: [[HUMANITY:SENSES]]
 
 **Senses** are the body’s **signal detectors** that convert **stimuli** (outside the body and inside the body) into **perceptual signals** the brain can interpret. Senses are a primary input to [[HUMANITY:OBSERVE]]. Because of [[HUMANITY:FALLIBILITY]], sensed signals are not automatically reliable; they SHOULD be checked and calibrated during [[HUMANITY:ORIENT]].
+
 - **Examples**
   - **Cooking at home:** You smell something burning, hear a timer, feel heat from the oven, and notice hunger or nausea.
   - **Driving/commuting:** You see brake lights, hear a siren, feel vibration in the steering wheel, and sense dizziness or fatigue.
@@ -229,7 +325,7 @@ TAGS: [[HUMANITY:SENSES]] [[SENSES]]
   - Senses can be inaccurate due to environment (noise, low light), body state (fatigue, illness), and cognition/emotion (stress, expectation) ([[HUMANITY:FALLIBILITY]]).
   - Senses provide **signals**, not guarantees. You MUST treat high-stakes perceptions as provisional until verified when feasible.
   - Internal sensing (interoception) varies widely across people and situations; you SHOULD avoid over-trusting a single internal cue when safety is at risk.
-* **Decision Rules (IF/THEN)**
+- **Decision Rules (IF/THEN)**
   - **IF** the environment is degraded (dark, loud, chaotic), **THEN** increase cross-checking (re-check, change position, use tools).
   - **IF** you feel strong emotion, fatigue, intoxication, or illness, **THEN** treat sensory certainty as lower and slow the loop.
   - **IF** the perception implies immediate safety risk (smoke smell, severe pain, dizziness while driving), **THEN** take a safe stabilizing action first (stop, move away, seek help) and verify after.
@@ -265,13 +361,13 @@ TAGS: [[HUMANITY:SENSES]] [[SENSES]]
   - **[[HUMANITY:INTERDEPENDENCE]]:** You ask someone else to confirm what you sensed when it matters (smoke source, child fever, confusing instructions).
   - **[[HUMANITY:TEMPERANCE]] + [[HUMANITY:REGULATION]]:** You pause when overstimulated, reduce inputs (quiet/dim), then re-check signals before acting.
 
-
 ##### Orient
 
 ID: HUMANITY.ELEMENTS.OODA.ORIENT
-TAGS: [[HUMANITY:ORIENT]] [[ORIENT]]
+TAGS: [[HUMANITY:ORIENT]]
 
 **Orient** is the repeating step where you **interpret what you [[HUMANITY:OBSERVE]]** by fitting it into context (goals/needs, prior experience, culture, incentives, constraints, emotions, assumptions, and mental models). The purpose is to produce a **working model** of “what is happening” and “what it likely means” that is good enough to support [[HUMANITY:DECIDE]]. Because of [[HUMANITY:FALLIBILITY]], orientation MUST treat interpretations as **hypotheses**, not facts, and SHOULD use [[HUMANITY:VALUES]] (especially [[HUMANITY:THINKING]], [[HUMANITY:HUMILITY]], [[HUMANITY:PERSPECTIVE]], [[HUMANITY:WISDOM]]) to reduce error and harm.
+
 - **Examples**
   - **Short text from a friend (minutes):** You orient by considering context (history, timing, typical tone) before assuming they are upset.
   - **Work feedback/performance review (minutes-hours):** You orient by separating what was said from what it implies about expectations, incentives, and your goals.
@@ -350,13 +446,13 @@ TAGS: [[HUMANITY:ORIENT]] [[ORIENT]]
   - **[[HUMANITY:INTERDEPENDENCE]]:** You ask a trusted person to sanity-check your interpretation in high-stakes situations.
   - **[[HUMANITY:WISDOM]]:** After a meaningful outcome, you capture one [[HUMANITY:LESSONS]] item to improve future orientation.
 
-
 ##### Decide
 
 ID: HUMANITY.ELEMENTS.OODA.DECIDE
-TAGS: [[HUMANITY:DECIDE]] [[DECIDE]]
+TAGS: [[HUMANITY:DECIDE]]
 
 **Decide** is the repeating step where you **select the next action (or deliberate non-action)** based on [[HUMANITY:OBSERVE]] and [[HUMANITY:ORIENT]]. The purpose is to choose a **specific next step** that balances [[HUMANITY:NEEDS]], [[HUMANITY:RESOURCES]], [[HUMANITY:VALUES]], risks, tradeoffs, and likely consequences. Because of [[HUMANITY:FALLIBILITY]] and [[HUMANITY:TEMPTATIONS]], decisions MUST include a minimum safety check (stakes, reversibility, bias, and verification when feasible).
+
 - **Examples**
   - **Budgeting this week:** You decide whether to pay rent, buy groceries, pay down debt, or cover a surprise expense first.
   - **Work conflict:** You decide to reply now, ask a clarifying question, escalate to a manager, or pause and revisit tomorrow.
@@ -437,13 +533,13 @@ TAGS: [[HUMANITY:DECIDE]] [[DECIDE]]
   - **[[HUMANITY:INTERDEPENDENCE]]:** You use a trusted person as a second perspective to spot blind spots and support follow-through.
   - **[[HUMANITY:WISDOM]]:** You capture outcomes as [[HUMANITY:LESSONS]] (a rule or checklist) to improve future decisions.
 
-
 ##### Act
 
 ID: HUMANITY.ELEMENTS.OODA.ACT
-TAGS: [[HUMANITY:ACT]] [[ACT]]
+TAGS: [[HUMANITY:ACT]]
 
 **Act** is the repeating step where you **execute the selected decision** in the real world (behavior and communication), using [[HUMANITY:RESOURCES]] to perform [[HUMANITY:ACTIVITIES]]. Act includes **follow-through**, **monitoring immediate results**, and **making small adjustments** to stay aligned with [[HUMANITY:NEEDS]] and [[HUMANITY:VALUES]]. Act also produces feedback that supports [[HUMANITY:LESSONS]] and improves future [[HUMANITY:ORIENT]] and performance.
+
 - **Examples**
   - **Paying bills / managing finances:** You log in, pay the bill, set reminders/autopay, and confirm it posted (an [[HUMANITY:IADL]]).
   - **Health follow-through:** You fill the prescription, take meds as directed, hydrate/eat, and contact the clinic if symptoms worsen.

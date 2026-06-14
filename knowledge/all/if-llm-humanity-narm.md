@@ -1,35 +1,128 @@
-# File Header
+# Humanity's Needs ← Activities ← Resources ← Motivations (NARM) Process — Information-Following Large Language Model Knowledge (*if-llm-humanity-narm.md*)
 
-- **Name**: GPT RBI Humanity NARM
-- **Version**: 2026-01-31 06:00 UTC by LHH
-- **Purpose**: TBD 
+## File Header
+
+- **Name:** Humanity's Needs ← Activities ← Resources ← Motivations (NARM) Process — Information-Following Large Language Model Knowledge (*if-llm-humanity-narm.md*)
+- **Version:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Last Reviewed:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Owner:** [Lance Hegland](lance.hegland@gmail.com)
+
+- **Purpose:** TBD
+- **Audience:** Average, diverse people in the United States of America today.
 - **Features**
   - TBD
 - **Scope**
-  - TBD
+  - **Covers:** TBD
+  - **Out of Scope:** TBD
 - **Use Cases**
-  - **Supported**
-    - TBD
-  - **Not Supported**
-    - TBD
+  - **Supported:** TBD
+  - **Not Supported:** TBD
 
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values.md`
+- **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
+- **Known Gaps / Limitations**
+  - TBD
 
-# Relevant Background Information
+- **Changelog**
+  - 2026-06-14 07:13 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed for best practices.
+  - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
 
+## Namespace, Tag, Alias, and Reference Rules
+
+- This is a simplified framework for reasoning and prompting relating to Humanity.
+- When relevant, cite concepts as: File → ID → Heading path. For example, when discussing meal planning, cite [[HUMANITY:IADLS]] (ID: HUMANITY.ELEMENTS.ACTIVITIES.IADLS) under Humanity → Elements → Activities → IADLS
+- When referencing an entry, prefer canonical tags like [[HUMANITY:IADLS]] over aliases like [[IADLS]] when precision matters.
+- Tag Policy
+  - Canonical tag format: [[HUMANITY:<LEAF>]] where <LEAF> matches the ID leaf (…ADLS → [[HUMANITY:ADLS]]).
+  - Alias tags: uppercase, no namespace (e.g., [[ADLS]] [[ADL]])
+  - No alias unless it's truly synonymous.
+- If a referenced concept isn't found, be explicit about what you did and didn't find; state clearly:
+  - "I didn't find *X* as a named concept in the Index or headings of the file."
+  - "Closest match in-file is *Y* (with the tag/ID)."
+  - Then proceed using *Y*.
+- First check `## Index` for the closest topic handle.
+- If the exact concept isn't present, map it to the nearest defined parent concept (Resources/Activities/Needs/ADLs/IADLs).
+- Say explicitly when something is not found in the file, then continue with general knowledge labeled as such.
+- If the concept will likely recur, suggest an ID + canonical tag + alias tag addition consistent with the file.
 
 ## Index
 
-Domain's common human topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
-
+Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
 ### Domain Knowledge Index
 
-Refer to the list of domain knowledge file indexes of common human topic references and canonical handles contained in 'GPT RBI Humanity Index 202601310149.md'.
+Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
 
+Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
+
+- `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
+- `if-llm-humanity.md`
+  - Humanity → HUMANITY → [[HUMANITY:ROOT]]
+  - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
+  - Elements → HUMANITY.ELEMENTS → [[HUMANITY:ELEMENTS]]
+  - Coping → HUMANITY.ELEMENTS.COPING → [[HUMANITY:COPING]]
+  - Concerns → HUMANITY.ELEMENTS.CONCERNS → [[HUMANITY:CONCERNS]]
+  - Lessons Learned → HUMANITY.ELEMENTS.LESSONS → [[HUMANITY:LESSONS]]
+  - Unalienable Rights → HUMANITY.ELEMENTS.RIGHTS → [[HUMANITY:RIGHTS]]
+  - Vision → HUMANITY.ELEMENTS.VISION → [[HUMANITY:VISION]]
+  - Mission → HUMANITY.ELEMENTS.MISSION → [[HUMANITY:MISSION]]
+- `if-llm-humanity-experts.md`
+  - Experts → HUMANITY.ELEMENTS.EXPERTS → [[HUMANITY:EXPERTS]]
+  - Reasoning and Behavior Experts → HUMANITY.ELEMENTS.EXPERTS.REASONING → [[HUMANITY:REASONING_EXPERTS]]
+  - Communication Experts → HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION → [[HUMANITY:COMMUNICATION_EXPERTS]]
+  - Application Experts → HUMANITY.ELEMENTS.EXPERTS.APPLICATION → [[HUMANITY:APPLICATION_EXPERTS]]
+  - History Experts → HUMANITY.ELEMENTS.EXPERTS.HISTORY → [[HUMANITY:HISTORY_EXPERTS]]
+- `if-llm-humanity-fallibility.md`
+  - Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
+  - Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS → [[HUMANITY:TEMPTATIONS]]
+  - Consequences of Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES → [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]
+  - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
+  - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
+  - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
+- `if-llm-humanity-ooda.md`
+  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
+  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
+  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
+  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
+  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
+  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
+- `if-llm-humanity-values.md`
+  - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
+  - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
+  - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
+  - Love → HUMANITY.ELEMENTS.VALUES.LOVE → [[HUMANITY:LOVE]]
+  - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
+  - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
+  - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
+  - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
+  - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
+  - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
+  - Compassion → HUMANITY.ELEMENTS.VALUES.COMPASSION → [[HUMANITY:COMPASSION]]
+  - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
+  - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
+  - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
+  - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
+  - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
+  - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
+  - Gratitude → HUMANITY.ELEMENTS.VALUES.GRATITUDE → [[HUMANITY:GRATITUDE]]
+  - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
+  - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
+  - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
+  - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
+  - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
+  - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
+  - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
+  - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
+  - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
+  - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
+  - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]
+  - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
+  - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
 
 ### Local Knowledge Index
 
-List of this file's common human topic references mapped to canonical handles.
+The following is a list of this file's common topic references mapped to canonical handles.
+
 - Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
 - Consequences of Unmet Needs → HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS → [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
 - Activities → HUMANITY.ELEMENTS.ACTIVITIES → [[HUMANITY:ACTIVITIES]]
@@ -39,31 +132,29 @@ List of this file's common human topic references mapped to canonical handles.
 - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
 - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
 
-
 ## Humanity
 
-
 ### Elements
-
 
 #### Needs
 
 ID: HUMANITY.ELEMENTS.NEEDS
-TAGS: [[HUMANITY:NEEDS]] [[NEEDS]]
+TAGS: [[HUMANITY:NEEDS]]
 
 Needs of humans that are satisfied by [[HUMANITY:ACTIVITIES]], which require [[HUMANITY:RESOURCES]]. These needs include the following:
+
 - **Health**: essential items for survival, such as nutrition, hydration, shelter, and sleep.
 - **Safety**: feeling and being safe from harm; having physical security, financial stability, and a supportive environment.
 - **Dignity**: self-esteem, achievements, skills, independence, and respect from others; involves realizing potential, personal growth, and achieving fulfillment.
 - **Inclusion**: ability for meaningful contribution and participation in activities with chosen families, friends, and communities; meaningful participation and contribution to familial, social, cultural, spiritual, educational, economic, romantic, and sexual activities.
 
-
 #### Consequences of Unmet Needs
 
 ID: HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS
-TAGS: [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]] [[CONSEQUENCES_UNMET_NEEDS]]
+TAGS: [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
 
 Common consequences of unmet needs of humanity observed across our many, diverse communities throughout our history; results of consistent and prolonged challenges satisfying [[HUMANITY:NEEDS]]. These are observed patterns, not moral judgments. Outcomes are shaped by many, diverse factors (e.g., environment, disability, trauma, discrimination, access).
+
 - **Health**
   - Death
   - Illness: Increased susceptibility to infections and diseases due to a weakened immune system.
@@ -113,7 +204,7 @@ Common consequences of unmet needs of humanity observed across our many, diverse
   - Defensive Behavior: Reacting strongly to criticism or perceived slights, often with anger or denial.
   - Frustration and Irritability: Increased frustration and irritability resulting from feeling unfulfilled, frustrated, and overwhelmed due to unmet aspirations and goals, lack of clarity and understanding, plus continuous stress and overexertion.
   - Mood Swings: Fluctuations in mood including increased irritability or sadness related to feelings of purpose and achievement, feedback, opportunities, or lack thereof.
-  - Frequent Complaints: Expressing dissatisfaction with their current situation or feeling stuck, especially with their work, lack of opportunities, or feeling unfulfilled. 
+  - Frequent Complaints: Expressing dissatisfaction with their current situation or feeling stuck, especially with their work, lack of opportunities, or feeling unfulfilled.
   - Escapism: Excessive engagement in activities that distract from the lack of fulfillment, such as social activities, recreation, gaming, multimedia, shopping, relationships, eating, substance use, gambling, substance use, or other potentially harmful or risky overindulgence.
   - Fatigue: Signs of tiredness or exhaustion, possibly due to stress or overworking.
   - Lack of Motivation: Showing a decreased interest in pursuing new challenges or endeavors that previously held appeal.
@@ -158,50 +249,49 @@ Common consequences of unmet needs of humanity observed across our many, diverse
   - Expressing Feelings of Loneliness: Frequently talking about feeling lonely or disconnected.
   - Low Self-Esteem: Reduced self-worth plus feelings of worthlessness, being unlovable or unlikable due to lack of involvement and recognition.
 
-
 #### Activities
 
 ID: HUMANITY.ELEMENTS.ACTIVITIES
-TAGS: [[HUMANITY:ACTIVITIES]] [[ACTIVITIES]]
+TAGS: [[HUMANITY:ACTIVITIES]]
 
 Basic human activities requiring [[HUMANITY:RESOURCES]] to satisfy [[HUMANITY:NEEDS]].
-
 
 ##### Activities of Daily Living (ADLs)
 
 ID: HUMANITY.ELEMENTS.ACTIVITIES.ADLS
-TAGS: [[HUMANITY:ADLS]] [[ADLS]] [[ADL]]
+TAGS: [[HUMANITY:ADLS]]
 
 Essential tasks satisfying [[HUMANITY:NEEDS]] of **Health**, **Safety**, and **Dignity**, including the following:
-  - bathing;
-  - using the bathroom;
-  - dressing;
-  - transferring; and,
-  - eating.
 
+- bathing;
+- using the bathroom;
+- dressing;
+- transferring; and,
+- eating.
 
 ##### Instrumental Activities of Daily Living (IADLs)
 
 ID: HUMANITY.ELEMENTS.ACTIVITIES.IADLS
-TAGS: [[HUMANITY:IADLS]] [[IADLS]] [[IADL]]
+TAGS: [[HUMANITY:IADLS]]
 
 Tasks that help to satisfy [[HUMANITY:ADLS]] plus [[HUMANITY:NEEDS]] of **Inclusion**, including the following:
-  - preparing meals;
-  - housekeeping;
-  - home maintenance;
-  - shopping;
-  - coordinating transportation;
-  - using communication devices;
-  - managing medications; and,
-  - managing finances.
 
+- preparing meals;
+- housekeeping;
+- home maintenance;
+- shopping;
+- coordinating transportation;
+- using communication devices;
+- managing medications; and,
+- managing finances.
 
 #### Limited Available Resources
 
 ID: HUMANITY.ELEMENTS.RESOURCES
-TAGS: [[HUMANITY:RESOURCES]] [[RESOURCES]]
+TAGS: [[HUMANITY:RESOURCES]]
 
-Core inputs humans draw on to perform [[HUMANITY:ACTIVITIES]] that produce results meeting [[HUMANITY:NEEDS]]. These resources are constrained by availability: **time** and **energy** are finite and are spent as they are used; **integrity** is an alignment-and-trust resource that can compound through consistent choices but can be damaged quickly; and **[[HUMANITY:CAPABILITIES]]** are buildable multipliers—developed over time by investing time/energy with integrity—that increase what a person can achieve per unit of effort. (i.e., (Integrity[Discipline] + Tools) + (Skills + Relationships[Collaboration + Supplies]) + (Knowledge + Time + Energy) + (Mentors[Guidance + Accountability] + Finances) → Resources → Activities → Capacity)
+Core inputs humans draw on to perform [[HUMANITY:ACTIVITIES]] that produce results meeting [[HUMANITY:NEEDS]]. These resources are constrained by availability: **time** and **energy** are finite and are spent as they are used; **integrity** is an alignment-and-trust resource that can compound through consistent choices but can be damaged quickly; and **[[HUMANITY:CAPABILITIES]]** are buildable multipliers—developed over time by investing time/energy with integrity—that increase what a person can achieve per unit of effort. (i.e., Autonomy + Abilities + Experiences + (Integrity[Discipline] + Tools) + (Skills + Relationships[Collaboration + Supplies]) + (Knowledge + Time + Energy) + (Mentors[Guidance + Accountability] + Finances) → Resources → Activities → Capacity)
+
 - **Time**: Fixed, nonrenewable, always passing; the scarcest budgeting constraint.
   - *Tips*
     - Choose intentionally; reduce distractions.
@@ -213,8 +303,7 @@ Core inputs humans draw on to perform [[HUMANITY:ACTIVITIES]] that produce resul
     - Invest in systems (meal planning, routines, checklists) that permanently lower recurring time costs.
 - **Energy**: Capacity to act (physical, cognitive, emotional); replenishable but limited day-to-day.
   - *Tips*
-    - Heuristic: (Time + Energy + Discipline + Experiences) + (Talents + Tools) + Mentors[Guidance + Accountability] + Finances → Health & Wellness → Energy
-    - Heuristic: (Time + Energy + Integrity[Discipline] + Experiences) + (Skills + Tools + Knowledge) + (Mentors[Guidance + Accountability]) + (Finances) → Health & Wellness → Energy
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Capabilities[Abilities + Mentors[Guidance + Accountability] + Knowledge + Skills + Tools + Finances] → Health & Wellness → Energy
     - Protect the “basics”: sleep consistency, movement, nutrition/hydration.
     - Design for recovery: breaks, downshifts, realistic pacing; treat burnout as a depletion spiral.
     - Reduce chronic drains: untreated pain, persistent conflict, chaotic finances, unsafe environments.
@@ -223,7 +312,7 @@ Core inputs humans draw on to perform [[HUMANITY:ACTIVITIES]] that produce resul
     - Automate or simplify recurring decisions to preserve mental energy.
 - **Integrity**: Alignment between values, words, and actions; creates self-trust and social trust; fragile under violations.
   - *Tips*
-    - Heuristic: (Integrity + Mentors[Accountability]) + (Time + Energy + Experiences) → Integrity
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Capabilities[Abilities + Mentors[Guidance + Accountability] + Knowledge + Skills + Tools + Finances] → Integrity
     - Keep promises small enough to keep; renegotiate early, not late.
     - Practice clear boundaries and honest expectations (especially around time/money).
     - Repair quickly when you miss: acknowledge, make amends, change the system that caused it.
@@ -232,7 +321,7 @@ Core inputs humans draw on to perform [[HUMANITY:ACTIVITIES]] that produce resul
     - Invest it where compounding matters most (key relationships, your reputation, critical responsibilities).
 - **[[HUMANITY:CAPABILITIES]]**
   - *Tips*
-    - Heuristic: (Integrity[Discipline]) + (Knowledge + Skills + Tools) + (Relationships[Collaboration + Supplies] + (Time + Energy + Mentors[Guidance + Accountability]) + (Finances) → Capabilities
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Capabilities[Abilities + Relationships[Collaboration + Supplies] + Mentors[Guidance + Accountability] + Knowledge + Skills + Tools + Finances] → Capabilities
     - Choose a small number of “keystone” capabilities to build (e.g., communication + budgeting + a career skill).
     - Practice deliberately (feedback loops), and maintain with light repetition (don’t let skills/tools drift).
     - Protect against degradation: avoid neglect (atrophy), misalignment (wrong goals), and overcomplexity (too many tools/subscriptions).
@@ -240,16 +329,16 @@ Core inputs humans draw on to perform [[HUMANITY:ACTIVITIES]] that produce resul
     - Prefer capabilities that transfer across life domains (communication improves work + family + community).
     - Periodically prune: drop low-ROI tools, skills, and commitments.
 
-
 ##### Capabilities
 
 ID: HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES
-TAGS: [[HUMANITY:CAPABILITIES]] [[CAPABILITIES]]
+TAGS: [[HUMANITY:CAPABILITIES]]
 
 Buildable multipliers that improve efficiency and effectiveness when using [[HUMANITY:RESOURCES]] to perform [[HUMANITY:ACTIVITIES]] and meet [[HUMANITY:NEEDS]].
+
 - **Autonomy**: *learnable ability* to [[HUMANITY:REGULATION]] (e.g., [[HUMANITY:MOTIVATORS]], [[HUMANITY:TEMPTATIONS]], [[HUMANITY:RESOURCES]], [[HUMANITY:ACTIVITIES]]), setting priorities and governing self; *available degree of control and discretion* over [[HUMANITY:RESOURCES]] and [[HUMANITY:ACTIVITIES]] of others and self (i.e., authority, freedom, power).
   - *Tips*
-    - Heuristic: (Resources [Time + Energy + Integrity[Discipline]] + Capabilities[Experiences]) + (Capabilities[Relationships + Knowledge + Abilities + Tools + Finances] → Integrity → Autonomy
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Capabilities[Abilities + Relationships[Collaboration + Supplies] + Mentors[Guidance + Accountability] + Knowledge + Skills + Tools + Finances] → Integrity → Autonomy → Capabilities
     - **Protect energy so decisions don’t feel impossible**: consistent sleep/movement/nutrition, reducing chronic drains, and matching tasks to your energy type lowers the “cost” of choosing and acting.
     - **Invest in integrity to reduce coordination overhead**: when self-trust and social trust are high, you need fewer “check-ins,” less rework, and fewer defensive cycles—making autonomy smoother to exercise.
     - **Strengthen relationships for support + opportunity**: supportive connections can provide help, accountability, and access to opportunities you can’t create alone (which expands your option set).
@@ -258,7 +347,7 @@ Buildable multipliers that improve efficiency and effectiveness when using [[HUM
     - **Build financial buffers to buy options**: emergency funds, lower debt burden, and “financial flexibility” can reduce forced choices and let you say “no,” switch jobs, move, get training, etc.
 - **Abilities**: Baseline aptitudes (physical, cognitive, emotional).
   - *Tips*
-    - Heuristic: (Time + Energy + Discipline + Experiences) + (Talents + Tools) + Mentors[Guidance + Accountability] + Finances → Health & Wellness → Abilities
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Capabilities[Abilities + Mentors[Guidance + Accountability] + Knowledge + Skills + Tools + Finances] → Health & Wellness → Abilities → Capabilities
     - Maintain health, practice, accommodations, realistic load.
     - Pick roles/tasks that reflect your strengths, your weaknesses, existing opportunities, and existing threats (i.e., risks).
       - Strengths + Opportunities = Leverage: Use strengths to maximize/seize opportunities.
@@ -267,43 +356,43 @@ Buildable multipliers that improve efficiency and effectiveness when using [[HUM
       - Weaknesses + Threats = Avoid: minimize weaknesses and avoid threats (i.e., risks).
 - **Relationships**: Connections with people who provide support, opportunity, belonging, accountability.
   - *Tips*
-    - Heuristic: (Time + Energy + Integrity + Experiences) + (Relationships) → Mentors (5-7 diverse)
-    - Heuristic: (Time + Energy + Integrity + Experiences) + (Relationships + Knowledge + Skills) → Relationships
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Capabilities[Abilities + Relationships] → Mentors (5-7 diverse) → Capabilities
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Capabilities[Abilities + Mentors[Guidance + Accountability] + Knowledge + Skills + Tools + Finances] → Relationships → Capabilities
     - Maintain reliability, reciprocity, shared time, conflict repair.
     - Ask early, ask clearly, and offer value; “weak ties” help opportunity, “strong ties” help resilience.
 - **Experiences**: Lived repetitive experiences that build judgment and confidence.
   - *Tips*
-    - Heuristic: (Time + Energy) + (Integrity[Discipline]) + (Relationships + Experiences) + Finances → Experiences
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Capabilities[Abilities + Relationships + (Knowledge + Skills + Tools + Finances + Mentors[Guidance + Accountability])] → Experiences → (Integrity + Autonomy + Abilities + Relationships + Knowledge + Skills + Tools + Finances) → Capabilities
     - Reflect (what worked/failed), capture lessons, seek varied repetitive experiences.
     - Turn experience into patterns/playbooks; avoid repeating avoidable mistakes.
 - **Knowledge**: Accurate information and understanding.
   - *Tips*
-    - Heuristic: (Time + Energy + Integrity[Discipline] + Experiences) + (Mentors[Guidance + Accountability]) + (Skills + Tools + Finances + Knowledge) → Knowledge
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Capabilities[Abilities + Mentors[Guidance + Accountability] + (Knowledge + Skills + Tools + Finances)] → Knowledge → (Autonomy + Skills) → Capabilities
     - Curate inputs; refresh what changes; verify important claims.
     - Apply in decisions; summarize into checklists/heuristics to reduce mental load.
 - **Skills**: Trained, repeatable competencies (communication, writing, trades, coding, caregiving).
   - *Tips*
-    - Heuristic: (Time + Energy + Integrity[Discipline] + Experiences) + (Mentors[Guidance + Accountability]) + (Knowledge + Skills + Tools + Finances) → Skills
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Capabilities[Abilities + Knowledge + Mentors[Guidance + Accountability] + (Skills + Tools + Finances)] → (Skills + Autonomy) → Capabilities
     - Maintain deliberate practice + feedback; small weekly repetitions prevent decay.
     - Focus on the “20% skills” that drive 80% outcomes in your life (often communication, planning, and domain skill).
 - **Tools**: Physical/digital aids that extend capability (devices, apps, vehicles, appliances) and capacity.
-  - *Tips*
-    - Heuristic: (Time + Energy + Integrity[Discipline] + Experiences) + (Knowledge + Skills + Tools + Finances) + (Mentors[Guidance + Accountability]) →  Tools
+  - *Tips* + Mentors[Guidance + Accountability]
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Capabilities[Abilities + Knowledge + Skills + (Tools + Finances + Mentors[Guidance + Accountability])] → Tools → (Autonomy + Tools) → Capabilities
     - Keep them simple, secure, and functional (updates, backups, maintenance schedules).
     - Standardize and template; don’t let tool choice become procrastination.
 - **Finances**: Money, credit, and financial flexibility that buffer shocks and buy time/options.
   - *Tips*
-    - Heuristic: (Integrity[Discipline] + Relationships[Awareness + Sales + Collaboration + Supplies] + (Skills + Tools) + (Knowledge + Time + Energy) + (Finances) → Finances
+    - Heuristic: (Time + Energy + Integrity[Discipline] + Autonomy) + Experiences + Relationships[Awareness + Sales + Collaboration + Supplies] + Capabilities[Abilities + Knowledge + Skills + Tools + (Finances + Mentors[Guidance + Accountability])] → (Finances + Autonomy) → Capabilities
     - Maintain spending plan, emergency fund, insurance coverage where appropriate, avoid high-interest spirals.
     - Buy back time (outsourcing key pain points), reduce stressors that drain energy, invest in high-ROI capability building (training, certifications, equipment).
-
 
 #### Motivators
 
 ID: HUMANITY.ELEMENTS.MOTIVATORS
-TAGS: [[HUMANITY:MOTIVATORS]] [[MOTIVATORS]]
+TAGS: [[HUMANITY:MOTIVATORS]]
 
 Common motivators of humanity across our many, diverse communities throughout our history; support the efficient and consistent achievement of [[HUMANITY:NEEDS]] for self and others.
+
 - Survival and Basic Needs (e.g. Physiological Needs)
   - Hydration and Nutrition
   - Shelter
@@ -373,3 +462,4 @@ Common motivators of humanity across our many, diverse communities throughout ou
 - Time and Temporal Preferences
   - Immediate Gratification vs. Delayed Rewards
   - Routine vs. Novelty
+  

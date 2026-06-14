@@ -1,35 +1,105 @@
-# File Header
+# Humanity's Values — Information-Following Large Language Model Knowledge (*if-llm-humanity-values.md*)
 
-- **Name**: GPT RBI Humanity Values
-- **Version**: 2026-01-31 06:02 UTC by LHH
-- **Purpose**: TBD 
+## File Header
+
+- **Name:** Humanity's Values — Information-Following Large Language Model Knowledge (*if-llm-humanity-values.md*)
+- **Version:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Last Reviewed:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Owner:** [Lance Hegland](lance.hegland@gmail.com)
+
+- **Purpose:** TBD
+- **Audience:** Average, diverse people in the United States of America today.
 - **Features**
   - TBD
 - **Scope**
-  - TBD
+  - **Covers:** TBD
+  - **Out of Scope:** TBD
 - **Use Cases**
-  - **Supported**
-    - TBD
-  - **Not Supported**
-    - TBD
+  - **Supported:** TBD
+  - **Not Supported:** TBD
 
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`
+- **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
+- **Known Gaps / Limitations**
+  - TBD
 
-# Relevant Background Information
+- **Changelog**
+  - 2026-06-14 07:13 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed for best practices.
+  - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
 
+## Namespace, Tag, Alias, and Reference Rules
+
+- This is a simplified framework for reasoning and prompting relating to Humanity.
+- When relevant, cite concepts as: File → ID → Heading path. For example, when discussing meal planning, cite [[HUMANITY:IADLS]] (ID: HUMANITY.ELEMENTS.ACTIVITIES.IADLS) under Humanity → Elements → Activities → IADLS
+- When referencing an entry, prefer canonical tags like [[HUMANITY:IADLS]] over aliases like [[IADLS]] when precision matters.
+- Tag Policy
+  - Canonical tag format: [[HUMANITY:<LEAF>]] where <LEAF> matches the ID leaf (…ADLS → [[HUMANITY:ADLS]]).
+  - Alias tags: uppercase, no namespace (e.g., [[ADLS]] [[ADL]])
+  - No alias unless it's truly synonymous.
+- If a referenced concept isn't found, be explicit about what you did and didn't find; state clearly:
+  - "I didn't find *X* as a named concept in the Index or headings of the file."
+  - "Closest match in-file is *Y* (with the tag/ID)."
+  - Then proceed using *Y*.
+- First check `## Index` for the closest topic handle.
+- If the exact concept isn't present, map it to the nearest defined parent concept (Resources/Activities/Needs/ADLs/IADLs).
+- Say explicitly when something is not found in the file, then continue with general knowledge labeled as such.
+- If the concept will likely recur, suggest an ID + canonical tag + alias tag addition consistent with the file.
 
 ## Index
 
-Domain's common human topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
-
+Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
 ### Domain Knowledge Index
 
-Refer to the list of domain knowledge file indexes of common human topic references and canonical handles contained in 'GPT RBI Humanity Index 202601310149.md'.
+Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
 
+Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
+
+- `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
+- `if-llm-humanity.md`
+  - Humanity → HUMANITY → [[HUMANITY:ROOT]]
+  - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
+  - Elements → HUMANITY.ELEMENTS → [[HUMANITY:ELEMENTS]]
+  - Coping → HUMANITY.ELEMENTS.COPING → [[HUMANITY:COPING]]
+  - Concerns → HUMANITY.ELEMENTS.CONCERNS → [[HUMANITY:CONCERNS]]
+  - Lessons Learned → HUMANITY.ELEMENTS.LESSONS → [[HUMANITY:LESSONS]]
+  - Unalienable Rights → HUMANITY.ELEMENTS.RIGHTS → [[HUMANITY:RIGHTS]]
+  - Vision → HUMANITY.ELEMENTS.VISION → [[HUMANITY:VISION]]
+  - Mission → HUMANITY.ELEMENTS.MISSION → [[HUMANITY:MISSION]]
+- `if-llm-humanity-experts.md`
+  - Experts → HUMANITY.ELEMENTS.EXPERTS → [[HUMANITY:EXPERTS]]
+  - Reasoning and Behavior Experts → HUMANITY.ELEMENTS.EXPERTS.REASONING → [[HUMANITY:REASONING_EXPERTS]]
+  - Communication Experts → HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION → [[HUMANITY:COMMUNICATION_EXPERTS]]
+  - Application Experts → HUMANITY.ELEMENTS.EXPERTS.APPLICATION → [[HUMANITY:APPLICATION_EXPERTS]]
+  - History Experts → HUMANITY.ELEMENTS.EXPERTS.HISTORY → [[HUMANITY:HISTORY_EXPERTS]]
+- `if-llm-humanity-fallibility.md`
+  - Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
+  - Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS → [[HUMANITY:TEMPTATIONS]]
+  - Consequences of Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES → [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]
+  - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
+  - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
+  - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
+- `if-llm-humanity-narm.md`
+  - Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
+  - Consequences of Unmet Needs → HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS → [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
+  - Activities → HUMANITY.ELEMENTS.ACTIVITIES → [[HUMANITY:ACTIVITIES]]
+  - Activities of Daily Living (ADLs) → HUMANITY.ELEMENTS.ACTIVITIES.ADLS → [[HUMANITY:ADLS]]
+  - Instrumental Activities of Daily Living (IADLs) → HUMANITY.ELEMENTS.ACTIVITIES.IADLS → [[HUMANITY:IADLS]]
+  - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
+  - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
+  - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
+- `if-llm-humanity-values.md`
+  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
+  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
+  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
+  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
+  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
+  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
 
 ### Local Knowledge Index
 
-List of this file's common human topic references mapped to canonical handles.
+The following is a list of this file's common topic references mapped to canonical handles.
+
 - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
 - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
 - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
@@ -62,19 +132,17 @@ List of this file's common human topic references mapped to canonical handles.
 - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
 - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
 
-
 ## Humanity
 
-
 ### Elements
-
 
 #### Values
 
 ID: HUMANITY.ELEMENTS.VALUES
-TAGS: [[HUMANITY:VALUES]] [[VALUES]]
+TAGS: [[HUMANITY:VALUES]]
 
 Values based on humanity’s most significant [[HUMANITY:LESSONS]] that have been gathered, tested, refined, and shared throughout human history across our many diverse communities and societies; [[HUMANITY:WISDOM]].
+
 - [[HUMANITY:VALUES]] relationship heuristic:
   - [[HUMANITY:ROOT]] values [[HUMANITY:WISDOM]].
   - [[HUMANITY:WISDOM]] is [[HUMANITY:INTERDEPENDENCE]]; [[HUMANITY:INTERDEPENDENCE]] is [[HUMANITY:WISDOM]].
@@ -89,13 +157,13 @@ Values based on humanity’s most significant [[HUMANITY:LESSONS]] that have bee
   - [[HUMANITY:PERSISTENCE]] includes [[HUMANITY:COURAGE]] and [[HUMANITY:HOPE]] (i.e., [[HUMANITY:HOPE]] is the only value included in [[HUMANITY:TRANSCENDENCE]] that is also included in [[HUMANITY:PERSISTENCE]]; [[HUMANITY:HOPE]] is the only value included in [[HUMANITY:TRANSCENDENCE]] that is also excluded in [[HUMANITY:COMPASSION]]).
   - [[HUMANITY:COURAGE]] includes [[HUMANITY:BRAVERY]], [[HUMANITY:INTEGRITY]], and [[HUMANITY:VITALITY]].
 
-
 ##### Wisdom
 
 ID: HUMANITY.ELEMENTS.VALUES.WISDOM
-TAGS: [[HUMANITY:WISDOM]] [[WISDOM]]
+TAGS: [[HUMANITY:WISDOM]]
 
 Consistently gathering, testing, and refining evidence of humanity’s most significant [[HUMANITY:LESSONS]] plus sharing those lessons (i.e. offering testimonials) across our many diverse communities and societies. Basically, these lessons indicate that consistently practicing [[HUMANITY:INTERDEPENDENCE]] often increases the likelihood of more efficiently nurturing and sustaining [[HUMANITY:RESOURCES]], more efficiently performing [[HUMANITY:ACTIVITIES]], and subsequently more efficiently satisfying [[HUMANITY:NEEDS]], collectively, on average, over time. Wisdom is the ability to apply our [[HUMANITY:RESOURCES]] to perform [[HUMANITY:ACTIVITIES]] to satisfy [[HUMANITY:NEEDS]] in a thoughtful and ethical manner. It involves making sound judgments, considering long-term consequences, and acting in ways that benefit both individuals and society, in the present place and time plus elsewhere and throughout the future. Ultimately, it means striving to consistently perform our [[HUMANITY:MISSION]] and contribute to our [[HUMANITY:VISION]].
+
 - **Included by Value**: None
 - **Includes Values**: [[HUMANITY:INTERDEPENDENCE]]
 - **Experiential Evidence** (Pattern Learning): Repeatedly experiencing that consistently practicing wisdom often makes it easier to efficiently satisfy [[HUMANITY:NEEDS]], collectively, on average, over time.
@@ -104,7 +172,7 @@ Consistently gathering, testing, and refining evidence of humanity’s most sign
   - more frequently and consistently practicing interdependence often creates bigger, stronger, and more impactful safety nets;
   - more frequently and consistently practicing wisdom often prevents avoidable messes.
 - **Social Reinforcement**: People are more likely to be more frequently, more consistently, and more significantly socially rewarded with support satisfying their [[HUMANITY:NEEDS]] (i.e., or, at least, less likely to experience more frequent, more consistent, and more significant social harms and risks to their ability to satisfy their [[HUMANITY:NEEDS]]) within their affiliated institutions (e.g., families, peer groups, spiritual communities, schools, workplaces), which reinforce these values as follows:
-  - praising them; 
+  - praising them;
   - telling illustrative stories about them;
   - building rituals around them;
   - sanctioning choices and actions that do not consistently demonstrate them (e.g., selfishness, rashness, quitting)
@@ -174,13 +242,13 @@ Consistently gathering, testing, and refining evidence of humanity’s most sign
     - **Cinderella**: patient virtue and discernment amid unfairness; wisdom isn’t always loud.
     - **The Emperor’s New Clothes**: collective self-deception—and the wisdom of honest speech.
 
-
 ##### Interdependence
 
 ID: HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE
-TAGS: [[HUMANITY:INTERDEPENDENCE]] [[INTERDEPENDENCE]]
+TAGS: [[HUMANITY:INTERDEPENDENCE]]
 
 How everything is connected and relies on each other for health and safety. Interdependence means we are part of a huge, diverse, and complex interconnected system that includes other human beings, other living beings, plus things in our environment. Interdependence requires us to consider how our decisions and actions impact others, their needs, in addition to our needs. Interdependence is the mutual reliance between human beings, other living beings, plus things in our environment; including other individuals, families, communities, and societies. Interdependence requires appreciation of others and their contributions; requires us to value cooperation plus shared responsibility to collective well-being. Interdependence requires [[HUMANITY:COMPASSION]] and [[HUMANITY:PERSISTENCE]] for ourselves and others.
+
 - **Included by Value**: [[HUMANITY:WISDOM]]
 - **Includes Values**
   - Secondary Values: [[HUMANITY:COMPASSION]] and [[HUMANITY:PERSISTENCE]]
@@ -246,13 +314,13 @@ How everything is connected and relies on each other for health and safety. Inte
     - **The Little Red Hen**: a cautionary tale—refusal to contribute breaks reciprocity and shared benefit.
     - **The Three Little Pigs**: shared refuge and preparation protect the group from predictable threats.
 
-
 ##### Love
 
 ID: HUMANITY.ELEMENTS.VALUES.LOVE
-TAGS: [[HUMANITY:LOVE]] [[LOVE]]
+TAGS: [[HUMANITY:LOVE]]
 
 Deep and enduring sense of care, connection, and commitment toward other people, other living beings, our environment, and ourselves. Love fosters emotional bonds, trust, and support in relationships, our [[HUMANITY:INTERDEPENDENCE]]. It motivates kindness, sacrifice, and a willingness to act for the well-being of others. Love is foundational for strong relationships, families, and communities, reinforcing the shared responsibility and emotional connection that sustain [[HUMANITY:INTERDEPENDENCE]]. Love motivates us to support, nurture, and protect other people, other living beings, our environment, and ourselves. It involves wanting the best for others and can strengthen connections between people, living beings, and our environment to foster harmony and understanding in relationships and communities.
+
 - **Included by Value**: [[HUMANITY:INTERDEPENDENCE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -320,13 +388,13 @@ Deep and enduring sense of care, connection, and commitment toward other people,
     - **The Little Match Girl** (Andersen): a compassion story—meant to awaken protective love in the reader/community.
     - **The Snow Queen** (Andersen): steadfast friendship-love and rescue—devotion without romance.
 
-
 ##### Critical Thinking
 
 ID: HUMANITY.ELEMENTS.VALUES.THINKING
-TAGS: [[HUMANITY:THINKING]] [[THINKING]]
+TAGS: [[HUMANITY:THINKING]]
 
 Analyzing, evaluating, and questioning information, ideas, and beliefs to make well-reasoned and informed decisions. It requires logic, skepticism, and a willingness to consider different perspectives. It involves examining evidence, identifying biases, and considering multiple perspectives before making decisions or forming opinions. Critical thinking helps individuals navigate complex issues, avoid manipulation, and make better judgments, contributing to a more informed and thoughtful society.
+
 - **Included by Value**: [[HUMANITY:INTERDEPENDENCE]]
 - **Includes Values**: [[HUMANITY:CURIOSITY]], [[HUMANITY:OPENNESS]], [[HUMANITY:PERSPECTIVE]], [[HUMANITY:LEARNING]], and [[HUMANITY:CREATIVITY]]
 - **Visual Elements**
@@ -392,13 +460,13 @@ Analyzing, evaluating, and questioning information, ideas, and beliefs to make w
     - **Hansel and Gretel**: problem-solving under scarcity; avoid obvious traps.
     - **The Princess and the Pea**: “testing a claim” (a crude experiment), though it also satirizes elitism.
 
-
 ##### Curiosity
 
 ID: HUMANITY.ELEMENTS.VALUES.CURIOSITY
-TAGS: [[HUMANITY:CURIOSITY]] [[CURIOSITY]]
+TAGS: [[HUMANITY:CURIOSITY]]
 
 Desire to explore, learn, and understand new things. It drives people to ask questions, seek new knowledge, discover new experiences, and gain a deeper understanding of other people, other living beings, our environment, and ourselves. Curiosity fuels intellectual and creative growth, leading to a deeper understanding of complex issues.
+
 - **Included by Value**: [[HUMANITY:THINKING]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -468,13 +536,13 @@ Desire to explore, learn, and understand new things. It drives people to ask que
     - **The Little Mermaid**: curiosity about another world pushes transformation and sacrifice.
     - **Beauty and the Beast**: curiosity that looks deeper than appearances reveals truth.
 
-
 ##### Open-Mindedness
 
 ID: HUMANITY.ELEMENTS.VALUES.OPENNESS
-TAGS: [[HUMANITY:OPENNESS]] [[OPENNESS]]
+TAGS: [[HUMANITY:OPENNESS]]
 
 Willingness to consider new ideas, perspectives, and possibilities without immediate judgment or rejection. It involves being receptive to different thoughts and experiences, allowing for growth and understanding. It involves humility, flexibility, and a readiness to change one's views when presented with new information. Open-mindedness fosters dialogue, personal growth, and a deeper understanding of others.
+
 - **Included by Value**: [[HUMANITY:THINKING]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -545,13 +613,13 @@ Willingness to consider new ideas, perspectives, and possibilities without immed
     - **Alice’s Adventures in Wonderland**: practicing flexibility in a world that breaks expectations; curiosity over rigidity.
     - **Goldilocks and the Three Bears**: exploration meets boundaries; openness paired with respect.
 
-
 ##### Perspective
 
 ID: HUMANITY.ELEMENTS.VALUES.PERSPECTIVE
-TAGS: [[HUMANITY:PERSPECTIVE]] [[PERSPECTIVE]]
+TAGS: [[HUMANITY:PERSPECTIVE]]
 
 Seeing and understanding situations from multiple viewpoints, which are influenced by personal experiences. It involves empathy, cultural awareness, and an appreciation for different life experiences. Perspective helps people recognize bias, reduce misunderstandings, and foster more meaningful human connections. It helps us appreciate diversity and navigate complex issues more thoughtfully.
+
 - **Included by Value**: [[HUMANITY:THINKING]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -627,13 +695,13 @@ Seeing and understanding situations from multiple viewpoints, which are influenc
     - **The Frog Prince**: reappraisal—what seems unworthy may transform.
     - **Alice’s Adventures in Wonderland**: flexibility under shifting rules; practicing perspective in the unfamiliar.
 
-
 ##### Love of Learning
 
 ID: HUMANITY.ELEMENTS.VALUES.LEARNING
-TAGS: [[HUMANITY:LEARNING]] [[LEARNING]]
+TAGS: [[HUMANITY:LEARNING]]
 
 An intrinsic motivation to acquire knowledge and deepen understanding. It reflects a passion for discovery and lifelong education. Love of learning enhances [[HUMANITY:THINKING]] by encouraging continued intellectual growth and adaptability.
+
 - **Included by Value**: [[HUMANITY:THINKING]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -698,13 +766,13 @@ An intrinsic motivation to acquire knowledge and deepen understanding. It reflec
     - **Hansel and Gretel**: learning resourcefulness under uncertainty.
     - **Beauty and the Beast**: learning to perceive character beyond appearances.
 
-
 ##### Creativity
 
 ID: HUMANITY.ELEMENTS.VALUES.CREATIVITY
-TAGS: [[HUMANITY:CREATIVITY]] [[CREATIVITY]]
+TAGS: [[HUMANITY:CREATIVITY]]
 
 Generating new ideas, approaches, solutions, and expressions. It involves imagination, innovation, and the capacity to think beyond conventional patterns. Creativity fuels problem-solving, artistic expression, and advancements in science, technology, and culture.
+
 - **Included by Value**: [[HUMANITY:THINKING]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -779,13 +847,13 @@ Generating new ideas, approaches, solutions, and expressions. It involves imagin
     - **The Emperor’s New Clothes**: social illusion vs truth—creative courage to say what’s real.
     - **Cinderella**: transformation and possibility—creative hope under constraint.
 
-
 ##### Compassion
 
 ID: HUMANITY.ELEMENTS.VALUES.COMPASSION
-TAGS: [[HUMANITY:COMPASSION]] [[COMPASSION]]
+TAGS: [[HUMANITY:COMPASSION]]
 
 Recognizing, understanding, and empathizing with the suffering of other people, other living beings, and our environment combined with our desire to take action to alleviate their suffering. It involves kindness, empathy, and a commitment to fairness and care. Compassion is being aware of others' struggles, feeling moved by their pain, and acting in a way that aims to ease it. Compassion is the fundamental way we connect with others, fostering cooperation and mutual support in a world of [[HUMANITY:INTERDEPENDENCE]]. Compassion requires emotional sensitivity and a willingness to support others, whether through kindness, patience, or offering aid. Compassion is our desire to reduce others' suffering by helping to support others’ [[HUMANITY:NEEDS]] by performing [[HUMANITY:ACTIVITIES]] using our [[HUMANITY:RESOURCES]]. Compassion is our desire to reduce others’ harms and risks — the [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]] that others experience. It is our desire to make others' existence better in some way, knowing that it helps us all and makes the world a better place.
+
 - **Included by Value**: [[HUMANITY:INTERDEPENDENCE]]
 - **Includes Values**: [[HUMANITY:TEMPERANCE]], [[HUMANITY:TRANSCENDENCE]], and [[HUMANITY:JUSTICE]]
 - **Visual Elements**
@@ -855,13 +923,13 @@ Recognizing, understanding, and empathizing with the suffering of other people, 
     - **Cinderella**: kindness under injustice; compassion without becoming cruel in return.
     - **The Happy Prince** (Wilde): compassion expressed through sacrificial giving to the poor.
 
-
 ##### Temperance
 
 ID: HUMANITY.ELEMENTS.VALUES.TEMPERANCE
-TAGS: [[HUMANITY:TEMPERANCE]] [[TEMPERANCE]]
+TAGS: [[HUMANITY:TEMPERANCE]]
 
 Self-restraint, moderation, and balance in thoughts, emotions, and actions. It involves exercising control over desires, impulses, and behaviors to achieve long-term well-being. Temperance helps individuals make thoughtful choices, avoid excesses, and cultivate inner harmony, allowing for better decision-making and stronger relationships. It promotes ethical behavior and encourages measured responses to challenges. It helps us to more efficiently and consistently perform our [[HUMANITY:MISSION]] and contribute to our [[HUMANITY:VISION]].
+
 - **Included by Value**: [[HUMANITY:COMPASSION]]
 - **Includes Values**: [[HUMANITY:MERCY]], [[HUMANITY:HUMILITY]], [[HUMANITY:PRUDENCE]], and [[HUMANITY:REGULATION]]
 - **Visual Elements**
@@ -931,17 +999,17 @@ Self-restraint, moderation, and balance in thoughts, emotions, and actions. It i
     - **The Red Shoes** (Andersen): unchecked craving becomes compulsion—discipline restores freedom.
     - **Beauty and the Beast**: gentleness and restraint (not rage) transforms relationships.
 
-
 ##### Mercy
 
 ID: HUMANITY.ELEMENTS.VALUES.MERCY
-TAGS: [[HUMANITY:MERCY]] [[MERCY]]
+TAGS: [[HUMANITY:MERCY]]
 
 Showing kindness, forgiveness, and compassion to someone who may have caused harm or risk to other people, other living beings, or our environment or to someone who may be suffering. It involves letting go of excessive punishment, resentment, or harsh judgment in favor of understanding and grace. Mercy fosters reconciliation, reduces harm, and upholds human dignity, even when justice may allow for stricter consequences. It is a form of strength that promotes healing and positive relationships.
+
 - **Included by Value**: [[HUMANITY:TEMPERANCE]]
 - **Includes Values**: None
 - **Visual Elements**
-  - **Hexadic Color Scheme** 
+  - **Hexadic Color Scheme**
     - #81D4FA
     - #FAA680
     - #80FAA6
@@ -1003,13 +1071,13 @@ Showing kindness, forgiveness, and compassion to someone who may have caused har
     - **The Snow Queen**: persistent compassion saves the frozen heart—mercy as endurance in love.
     - **Les fées / The Fairies** (Perrault): kindness to a disguised stranger is rewarded; harshness is corrected.
 
-
 ##### Humility
 
 ID: HUMANITY.ELEMENTS.VALUES.HUMILITY
-TAGS: [[HUMANITY:HUMILITY]] [[HUMILITY]]
+TAGS: [[HUMANITY:HUMILITY]]
 
 Recognizing, acknowledging, understanding, and remaining aware of our [[HUMANITY:FALLIBILITY]]. Recognizing one’s limitations, strengths, and the value of others without arrogance or superiority; being modest and respectful. It involves openness to learning, acknowledging mistakes, and appreciating different perspectives. Humility fosters respect, collaboration, and continuous growth, helping individuals remain grounded and aware of their [[HUMANITY:INTERDEPENDENCE]] with others.
+
 - **Included by Value**: [[HUMANITY:TEMPERANCE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -1080,13 +1148,13 @@ Recognizing, acknowledging, understanding, and remaining aware of our [[HUMANITY
     - **King Thrushbeard**: pride is softened through lived experience; humility restores relationship.
     - **The Frog Prince**: humility in keeping promises; respect transforms outcomes.
 
-
 ##### Prudence
 
 ID: HUMANITY.ELEMENTS.VALUES.PRUDENCE
-TAGS: [[HUMANITY:PRUDENCE]] [[PRUDENCE]]
+TAGS: [[HUMANITY:PRUDENCE]]
 
 Making wise and thoughtful decisions by carefully considering consequences, risks, and ethical implications, especially when faced with complex or challenging situations. It involves foresight, caution, and practical judgment to avoid harm and achieve the best possible outcomes. Prudence helps individuals navigate life’s complexities while efficiently and consistently performing our [[HUMANITY:MISSION]] and contributing to our [[HUMANITY:VISION]].
+
 - **Included by Value**: [[HUMANITY:TEMPERANCE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -1158,13 +1226,13 @@ Making wise and thoughtful decisions by carefully considering consequences, risk
     - **Rumpelstiltskin**: rash bargains and desperate promises—prudence reads the fine print.
     - **The Fisherman and His Wife**: imprudent greed escalates until everything collapses.
 
-
 ##### Self-Regulation
 
 ID: HUMANITY.ELEMENTS.VALUES.REGULATION
-TAGS: [[HUMANITY:REGULATION]] [[REGULATION]]
+TAGS: [[HUMANITY:REGULATION]]
 
 Controlling emotions, thoughts, and behaviors in response to internal and external influences. It helps individuals stay focused, manage stress, and make thoughtful choices rather than reacting impulsively. Self-regulation is essential for maintaining personal well-being and effective social interactions; to efficiently and consistently perform our [[HUMANITY:MISSION]] and contribute to our [[HUMANITY:VISION]].
+
 - **Included by Value**: [[HUMANITY:TEMPERANCE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -1228,13 +1296,13 @@ Controlling emotions, thoughts, and behaviors in response to internal and extern
     - **Little Red Riding Hood**: boundaries + caution; impulse and naivety create danger.
     - **Goldilocks**: self-regulation around respect and “not taking what isn’t yours.”
 
-
 ##### Transcendence
 
 ID: HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE
-TAGS: [[HUMANITY:TRANSCENDENCE]] [[TRANSCENDENCE]]
+TAGS: [[HUMANITY:TRANSCENDENCE]]
 
 Rising above personal limitations, challenges, or circumstances to find deeper meaning, purpose, or connection to something greater than oneself, including our [[HUMANITY:VALUES]], [[HUMANITY:VISION]], and [[HUMANITY:MISSION]]. It involves seeking higher understanding, finding inspiration beyond immediate concerns, and recognizing a broader perspective of existence. Transcendence allows individuals to see beyond difficulties and limitations, cultivating resilience, spiritual or philosophical insight, and a greater sense of unity with other people, other living beings, and our environment — our [[HUMANITY:INTERDEPENDENCE]].
+
 - **Included by Value**: [[HUMANITY:COMPASSION]] and [[HUMANITY:PERSISTENCE]]
 - **Includes Values**: [[HUMANITY:GRATITUDE]], [[HUMANITY:PURPOSE]], [[HUMANITY:EXCELLENCE]], [[HUMANITY:HUMOR]], and [[HUMANITY:HOPE]]
 - **Visual Elements**
@@ -1298,13 +1366,13 @@ Rising above personal limitations, challenges, or circumstances to find deeper m
     - **The Snow Queen**: recovery of heart and wholeness; love and perseverance overcoming cold emptiness.
     - **The Little Mermaid**: longing for “more than the given world,” and the costs of transformation.
 
-
 ##### Gratitude
 
 ID: HUMANITY.ELEMENTS.VALUES.GRATITUDE
-TAGS: [[HUMANITY:GRATITUDE]] [[GRATITUDE]]
+TAGS: [[HUMANITY:GRATITUDE]]
 
 Recognizing and appreciating the positive aspects of life, including kindness from others, personal achievements, and the beauty of the world. It fosters a positive outlook, strengthens relationships, and encourages a sense of contentment and generosity. Practicing gratitude helps individuals focus on what they have rather than what they lack, promoting emotional well-being and deeper connections with other people, other living beings, and our environment — our [[HUMANITY:INTERDEPENDENCE]].
+
 - **Included by Value**: [[HUMANITY:TRANSCENDENCE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -1374,13 +1442,13 @@ Recognizing and appreciating the positive aspects of life, including kindness fr
     - **Cinderella**: gratitude + humility amid deprivation; recognition arrives without bitterness.
     - **The Golden Goose**: kindness to the odd/overlooked brings unexpected good—gratitude for unlikely gifts.
 
-
 ##### Purpose
 
 ID: HUMANITY.ELEMENTS.VALUES.PURPOSE
-TAGS: [[HUMANITY:PURPOSE]] [[PURPOSE]]
+TAGS: [[HUMANITY:PURPOSE]]
 
 Sense of direction and meaning in life that guides actions, decisions, and long-term goals. It provides motivation, resilience, and fulfillment, helping individuals contribute to something larger than themselves. A strong sense of purpose fosters commitment, perseverance, and a sense of responsibility toward other people, other living beings, and our environment — our [[HUMANITY:INTERDEPENDENCE]].
+
 - **Included by Value**: [[HUMANITY:TRANSCENDENCE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -1443,13 +1511,13 @@ Sense of direction and meaning in life that guides actions, decisions, and long-
     - **The Wizard of Oz**: purpose as self-discovery—traits you seek may already be yours to practice.
     - **The Sword in the Stone**: purpose as calling—right action and character reveal rightful direction.
 
-
 ##### Appreciation of Excellence
 
 ID: HUMANITY.ELEMENTS.VALUES.EXCELLENCE
-TAGS: [[HUMANITY:EXCELLENCE]] [[EXCELLENCE]]
+TAGS: [[HUMANITY:EXCELLENCE]]
 
 Appreciation of excellence is the recognition and admiration of outstanding qualities, achievements, and beauty in people, nature, art, or ideas. It fosters inspiration, motivation, and a desire to strive for higher standards in oneself and others. This value encourages respect for skill, dedication, and creativity in various forms.
+
 - **Included by Value**: [[HUMANITY:TRANSCENDENCE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -1519,13 +1587,13 @@ Appreciation of excellence is the recognition and admiration of outstanding qual
     - **The Emperor’s New Clothes**: excellence in truth-telling—standards collapse when everyone performs.
     - **Rumpelstiltskin**: warns about “miracle” shortcuts—real excellence can’t be conjured without cost.
 
-
 ##### Humor
 
 ID: HUMANITY.ELEMENTS.VALUES.HUMOR
-TAGS: [[HUMANITY:HUMOR]] [[HUMOR]]
+TAGS: [[HUMANITY:HUMOR]]
 
 Recognizing, creating, and enjoying situations, expressions, or ideas that bring laughter or amusement. It helps individuals cope with difficulties, strengthen social connections, and maintain perspective in challenging situations. Humor fosters resilience, diffuses tension, and brings joy to individuals, families, and communities.
+
 - **Included by Value**: [[HUMANITY:TRANSCENDENCE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -1594,13 +1662,13 @@ Recognizing, creating, and enjoying situations, expressions, or ideas that bring
     - **The Bremen Town Musicians**: comic teamwork—humor as solidarity and improvisation.
     - **Hans in Luck**: cheerful foolishness—humor that questions what “good fortune” really means.
 
-
 ##### Justice
 
 ID: HUMANITY.ELEMENTS.VALUES.JUSTICE
-TAGS: [[HUMANITY:JUSTICE]] [[JUSTICE]]
+TAGS: [[HUMANITY:JUSTICE]]
 
 Fairness in the treatment of individuals, families, and communities, ensuring that all people receive what they are due in terms of rights, opportunities, and responsibilities. It involves creating systems, laws, and practices that uphold equality, prevent harm, and protect the dignity of all. Justice seeks to balance the needs of individuals and society while addressing wrongdoing, promoting fairness, and ensuring accountability. Practicing justice requires us to make decisions that are ethical, equitable, and in alignment with the well-being of other people, other living beings, our environment, and ourselves — our [[HUMANITY:INTERDEPENDENCE]].
+
 - **Included by Value**: [[HUMANITY:COMPASSION]]
 - **Includes Values**: [[HUMANITY:FAIRNESS]], [[HUMANITY:CITIZENSHIP]], and [[HUMANITY:LEADERSHIP]]
 - **Visual Elements**
@@ -1672,16 +1740,16 @@ Fairness in the treatment of individuals, families, and communities, ensuring th
     - **The Emperor’s New Clothes**: social pressure can protect injustice; truth-telling disrupts it.
     - **The Little Match Girl**: moral indictment of indifference; prompts compassion-driven justice.
 
-
 ##### Fairness
 
 ID: HUMANITY.ELEMENTS.VALUES.FAIRNESS
-TAGS: [[HUMANITY:FAIRNESS]] [[FAIRNESS]]
+TAGS: [[HUMANITY:FAIRNESS]]
 
 Making decisions and treating people in an impartial, just, and unbiased manner. It ensures that individuals are given equal opportunities, rights, and resources based on their needs and contributions. Fairness does not mean treating everyone exactly the same but rather ensuring that conditions and outcomes are equitable, reasonable, and free from favoritism or discrimination.
+
 - **Included by Value**: [[HUMANITY:JUSTICE]]
 - **Includes Values**: None
-* **Visual Elements**
+- **Visual Elements**
   - **Hexadic Color Scheme**
     - #F5F5F5
     - #F5F5F5
@@ -1753,13 +1821,13 @@ Making decisions and treating people in an impartial, just, and unbiased manner.
     - **The Little Match Girl**: a stark warning about social unfairness and neglected suffering.
     - **The Twelve Brothers** (or similar sibling-justice tales): fairness in family obligations and broken promises.
 
-
 ##### Citizenship
 
 ID: HUMANITY.ELEMENTS.VALUES.CITIZENSHIP
-TAGS: [[HUMANITY:CITIZENSHIP]] [[CITIZENSHIP]]
+TAGS: [[HUMANITY:CITIZENSHIP]]
 
 Responsibility and active participation of individuals in their families, communities, and societies. It involves upholding laws, respecting the rights of others, engaging in civic duties (such as voting and volunteering), and contributing to the common good of other people, other living beings, our environment, and ourselves. Citizenship recognizes that individuals are part of a larger social structure and have both rights and obligations within that structure.
+
 - **Included by Value**: [[HUMANITY:JUSTICE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -1829,13 +1897,13 @@ Responsibility and active participation of individuals in their families, commun
     - **The Ugly Duckling**: belonging and inclusion—communities mature when they make room for difference.
     - **The Three Little Pigs**: preparedness—responsible choices reduce risk for self and others.
 
-
 ##### Leadership
 
 ID: HUMANITY.ELEMENTS.VALUES.LEADERSHIP
-TAGS: [[HUMANITY:LEADERSHIP]] [[LEADERSHIP]]
+TAGS: [[HUMANITY:LEADERSHIP]]
 
 Guiding, inspiring, and supporting others toward a common goal, including our [[HUMANITY:VALUES]], [[HUMANITY:VISION]], and [[HUMANITY:MISSION]]. It involves making ethical decisions, fostering collaboration, and ensuring that the needs of individuals, families, and communities are met. Effective leadership requires responsibility, integrity, and a commitment to justice, fairness, and the well-being of those being led.
+
 - **Included by Value**: [[HUMANITY:JUSTICE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -1909,17 +1977,17 @@ Guiding, inspiring, and supporting others toward a common goal, including our [[
     - **The Little Match Girl**: an indictment of civic/leader neglect—communities are judged by how they treat the vulnerable.
     - **King Thrushbeard**: leadership and character—humility and perspective reshape how power is used.
 
-
 ##### Persistence
 
 ID: HUMANITY.ELEMENTS.VALUES.PERSISTENCE
-TAGS: [[HUMANITY:PERSISTENCE]] [[PERSISTENCE]]
+TAGS: [[HUMANITY:PERSISTENCE]]
 
 Determination to continue striving toward a goal despite obstacles, setbacks, or difficulties. It requires resilience, dedication, and a belief in long-term success. Persistence involves staying focused on a goal, not giving up when challenges arise, and continuously working toward success. Persistence helps ensure that progress is made and goals are achieved, despite obstacles or delays.
+
 - **Included by Value**: [[HUMANITY:INTERDEPENDENCE]]
 - **Includes Values**: [[HUMANITY:COURAGE]] and [[HUMANITY:HOPE]]
 - **Visual Elements**
-  - **Hexadic Color Scheme** 
+  - **Hexadic Color Scheme**
     - #F57C00
     - #007AF5
     - #F5007A
@@ -1979,13 +2047,13 @@ Determination to continue striving toward a goal despite obstacles, setbacks, or
     - **Hansel and Gretel**: persistence and cleverness to survive and escape.
     - **East of the Sun and West of the Moon**: determined quest across impossible distances.
 
-
 ##### Courage
 
 ID: HUMANITY.ELEMENTS.VALUES.COURAGE
-TAGS: [[HUMANITY:COURAGE]] [[COURAGE]]
+TAGS: [[HUMANITY:COURAGE]]
 
 Facing fear, pain, uncertainty, or challenges with strength and determination. It involves taking action despite difficulties, standing up for what is right, and persevering in the face of adversity. Courage allows individuals to embrace risks, endure hardships, and uphold our [[HUMANITY:VALUES]], [[HUMANITY:VISION]], and [[HUMANITY:MISSION]] even when confronted with opposition or fear. It manifests in various forms, including physical bravery, moral integrity, and emotional resilience.
+
 - **Included by Value**: [[HUMANITY:PERSISTENCE]]
 - **Includes Values**: [[HUMANITY:BRAVERY]], [[HUMANITY:INTEGRITY]], and [[HUMANITY:VITALITY]]
 - **Visual Elements**
@@ -2055,13 +2123,13 @@ Facing fear, pain, uncertainty, or challenges with strength and determination. I
     - **Beauty and the Beast**: moral courage—seeing past fearsome appearances.
     - **The Twelve Dancing Princesses**: courage to uncover truth despite mystery and risk.
 
-
 ##### Bravery
 
 ID: HUMANITY.ELEMENTS.VALUES.BRAVERY
-TAGS: [[HUMANITY:BRAVERY]] [[BRAVERY]]
+TAGS: [[HUMANITY:BRAVERY]]
 
 Willingness to face physical danger, fear, or hardship with boldness and confidence. It is a specific form of courage that often involves confronting threats or risks head-on, without hesitation. Bravery can be seen in heroic acts, but also in everyday moments where one chooses to confront difficulties despite potential consequences.
+
 - **Included by Value**: [[HUMANITY:COURAGE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -2071,7 +2139,7 @@ Willingness to face physical danger, fear, or hardship with boldness and confide
     - #D11AFF
     - #47FF1A
     - #1A47FF
-    - #FFD11A 
+    - #FFD11A
   - **Symbols**
     - **Lion**: “courage under threat”; the archetype of standing firm in danger.
     - **Shield**: protection + resolve; bravery as defense of what matters.
@@ -2131,13 +2199,13 @@ Willingness to face physical danger, fear, or hardship with boldness and confide
     - **The Wizard of Oz**: the “lion” lesson—feeling fear doesn’t negate bravery.
     - **The Snow Queen**: brave devotion and endurance through long hardship to rescue someone.
 
-
 ##### Integrity
 
 ID: HUMANITY.ELEMENTS.VALUES.INTEGRITY
-TAGS: [[HUMANITY:INTEGRITY]] [[INTEGRITY]]
+TAGS: [[HUMANITY:INTEGRITY]]
 
 Being honest, ethical, and consistent in one’s principles and actions. It involves adhering to moral and ethical values even when faced with challenges or temptations. A person with integrity acts truthfully and responsibly, ensuring their words and actions align with their beliefs and commitments, including our [[HUMANITY:VALUES]], [[HUMANITY:VISION]], and [[HUMANITY:MISSION]].
+
 - **Included by Value**: [[HUMANITY:COURAGE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -2147,7 +2215,7 @@ Being honest, ethical, and consistent in one’s principles and actions. It invo
     - #0E7A00
     - #6C007A
     - #7A6C00
-    - #000E7A 
+    - #000E7A
   - **Symbols**
     - **Plumb line / straightedge**: “uprightness” and alignment—actions match stated principles.
     - **Handshake**: trust, reliability, and keeping commitments with others.
@@ -2209,13 +2277,13 @@ Being honest, ethical, and consistent in one’s principles and actions. It invo
     - **Beauty and the Beast**: integrity as faithful love and seeing reality beyond appearances.
     - **The Fisherman and His Wife**: integrity includes contentment; unchecked greed erodes character.
 
-
 ##### Vitality
 
 ID: HUMANITY.ELEMENTS.VALUES.VITALITY
-TAGS: [[HUMANITY:VITALITY]] [[VITALITY]]
+TAGS: [[HUMANITY:VITALITY]]
 
 Energy, enthusiasm, and strength that enable individuals to actively engage in life. It represents physical, emotional, and mental well-being, allowing people to pursue their goals with vigor and resilience. Vitality fuels perseverance and the ability to recover from setbacks, making it essential for overall well-being and long-term success.
+
 - **Included by Value**: [[HUMANITY:COURAGE]]
 - **Includes Values**: None
 - **Visual Elements**
@@ -2225,7 +2293,7 @@ Energy, enthusiasm, and strength that enable individuals to actively engage in l
     - #B37942
     - #427CB3
     - #B3427C
-    - #42B379 
+    - #42B379
   - **Symbols**
     - **Sun / sunrise**: renewal + life-giving energy; “a new day” vitality.
     - **Heartbeat / pulse line**: aliveness in motion; vitality as sustained living energy.
@@ -2285,13 +2353,13 @@ Energy, enthusiasm, and strength that enable individuals to actively engage in l
     - **The Snow Queen**: long, cold journey—vitality as persistence and warmth of love/friendship.
     - **Jack and the Beanstalk**: daring upward growth—vitality as bold expansion and striving.
 
-
 ##### Hope
 
 ID: HUMANITY.ELEMENTS.VALUES.HOPE
-TAGS: [[HUMANITY:HOPE]] [[HOPE]]
+TAGS: [[HUMANITY:HOPE]]
 
 Believing that positive outcomes are possible even in difficult situations. It provides motivation, resilience, and a sense of optimism that fuels efforts toward improvement and progress. Hope helps individuals, families, and communities persist through challenges by envisioning a better future.
+
 - **Included by Value**: [[HUMANITY:TRANSCENDENCE]]
 - **Includes Values**: None
 - **Visual Elements**
