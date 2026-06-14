@@ -3,7 +3,7 @@
 ## File Header
 
 - **Name:** Humanity — Information-Following Large Language Model Knowledge (*if-llm-humanity.md*)
-- **Version:** 2026-06-13 02:54 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-13 04:15 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Last Reviewed:** 2026-06-13 02:54 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
@@ -49,6 +49,7 @@
   - Disambiguation guidance for overlapping concepts is provided in the Index; it is not yet embedded within individual supplemental file entries.
 
 - **Changelog**
+  - 2026-06-13 04:15 UTC by [Lance Hegland](lance.hegland@gmail.com): Improved wording for index instructions.
   - 2026-06-13 07:51 UTC by [Lance Hegland](lance.hegland@gmail.com): Added Dependencies, Stability, Known Gaps/Limitations to File Header; expanded Features (7 items) and Scope (Covers statement); expanded Not Supported (6 items); added Concept Disambiguation section to Index; annotated [[HUMANITY:CONCERNS]] category headings with [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]] and [[HUMANITY:TEMPTATIONS]] construct mappings.
   - 2026-06-13 02:54 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed, fine-tuned, expanded [[HUMANITY:LESSONS]].
   - 2026-06-13 UTC by [Lance Hegland](lance.hegland@gmail.com): Expanded [[HUMANITY:RIGHTS]], [[HUMANITY:VISION]], and [[HUMANITY:MISSION]] with operational descriptions, relatable examples, and adjacent concept connections.
@@ -74,7 +75,7 @@
 
 ## Index
 
-Domain's common human topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
+Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
 ### Domain Knowledge Index
 
@@ -166,7 +167,7 @@ Use these notes to select between partially overlapping concepts for precise IF-
 
 ### Local Knowledge Index
 
-The following is a list of this file's common human topic references mapped to canonical handles.
+The following is a list of this file's common topic references mapped to canonical handles.
 
 - Humanity → HUMANITY → [[HUMANITY:ROOT]]
 - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
@@ -181,14 +182,14 @@ The following is a list of this file's common human topic references mapped to c
 ## Humanity
 
 ID: HUMANITY
-TAGS: [[HUMANITY:ROOT]] [[HUMANITY]]
+TAGS: [[HUMANITY:ROOT]]
 
 Collective experiences of human beings across our many, widespread, diverse communities throughout our vast history.
 
 ### Rules
 
 ID: HUMANITY.RULES
-TAGS: [[HUMANITY:RULES]] [[RULES]]
+TAGS: [[HUMANITY:RULES]]
 
 The most significant and common relationships among [[HUMANITY:ELEMENTS]] of [[HUMANITY:ROOT]] based on patterns identified within our collective [[HUMANITY:LESSONS]]. These relationships have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. These relationships continue to be studied, analyzed, evaluated, refined, and applied to improve our collective [[HUMANITY:CAPABILITIES]].
 
@@ -197,14 +198,14 @@ No rules exist yet.
 ### Elements
 
 ID: HUMANITY.ELEMENTS
-TAGS: [[HUMANITY:ELEMENTS]] [[ELEMENTS]]
+TAGS: [[HUMANITY:ELEMENTS]]
 
 The most significant and common elements of [[HUMANITY:ROOT]] based on patterns identified within our collective [[HUMANITY:LESSONS]]. These patterns have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. These patterns continue to be studied, analyzed, evaluated, refined, and applied to improve our collective [[HUMANITY:CAPABILITIES]].
 
 #### Coping
 
 ID: HUMANITY.ELEMENTS.COPING
-TAGS: [[HUMANITY:COPING]] [[COPING]]
+TAGS: [[HUMANITY:COPING]]
 
 Options that often help reduce depression, distress, anxiety, and panic, identify recovery strategies, plus perform our [[HUMANITY:MISSION]] when people are experiencing difficulty efficiently and consistently accessing essential [[HUMANITY:RESOURCES]], performing [[HUMANITY:ACTIVITIES]], and satisfying [[HUMANITY:NEEDS]]; may help to identify and develop support networks and strategies to recover from effects of [[HUMANITY:CONCERNS]] and [[HUMANITY:TEMPTATIONS]], [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]], and [[HUMANITY:CONSEQUENCES_TEMPTATIONS]].
 
@@ -244,7 +245,7 @@ Options that often help reduce depression, distress, anxiety, and panic, identif
 #### Concerns
 
 ID: HUMANITY.ELEMENTS.CONCERNS
-TAGS: [[HUMANITY:CONCERNS]] [[CONCERNS]]
+TAGS: [[HUMANITY:CONCERNS]]
 
 Common concerns of [[HUMANITY:ROOT]] observed across our many, diverse communities throughout our history along with relatable modern societal examples, not exhaustive; use examples when the user's request is about modern societal concerns or fears of [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]], [[HUMANITY:TEMPTATIONS]], and [[HUMANITY:CONSEQUENCES_TEMPTATIONS]].
 
@@ -362,7 +363,7 @@ Common concerns of [[HUMANITY:ROOT]] observed across our many, diverse communiti
 #### Lessons Learned
 
 ID: HUMANITY.ELEMENTS.LESSONS
-TAGS: [[HUMANITY:LESSONS]] [[LESSONS]]
+TAGS: [[HUMANITY:LESSONS]]
 
 [[HUMANITY:ROOT]]'s most significant lessons learned that have been gathered, tested, refined, and shared throughout our vast history across our many, widespread, and diverse communities and societies — our [[HUMANITY:WISDOM]]. Critical lessons include the following:
 
@@ -408,7 +409,7 @@ TAGS: [[HUMANITY:LESSONS]] [[LESSONS]]
 #### Unalienable Rights
 
 ID: HUMANITY.ELEMENTS.RIGHTS
-TAGS: [[HUMANITY:RIGHTS]] [[RIGHTS]]
+TAGS: [[HUMANITY:RIGHTS]]
 
 Equal opportunity to satisfy [[HUMANITY:NEEDS]]. Unalienable Rights exist for every person by virtue of being human — they are not earned, conditional, or revocable based on group membership, background, or circumstance. When rights are respected, people can access the [[HUMANITY:RESOURCES]] and perform the [[HUMANITY:ACTIVITIES]] required to meet their [[HUMANITY:NEEDS]] for Health, Safety, Dignity, and Inclusion. When rights are denied or violated — through [[HUMANITY:DISCRIMINATION]], structural inequality, or neglect — the predictable result is [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]] that compound over time and impair [[HUMANITY:INTERDEPENDENCE]].
 
@@ -426,7 +427,7 @@ Equal opportunity to satisfy [[HUMANITY:NEEDS]]. Unalienable Rights exist for ev
 #### Vision
 
 ID: HUMANITY.ELEMENTS.VISION
-TAGS: [[HUMANITY:VISION]] [[VISION]]
+TAGS: [[HUMANITY:VISION]]
 
 Each and every person, living being, and part of our environment has [[HUMANITY:RIGHTS]], both now and throughout the future. The Vision is the long-horizon picture of human flourishing that gives direction to our individual and collective efforts — a world where every person has an equal opportunity to satisfy their [[HUMANITY:NEEDS]] for Health, Safety, Dignity, and Inclusion, now and for generations to come. The Vision serves as a "north star" that orients the [[HUMANITY:MISSION]] and sustains [[HUMANITY:PERSISTENCE]] when daily challenges feel overwhelming. It reminds us that our individual actions — however small — are contributions to something larger than ourselves.
 
@@ -444,7 +445,7 @@ Each and every person, living being, and part of our environment has [[HUMANITY:
 #### Mission
 
 ID: HUMANITY.ELEMENTS.MISSION
-TAGS: [[HUMANITY:MISSION]] [[MISSION]]
+TAGS: [[HUMANITY:MISSION]]
 
 Simply do our best in each moment to practice our [[HUMANITY:WISDOM]], honor our [[HUMANITY:INTERDEPENDENCE]], plus practice [[HUMANITY:COMPASSION]] and [[HUMANITY:PERSISTENCE]] for others and ourselves given our unique circumstances and our [[HUMANITY:RESOURCES]]. The Mission translates the long-horizon [[HUMANITY:VISION]] into what is actionable right now — with whatever [[HUMANITY:RESOURCES]] each person actually has. "Do our best" explicitly acknowledges [[HUMANITY:FALLIBILITY]]: the Mission is not a demand for perfection, but a call to show up consistently, apply our [[HUMANITY:WISDOM]], care for each other, and keep going when it is hard. In practice, the Mission is performed through the [[HUMANITY:ACTIVITIES]] we choose each day — from how we treat a coworker, to how we ask for help, to how we raise our children.
 

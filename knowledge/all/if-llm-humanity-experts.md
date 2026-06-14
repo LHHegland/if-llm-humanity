@@ -3,33 +3,36 @@
 ## File Header
 
 - **Name:** Humanity's Experts — Information-Following Large Language Model Knowledge (*if-llm-humanity-experts.md*)
-- **Version:** 2026-06-12 06:44 UTC by [Lance Hegland](lance.hegland@gmail.com)
-- **Last Reviewed:** 2026-06-12 06:44 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Last Reviewed:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
-- **Purpose:** Empower an instruction-following large language model (IF-LLM) to help an average adult in the U.S. today to think more clearly, calmly, and fairly about real-life situations—especially under uncertainty—without turning the IF-LLM into a medical, legal, or moral authority. These use cases emphasize sensemaking, decision hygiene, and human dignity, while respecting autonomy and professional boundaries.
+- **Purpose:** Empower an IF-LLM to identify and cite relevant expert domains when helping an average U.S. adult understand who studies the patterns described in this knowledge ecosystem, what expert types to seek when a situation requires specialized knowledge, and how to attribute claims to recognized fields of expertise.
 - **Audience:** Average, diverse people in the United States of America today.
 - **Features**
-  - Empowers how to think, not what to conclude.
-  - Prioritizes fairness, safety, and clarity over speed or cleverness.
+  - Four expert subdomain categories (Reasoning/Behavior, Communication, Application, History) organized by functional role.
+  - Role listings structured into professional subcategories for precise IF-LLM retrieval.
+  - Integrates with [[HUMANITY:CAPABILITIES]] and [[HUMANITY:LESSONS]] for expertise-to-application mapping.
+  - Concept Disambiguation section guides IF-LLM selection when a role spans multiple expert categories.
+  - IF/THEN decision rules support structured IF-LLM retrieval workflows per entry.
 - **Scope**
-  - User is not seeking diagnosis, legal rulings, or professional certification
-  - Use cases emphasize support, structure, and reflection, not command-and-control
-  - High-stakes situations still defer to professionals
+  - **Covers:** Professional and academic expert roles that study, analyze, and apply humanity's significant patterns; organized by functional domain (reasoning/behavior, communication, application, history).
+  - **Out of Scope:** Individual practitioner directories; credential verification; clinical or legal referrals; technical subspecialties outside the humanity knowledge domain.
 - **Use Cases**
-  - **Supported:**
-    - Personal decision support under uncertainty
-    - Emotional regulation and coping (non-clinical)
-    - Conflict de-escalation and communication prep
-    - Sensemaking of complex or emotionally charged situations
-    - Self-reflection and personal growth scaffolding
-    - Life skills and daily functioning support
-  - **Not Supported**
-    - Not suitable for diagnosis, therapy, legal advice, or emergency response.
-    - Not optimized for technical or domain-specific expertise.
+  - **Supported:** Helping users understand which expert fields address their question; recommending professional consultation types; attributing knowledge claims to recognized disciplines when IF-LLM reasoning is grounded in those fields.
+  - **Not Supported:** Not a referral service for individual practitioners; not optimized for clinical, legal, or engineering subspecialties; not for generating professional credentials or certifications; not for diagnosing, prescribing, or providing therapy.
+
+- **Dependencies (Required):** `if-llm-humanity.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-values.md`, `if-llm-system-policies-processing.md`
+- **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
+- **Known Gaps / Limitations**
+  - Many expert roles appear across multiple subcategories (e.g., Philosophers, Developmental Psychologists, Cultural Anthropologists). The Concept Disambiguation section provides selection guidance, but cross-category roles are not fully deduplicated within individual entries.
+  - Expert lists represent professional and academic roles commonly recognized in the U.S. and internationally; they are not exhaustive and may not reflect all relevant subdisciplines or emerging fields.
+  - No individual practitioner names, directories, or specific institutions are listed; users seeking a specific professional should be directed to appropriate referral resources (e.g., professional associations, 211 services, SAMHSA).
+  - Ontological relationships describe the most significant connections across the ecosystem; edge cases spanning multiple categories require IF-LLM judgment and may benefit from citing more than one expert subcategory.
 
 - **Changelog**
-  - 2026-06-12 06:44 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed and updated
+  - 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com): Completed all TBD fields in File Header (Purpose, Features, Scope, Use Cases, Known Gaps/Limitations); removed circular self-reference from Dependencies list; added Concept Disambiguation section with cross-category role guidance; added Ontological Relationships, Examples, Boundaries/Scope, and IF/THEN Decision Rules to all five expert entries (Experts parent + four subcategories); added distinctive opening descriptions summarizing what each expert subcategory produces; updated Changelog with this specific entry.
+  - 2026-06-13 04:23 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed and updated for best practices.
   - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
 
 ## Namespace, Tag, Alias, and Reference Rules
@@ -40,76 +43,172 @@
 - Tag Policy
   - Canonical tag format: [[HUMANITY:<LEAF>]] where <LEAF> matches the ID leaf (…ADLS → [[HUMANITY:ADLS]]).
   - Alias tags: uppercase, no namespace (e.g., [[ADLS]] [[ADL]])
-  - No alias unless it’s truly synonymous.
-- If a referenced concept isn’t found, be explicit about what you did and didn’t find; state clearly:
-  - “I didn’t find *X* as a named concept in the Index or headings of the file.”
-  - “Closest match in-file is *Y* (with the tag/ID).”
+  - No alias unless it's truly synonymous.
+- If a referenced concept isn't found, be explicit about what you did and didn't find; state clearly:
+  - "I didn't find *X* as a named concept in the Index or headings of the file."
+  - "Closest match in-file is *Y* (with the tag/ID)."
   - Then proceed using *Y*.
 - First check `## Index` for the closest topic handle.
-- If the exact concept isn’t present, map it to the nearest defined parent concept (Resources/Activities/Needs/ADLs/IADLs).
+- If the exact concept isn't present, map it to the nearest defined parent concept (Resources/Activities/Needs/ADLs/IADLs).
 - Say explicitly when something is not found in the file, then continue with general knowledge labeled as such.
 - If the concept will likely recur, suggest an ID + canonical tag + alias tag addition consistent with the file.
 
-## Supplemental Files
-
 ## Index
 
-Domain's common human topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
+Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
 ### Domain Knowledge Index
 
-Refer to the list of domain knowledge file indexes for common topic references and canonical handles contained in `if-llm-humanity-index.md`.
+Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
 
 Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
 
 - `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
-- `if-llm-humanity.md` → Humanity → HUMANITY → [[HUMANITY:ROOT]]
-- `if-llm-humanity-values.md` → Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
-- `if-llm-humanity-fallibility.md` → Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
-- `if-llm-humanity-narm.md` → Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
-- `if-llm-humanity-ooda.md` → Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
-- `if-llm-humanity-experts.md` → Experts → HUMANITY.ELEMENTS.EXPERTS → [[HUMANITY:EXPERTS]]
+- `if-llm-humanity.md`
+  - Humanity → HUMANITY → [[HUMANITY:ROOT]]
+  - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
+  - Elements → HUMANITY.ELEMENTS → [[HUMANITY:ELEMENTS]]
+  - Coping → HUMANITY.ELEMENTS.COPING → [[HUMANITY:COPING]]
+  - Concerns → HUMANITY.ELEMENTS.CONCERNS → [[HUMANITY:CONCERNS]]
+  - Lessons Learned → HUMANITY.ELEMENTS.LESSONS → [[HUMANITY:LESSONS]]
+  - Unalienable Rights → HUMANITY.ELEMENTS.RIGHTS → [[HUMANITY:RIGHTS]]
+  - Vision → HUMANITY.ELEMENTS.VISION → [[HUMANITY:VISION]]
+  - Mission → HUMANITY.ELEMENTS.MISSION → [[HUMANITY:MISSION]]
+- `if-llm-humanity-fallibility.md`
+  - Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
+  - Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS → [[HUMANITY:TEMPTATIONS]]
+  - Consequences of Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES → [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]
+  - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
+  - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
+  - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
+- `if-llm-humanity-ooda.md`
+  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
+  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
+  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
+  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
+  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
+  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
+- `if-llm-humanity-narm.md`
+  - Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
+  - Consequences of Unmet Needs → HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS → [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
+  - Activities → HUMANITY.ELEMENTS.ACTIVITIES → [[HUMANITY:ACTIVITIES]]
+  - Activities of Daily Living (ADLs) → HUMANITY.ELEMENTS.ACTIVITIES.ADLS → [[HUMANITY:ADLS]]
+  - Instrumental Activities of Daily Living (IADLs) → HUMANITY.ELEMENTS.ACTIVITIES.IADLS → [[HUMANITY:IADLS]]
+  - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
+  - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
+  - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
+- `if-llm-humanity-values.md`
+  - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
+  - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
+  - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
+  - Love → HUMANITY.ELEMENTS.VALUES.LOVE → [[HUMANITY:LOVE]]
+  - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
+  - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
+  - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
+  - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
+  - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
+  - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
+  - Compassion → HUMANITY.ELEMENTS.VALUES.COMPASSION → [[HUMANITY:COMPASSION]]
+  - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
+  - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
+  - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
+  - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
+  - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
+  - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
+  - Gratitude → HUMANITY.ELEMENTS.VALUES.GRATITUDE → [[HUMANITY:GRATITUDE]]
+  - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
+  - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
+  - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
+  - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
+  - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
+  - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
+  - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
+  - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
+  - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
+  - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
+  - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]
+  - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
+  - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
 
+### Concept Disambiguation
 
+Use these notes to select between partially overlapping expert categories for precise IF-LLM retrieval and reasoning.
 
-# Relevant Background Information
+- **[[HUMANITY:REASONING_EXPERTS]] vs. [[HUMANITY:COMMUNICATION_EXPERTS]]**
+  - Use `[[HUMANITY:REASONING_EXPERTS]]` when the focus is on *how humans think, decide, or behave* — logic, ethics, cognition, motivation, and behavioral science.
+  - Use `[[HUMANITY:COMMUNICATION_EXPERTS]]` when the focus is on *how humans express, transmit, and preserve meaning* — language, narrative, folklore, and cultural storytelling.
+  - Note: Philosophers and Psychologists appear in both. Cite [[HUMANITY:REASONING_EXPERTS]] for *analytical and ethical frameworks*; cite [[HUMANITY:COMMUNICATION_EXPERTS]] for *how those frameworks are transmitted across cultures and time*.
 
+- **[[HUMANITY:REASONING_EXPERTS]] vs. [[HUMANITY:APPLICATION_EXPERTS]]**
+  - Use `[[HUMANITY:REASONING_EXPERTS]]` when the focus is on *developing or evaluating the underlying frameworks* — moral theory, cognitive models, standards development.
+  - Use `[[HUMANITY:APPLICATION_EXPERTS]]` when the focus is on *putting knowledge into practice* in real-world domains — healthcare ethics, social work, policy, organizational development.
+  - When a user is asking *what to do* in a complex situation, prefer [[HUMANITY:APPLICATION_EXPERTS]]. When asking *why* something works or how to reason about it, prefer [[HUMANITY:REASONING_EXPERTS]].
 
-## Index
+- **[[HUMANITY:HISTORY_EXPERTS]] vs. [[HUMANITY:APPLICATION_EXPERTS]]**
+  - Use `[[HUMANITY:HISTORY_EXPERTS]]` when the focus is on *understanding patterns across time and civilizations* — long-term trends, cross-cultural comparisons, why similar problems recur.
+  - Use `[[HUMANITY:APPLICATION_EXPERTS]]` when the focus is on *current real-world implementation* — what professionals do today to apply those lessons.
+  - Cite both when a user is asking about a problem that recurs historically AND needs guidance on current professional practice.
 
-Common human topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
+- **[[HUMANITY:HISTORY_EXPERTS]] vs. [[HUMANITY:COMMUNICATION_EXPERTS]]**
+  - Use `[[HUMANITY:HISTORY_EXPERTS]]` when the focus is on *what happened and why* — historical evidence, social trends, civilizational analysis.
+  - Use `[[HUMANITY:COMMUNICATION_EXPERTS]]` when the focus is on *how that history was told, preserved, or transmitted* — oral traditions, literature, religious narrative, folklore.
+
+- **Roles appearing in multiple categories**
+  - *Philosophers / Ethicists*: cite [[HUMANITY:REASONING_EXPERTS]] for logical and ethical frameworks; [[HUMANITY:COMMUNICATION_EXPERTS]] for philosophical literature and its transmission; [[HUMANITY:APPLICATION_EXPERTS]] for applied ethics in professional practice; [[HUMANITY:HISTORY_EXPERTS]] for the history of ideas and worldviews.
+  - *Developmental Psychologists*: cite [[HUMANITY:REASONING_EXPERTS]] for cognitive and behavioral development frameworks; [[HUMANITY:COMMUNICATION_EXPERTS]] for language development and moral learning through narrative.
+  - *Cultural Anthropologists*: cite [[HUMANITY:COMMUNICATION_EXPERTS]] for cultural storytelling, ritual, and tradition; [[HUMANITY:APPLICATION_EXPERTS]] for cross-cultural applied work; [[HUMANITY:HISTORY_EXPERTS]] for belief systems, social norms, and lived experience across civilizations.
+  - *Sociologists*: cite [[HUMANITY:HISTORY_EXPERTS]] for structural and comparative social analysis over time; [[HUMANITY:APPLICATION_EXPERTS]] for policy, organizational, and community application.
+
+### Local Knowledge Index
+
+The following is a list of this file's common topic references mapped to canonical handles.
+
 - Experts → HUMANITY.ELEMENTS.EXPERTS → [[HUMANITY:EXPERTS]]
 - Reasoning and Behavior Experts → HUMANITY.ELEMENTS.EXPERTS.REASONING → [[HUMANITY:REASONING_EXPERTS]]
 - Communication Experts → HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION → [[HUMANITY:COMMUNICATION_EXPERTS]]
 - Application Experts → HUMANITY.ELEMENTS.EXPERTS.APPLICATION → [[HUMANITY:APPLICATION_EXPERTS]]
 - History Experts → HUMANITY.ELEMENTS.EXPERTS.HISTORY → [[HUMANITY:HISTORY_EXPERTS]]
 
-
-### Primary File Index
-
-Common human topic reference and canonical handle (i.e., ID and namespaced tag) mapped to primary knowledge file:
-
-
 ## Humanity
 
-
 ### Elements
-
 
 #### Experts
 
 ID: HUMANITY.ELEMENTS.EXPERTS
-TAGS: [[HUMANITY:EXPERTS]] [[EXPERTS]]
+TAGS: [[HUMANITY:EXPERTS]]
 
-Experts of [[HUMANITY:ROOT]]’s most significant patterns. These patterns have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. Experts comprehensively study, analyze, evaluate, refine, and apply these patterns to build and maintain their related [[HUMANITY:CAPABILITIES]].
+Experts of [[HUMANITY:ROOT]]'s most significant patterns. These patterns have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. Experts comprehensively study, analyze, evaluate, refine, and apply these patterns to build and maintain their related [[HUMANITY:CAPABILITIES]]. Together, the four expert subcategories — Reasoning/Behavior, Communication, Application, and History — represent the full span of human inquiry into who we are, how we think, how we share what we know, how we put it into practice, and how we document it over time.
 
+- **Examples**
+  - **Helping a user understand a complex situation (general):** "Several expert fields can shed light on this. Researchers in [[HUMANITY:REASONING_EXPERTS]] study why people behave this way; [[HUMANITY:HISTORY_EXPERTS]] can show whether similar patterns have appeared before; and [[HUMANITY:APPLICATION_EXPERTS]] work on what communities and organizations can actually do about it."
+  - **When a user asks "who should I talk to about this?":** Identify the relevant expert subcategory (e.g., [[HUMANITY:APPLICATION_EXPERTS]] for professional consultation), then note that specific practitioners can be located through professional associations or community referral services (e.g., 211, SAMHSA).
+  - **Attributing a knowledge claim:** "This insight draws on [[HUMANITY:REASONING_EXPERTS]] — specifically Behavioral Scientists and Cognitive Psychologists — who have documented this pattern across many studies."
+
+- **Boundaries / Scope**
+  - **Includes:** All four expert subcategories; academic, professional, and applied roles that study and apply humanity's patterns.
+  - **Excludes:** Individual practitioner names, service directories, specific institutions, credential-granting bodies; clinical diagnosis, legal advice, or emergency services (for urgent help, see [[HUMANITY:COPING]]).
+  - **Primary purpose:** Enable IF-LLM to attribute claims to recognized expert domains and guide users toward appropriate professional fields when a situation exceeds general knowledge.
+
+- **Decision Rules (IF/THEN)**
+  - **IF** a user's question requires domain expertise, **THEN** cite the most relevant expert subcategory to signal where authoritative knowledge comes from.
+  - **IF** a user asks "who studies [X]?" **THEN** identify the best-fit subcategory first; if multiple subcategories apply, cite both with a brief disambiguation note.
+  - **IF** a user asks "who should I talk to about [X]?" **THEN** cite the relevant [[HUMANITY:APPLICATION_EXPERTS]] subcategory and recommend professional consultation through appropriate channels.
+  - **IF** multiple subcategories apply equally, **THEN** cite the most action-relevant one first and note the others.
+
+- **Ontological Relationships**
+  - **Related to:** [[HUMANITY:LESSONS]] (experts are the primary agents who identify, test, refine, and transmit lessons); [[HUMANITY:WISDOM]] (experts collectively produce the evidence base from which wisdom is drawn); [[HUMANITY:CAPABILITIES]] (expert knowledge enables the development of human capabilities); [[HUMANITY:VALUES]] (experts study, codify, and transmit human values across disciplines and traditions)
+  - **Grounds:** [[HUMANITY:LESSONS]] (expert study produces the validated patterns that become lessons); [[HUMANITY:WISDOM]] (expert synthesis across fields produces wisdom)
+  - **Required by:** [[HUMANITY:CAPABILITIES]] development (building human capabilities requires expert-generated knowledge, frameworks, and professional practice)
+  - **Affects:** the quality and depth of [[HUMANITY:LESSONS]] available to the IF-LLM; the reliability of [[HUMANITY:ORIENT]] when domain expertise is relevant to interpreting a situation
 
 ##### Reasoning and Behavior Experts
 
 ID: HUMANITY.ELEMENTS.EXPERTS.REASONING
-TAGS: [[HUMANITY:REASONING_EXPERTS]] [[REASONING_EXPERTS]]
+TAGS: [[HUMANITY:REASONING_EXPERTS]]
 
-Experts of [[HUMANITY:ROOT]]'s most significant reasoning and behavior patterns. These patterns have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. Experts comprehensively study, analyze, evaluate, refine, and apply these patterns to build and maintain their related [[HUMANITY:CAPABILITIES]]. Experts include the following:
+Experts of [[HUMANITY:ROOT]]'s most significant reasoning and behavior patterns. These patterns have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. Experts comprehensively study, analyze, evaluate, refine, and apply these patterns to build and maintain their related [[HUMANITY:CAPABILITIES]]. These experts produce the intellectual frameworks, cognitive models, behavioral theories, moral philosophies, decision sciences, and standards that explain *why* humans think and behave as they do — forming the analytical backbone of [[HUMANITY:LESSONS]], [[HUMANITY:VALUES]], and [[HUMANITY:OODA]]. Experts include the following:
+
 - Formal Logic and Foundations Specialists
   - Logicians
   - Proof Theorists
@@ -160,13 +259,39 @@ Experts of [[HUMANITY:ROOT]]'s most significant reasoning and behavior patterns.
   - Instructional Systems Designers
   - Character Education Specialists
 
+- **Examples**
+  - **Cognitive bias and decision-making:** User asks "Why do people fall for scams even when they know better?" → cite [[HUMANITY:REASONING_EXPERTS]]: Cognitive Psychologists, Behavioral Scientists, Human Factors Specialists.
+  - **Ethical dilemmas:** User asks "What does ethics say about lying to protect someone's feelings?" → cite [[HUMANITY:REASONING_EXPERTS]]: Ethicists, Applied Ethicists, Moral Psychologists.
+  - **Stress and decision quality:** User asks "Who studies how people make worse decisions when they're stressed or tired?" → cite [[HUMANITY:REASONING_EXPERTS]]: Decision Scientists, Cognitive Engineers, Behavioral Scientists.
+  - **Standards and policy:** User asks "Who designs the rules that organizations use to make fair decisions?" → cite [[HUMANITY:REASONING_EXPERTS]]: Standards Developers, Policy Analysts, Program Evaluators.
+
+- **Boundaries / Scope**
+  - **Includes:** Academic and professional roles focused on the analytical, ethical, cognitive, and behavioral dimensions of human reasoning and decision-making; framework and standards development.
+  - **Excludes:** Clinical treatment roles such as therapists or counselors (see [[HUMANITY:APPLICATION_EXPERTS]]); roles focused primarily on communication and narrative transmission (see [[HUMANITY:COMMUNICATION_EXPERTS]]); historical analysis of reasoning patterns over time (see [[HUMANITY:HISTORY_EXPERTS]]); individual practitioners or service directories.
+  - **Primary purpose:** Provide IF-LLM with the expert attribution source for claims about *how* and *why* humans think, reason, decide, and behave.
+
+- **Decision Rules (IF/THEN)**
+  - **IF** a user asks *why* humans think, reason, or make decisions the way they do → [[HUMANITY:REASONING_EXPERTS]]
+  - **IF** a user asks about cognitive bias, moral dilemmas, or behavioral patterns → [[HUMANITY:REASONING_EXPERTS]] (Moral Psychologists, Behavioral Scientists, Cognitive Psychologists)
+  - **IF** a user asks about decision-making under stress, scarcity, or low resources → [[HUMANITY:REASONING_EXPERTS]] (Decision Scientists, Cognitive Engineers) and [[HUMANITY:HISTORY_EXPERTS]] for historical patterns
+  - **IF** a user asks about ethical frameworks, moral philosophy, or values-based reasoning → [[HUMANITY:REASONING_EXPERTS]] (Ethicists, Moral Psychologists, Philosophers)
+  - **IF** a user asks about standards, policy design, or regulatory frameworks → [[HUMANITY:REASONING_EXPERTS]] (Standards Developers, Policy Analysts, Regulatory Specialists)
+  - **IF** the user also asks *how to apply* these frameworks in a professional or community setting → add [[HUMANITY:APPLICATION_EXPERTS]]
+
+- **Ontological Relationships**
+  - **Related to:** [[HUMANITY:OODA]] (reasoning experts study and improve the quality of the full OODA loop — especially [[HUMANITY:ORIENT]] and [[HUMANITY:DECIDE]]); [[HUMANITY:THINKING]] (reasoning experts develop and validate frameworks for critical thinking); [[HUMANITY:VALUES]] (moral philosophers and ethicists define, refine, and test human values); [[HUMANITY:FALLIBILITY]] (behavioral scientists document recurring patterns of human error, bias, and temptation); [[HUMANITY:TEMPTATIONS]] (economists, behavioral scientists, and cognitive psychologists explain the mechanics of temptation patterns); [[HUMANITY:LESSONS]] (reasoning experts synthesize and validate lessons about how humans think and decide across contexts)
+  - **Grounds:** [[HUMANITY:OODA]] quality (especially [[HUMANITY:ORIENT]] and [[HUMANITY:DECIDE]] accuracy); [[HUMANITY:THINKING]] frameworks; [[HUMANITY:VALUES]] definitions
+  - **Required by:** [[HUMANITY:CAPABILITIES]] development (building cognitive and reasoning capabilities requires expert knowledge and validated frameworks)
+  - **Affects:** quality of [[HUMANITY:ORIENT]] and [[HUMANITY:DECIDE]] steps; accuracy of [[HUMANITY:VALUES]] application; depth of understanding of [[HUMANITY:FALLIBILITY]] and [[HUMANITY:TEMPTATIONS]]
+  - **Vulnerable to:** narrow disciplinary framing — a single expert field rarely captures the full picture; cite multiple subcategories when a question spans cognition, ethics, and behavior
 
 ##### Communication Experts
 
 ID: HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION
-TAGS: [[HUMANITY:COMMUNICATION_EXPERTS]] [[COMMUNICATION_EXPERTS]]
+TAGS: [[HUMANITY:COMMUNICATION_EXPERTS]]
 
-Experts of [[HUMANITY:ROOT]]’s most significant communication patterns. These patterns have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. Experts comprehensively study, analyze, evaluate, refine, and apply these patterns to build and maintain their related [[HUMANITY:CAPABILITIES]]. Experts include the following:
+Experts of [[HUMANITY:ROOT]]'s most significant communication patterns. These patterns have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. Experts comprehensively study, analyze, evaluate, refine, and apply these patterns to build and maintain their related [[HUMANITY:CAPABILITIES]]. These experts preserve, transmit, and interpret [[HUMANITY:LESSONS]] across cultures, languages, and time through storytelling, linguistic analysis, religious narrative, folklore, mythology, and literary tradition — explaining *how* humanity shares and sustains its [[HUMANITY:WISDOM]]. They produce linguistic analyses, narrative frameworks, cultural translations, archival records, and literary interpretations that keep humanity's patterns alive and accessible across generations and communities. Experts include the following:
+
 - Linguistics and Language
   - Linguists
   - Comparative Linguists
@@ -243,13 +368,39 @@ Experts of [[HUMANITY:ROOT]]’s most significant communication patterns. These 
   - Publishers and Editors (Folklore and Mythology Publications)
   - Editors (Language Usage and Etymology)
 
+- **Examples**
+  - **Origins of sayings and proverbs:** User asks "Where does the saying 'don't judge a book by its cover' come from, and what does it really mean?" → cite [[HUMANITY:COMMUNICATION_EXPERTS]]: Etymologists, Phraseologists, Folklorists.
+  - **Cross-cultural teaching of values:** User asks "How do different cultures teach children about honesty?" → cite [[HUMANITY:COMMUNICATION_EXPERTS]]: Comparative Mythologists, Children's Literature Professors, Curriculum Developers, Cultural Anthropologists.
+  - **Recurring story themes:** User asks "Why do completely different cultures have the same kinds of stories — like a great flood, or a trickster figure?" → cite [[HUMANITY:COMMUNICATION_EXPERTS]]: Comparative Mythologists, Mythopoetic Theorists, Comparative Religion Scholars.
+  - **Understanding a cultural tradition:** User asks "What do oral traditions do for a community that written records don't?" → cite [[HUMANITY:COMMUNICATION_EXPERTS]]: Oral Tradition Scholars, Ethnographers, Sociolinguists.
+
+- **Boundaries / Scope**
+  - **Includes:** Expert roles focused on language, storytelling, narrative, folklore, mythology, literature, archival preservation, and cultural transmission of human wisdom across communities and generations.
+  - **Excludes:** Applied professional practice in clinical or legal communication settings (see [[HUMANITY:APPLICATION_EXPERTS]]); analytical reasoning frameworks and ethical theory development (see [[HUMANITY:REASONING_EXPERTS]]); historical social structures beyond their storytelling dimensions (see [[HUMANITY:HISTORY_EXPERTS]]); individual authors, storytellers, or media creators not functioning as scholarly experts.
+  - **Primary purpose:** Provide IF-LLM with expert attribution for claims about *how* human wisdom is encoded in and transmitted through language, narrative, and cultural tradition.
+
+- **Decision Rules (IF/THEN)**
+  - **IF** a user asks about the origin or meaning of a proverb, saying, or idiom → [[HUMANITY:COMMUNICATION_EXPERTS]] (Etymologists, Phraseologists, Folklorists)
+  - **IF** a user asks about myths, folktales, or religious stories across cultures → [[HUMANITY:COMMUNICATION_EXPERTS]] (Comparative Mythologists, Religious Studies Professors, Comparative Religion Scholars)
+  - **IF** a user asks how a cultural value is taught to children → [[HUMANITY:COMMUNICATION_EXPERTS]] (Children's Literature Professors, Curriculum Developers, Language Teachers)
+  - **IF** a user asks about preserving or passing down cultural knowledge → [[HUMANITY:COMMUNICATION_EXPERTS]] (Archivists, Oral Tradition Scholars, Special Collections Librarians)
+  - **IF** a user asks why the same story themes appear across unrelated cultures → [[HUMANITY:COMMUNICATION_EXPERTS]] (Comparative Mythologists, Mythopoetic Theorists) and [[HUMANITY:HISTORY_EXPERTS]] for cross-civilizational patterns
+  - **IF** the user also asks *why* these patterns persist historically or socially → add [[HUMANITY:HISTORY_EXPERTS]]
+
+- **Ontological Relationships**
+  - **Related to:** [[HUMANITY:LESSONS]] (communication experts are the primary transmitters of humanity's lessons through story, proverb, and tradition); [[HUMANITY:WISDOM]] (the sharing of lessons across communities — storytelling and tradition — is how [[HUMANITY:WISDOM]] is defined in [[HUMANITY:LESSONS]]); [[HUMANITY:VALUES]] (communication experts show how values are embedded, taught, and sustained through narrative across cultures); [[HUMANITY:ORIENT]] (narrative and cultural context are primary inputs that shape how people interpret situations — the Orient step of [[HUMANITY:OODA]])
+  - **Grounds:** transmission of [[HUMANITY:LESSONS]] across communities and generations; cultural context for [[HUMANITY:ORIENT]] accuracy
+  - **Required by:** [[HUMANITY:WISDOM]] (wisdom spreads through the communication patterns these experts study and preserve)
+  - **Affects:** how effectively [[HUMANITY:LESSONS]] and [[HUMANITY:VALUES]] are understood and adopted across diverse communities; the richness of [[HUMANITY:ORIENT]] when cultural and narrative context is relevant
+  - **Vulnerable to:** cultural bias — communication experts from any single tradition may not represent the full range of human storytelling and wisdom; cite cross-cultural and comparative experts when diversity of perspective matters
 
 ##### Application Experts
 
 ID: HUMANITY.ELEMENTS.EXPERTS.APPLICATION
-TAGS: [[HUMANITY:APPLICATION_EXPERTS]] [[APPLICATION_EXPERTS]]
+TAGS: [[HUMANITY:APPLICATION_EXPERTS]]
 
-Experts applying [[HUMANITY:ROOT]]’s most significant [[HUMANITY:LESSONS]]. These [[HUMANITY:LESSONS]] have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. Experts comprehensively study, analyze, evaluate, refine, and apply these [[HUMANITY:LESSONS]] to build and maintain their related [[HUMANITY:CAPABILITIES]]. Experts include the following:
+Experts applying [[HUMANITY:ROOT]]'s most significant [[HUMANITY:LESSONS]]. These [[HUMANITY:LESSONS]] have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. Experts comprehensively study, analyze, evaluate, refine, and apply these [[HUMANITY:LESSONS]] to build and maintain their related [[HUMANITY:CAPABILITIES]]. These experts translate humanity's lessons into real-world practice across professional domains — healthcare, law, policy, education, organizations, and communities. They produce ethical guidelines, policy frameworks, clinical protocols, professional standards, and organizational development tools that help individuals and institutions apply [[HUMANITY:WISDOM]] in everyday life, explaining *how* to put knowledge into practice to better satisfy [[HUMANITY:NEEDS]] and prevent [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]. Experts include the following:
+
 - Ethics and Philosophy
   - Philosophers
   - Ethicists
@@ -325,13 +476,39 @@ Experts applying [[HUMANITY:ROOT]]’s most significant [[HUMANITY:LESSONS]]. Th
   - Investigative Journalists
   - Community Engagement Coordinators
 
+- **Examples**
+  - **Workplace ethical challenges:** User asks "Who can help me figure out the right thing to do when my boss asks me to do something that feels wrong?" → cite [[HUMANITY:APPLICATION_EXPERTS]]: Business Ethicists, Ethics and Compliance Officers, Workplace Ethics Trainers.
+  - **Accessing community support:** User asks "What kind of professional helps people find resources when they're struggling to make ends meet?" → cite [[HUMANITY:APPLICATION_EXPERTS]]: Social Workers, Community Health Workers, Advocacy and Outreach Coordinators.
+  - **Organizational fairness:** User asks "Who studies how to make workplaces fairer for everyone?" → cite [[HUMANITY:APPLICATION_EXPERTS]]: Industrial-Organizational Psychologists, Diversity and Inclusion Specialists, Organizational Development Specialists.
+  - **Healthcare ethics:** User asks "Who helps hospitals make difficult ethical decisions about patient care?" → cite [[HUMANITY:APPLICATION_EXPERTS]]: Medical Ethicists, Clinical Ethicists, Bioethics Researchers.
+
+- **Boundaries / Scope**
+  - **Includes:** Expert roles that apply humanity's patterns in professional, institutional, or community contexts, with an emphasis on real-world outcomes for individuals and groups; covers health, law, education, policy, organizational, and community practice domains.
+  - **Excludes:** Theoretical framework development (see [[HUMANITY:REASONING_EXPERTS]]); historical or cross-civilizational analysis (see [[HUMANITY:HISTORY_EXPERTS]]); narrative and storytelling transmission (see [[HUMANITY:COMMUNICATION_EXPERTS]]); individual practitioners providing direct services — this file lists roles, not specific professionals; emergency crisis services (see [[HUMANITY:COPING]] for urgent resources).
+  - **Primary purpose:** Enable IF-LLM to identify what *type* of professional to recommend when a user's situation calls for real-world expert guidance; support the user in understanding who to seek, not who specifically.
+
+- **Decision Rules (IF/THEN)**
+  - **IF** a user asks who can help them *do something* about a difficult human situation (ethically, socially, legally, or organizationally) → [[HUMANITY:APPLICATION_EXPERTS]]
+  - **IF** a user asks about professional support for health, family, or community challenges → [[HUMANITY:APPLICATION_EXPERTS]] (Social Workers, Public Health Educators, Patient Advocates, Community Health Workers)
+  - **IF** a user asks about organizational ethics, workplace fairness, or diversity and inclusion → [[HUMANITY:APPLICATION_EXPERTS]] (Business Ethicists, Diversity and Inclusion Specialists, Organizational Development Specialists)
+  - **IF** a user asks about legal ethics, policy design, or human rights advocacy → [[HUMANITY:APPLICATION_EXPERTS]] (Legal Ethics Specialists, Human Rights Advocates, Public Policy Analysts)
+  - **IF** a user asks about how to become more capable or advance in a career → [[HUMANITY:APPLICATION_EXPERTS]] (Career Counselors, Training and Development Specialists, Workforce Development Specialists) and [[HUMANITY:CAPABILITIES]]
+  - **IF** the user also wants to understand *why* these practices developed or what history shows → add [[HUMANITY:HISTORY_EXPERTS]] and [[HUMANITY:REASONING_EXPERTS]]
+
+- **Ontological Relationships**
+  - **Related to:** [[HUMANITY:LESSONS]] (application experts are the bridge between humanity's lessons and real-world practice); [[HUMANITY:NEEDS]] (application experts design systems and professional roles to help people meet their needs); [[HUMANITY:ACTIVITIES]] (application experts support IADLs through social work, healthcare, policy, and education); [[HUMANITY:CAPABILITIES]] (application experts build human capabilities through education, workforce development, and organizational systems); [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]] (application experts respond to and work to prevent consequences of unmet needs); [[HUMANITY:RIGHTS]] (legal experts, policy analysts, and human rights advocates work to protect and enforce rights)
+  - **Grounds:** practical expression of [[HUMANITY:LESSONS]] in professional contexts; real-world systems for [[HUMANITY:NEEDS]] satisfaction
+  - **Required by:** [[HUMANITY:CAPABILITIES]] growth at the community and institutional level (requires professional expertise and systems); [[HUMANITY:NEEDS]] satisfaction at scale (requires healthcare, social service, policy, and education infrastructure)
+  - **Affects:** real-world outcomes for [[HUMANITY:NEEDS]] satisfaction; prevention of [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]; protection of [[HUMANITY:RIGHTS]] in practice
+  - **Vulnerable to:** gaps between policy intent and lived experience — cite [[HUMANITY:HISTORY_EXPERTS]] when historical patterns suggest that a policy approach has known limitations
 
 ##### History Experts
 
 ID: HUMANITY.ELEMENTS.EXPERTS.HISTORY
-TAGS: [[HUMANITY:HISTORY_EXPERTS]] [[HISTORY_EXPERTS]]
+TAGS: [[HUMANITY:HISTORY_EXPERTS]]
 
-Experts of [[HUMANITY:ROOT]]'s most significant patterns. These patterns help inform [[HUMANITY:LESSONS]]. These patterns have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. Experts comprehensively study, analyze, evaluate, refine, and apply these patterns to build and maintain their related [[HUMANITY:CAPABILITIES]]. Experts include the following:
+Experts of [[HUMANITY:ROOT]]'s most significant patterns. These patterns help inform [[HUMANITY:LESSONS]]. These patterns have been, and continue to be, identified across our many, widespread, diverse communities throughout our vast history. Experts comprehensively study, analyze, evaluate, refine, and apply these patterns to build and maintain their related [[HUMANITY:CAPABILITIES]]. These experts document, analyze, and interpret humanity's patterns across civilizations, societies, and time — producing the evidence base from which [[HUMANITY:LESSONS]] and [[HUMANITY:WISDOM]] are identified and validated. They explain *what has happened*, *why similar problems recur*, and *what the long arc of human experience reveals* about our shared nature, through archaeological, historical, sociological, geographic, and interdisciplinary lenses. Experts include the following:
+
 - Anthropology and Archaeology
   - Cultural Anthropologists (belief systems, social norms, rituals, lived experience)
   - Social Anthropologists (institutions, kinship, power, inequality)
@@ -388,3 +565,30 @@ Experts of [[HUMANITY:ROOT]]'s most significant patterns. These patterns help in
   - Public Intellectuals (integrative analysis for broad audiences)
   - Museum Curators and Public Historians (interpret and communicate human pasts)
   - Documentary Researchers and Writers (narrative synthesis of human experience)
+
+- **Examples**
+  - **Recurring societal problems:** User asks "Why do societies keep repeating the same mistakes with money, power, and corruption?" → cite [[HUMANITY:HISTORY_EXPERTS]]: World/Global Historians, Institutional Economists, Systems Thinkers, Political Economists.
+  - **Historical patterns of inequality:** User asks "How have different societies dealt with inequality throughout history?" → cite [[HUMANITY:HISTORY_EXPERTS]]: Economic Historians, Social Historians, Comparative Sociologists, Development Economists.
+  - **Community recovery:** User asks "What does history show about how communities recover after major disasters or crises?" → cite [[HUMANITY:HISTORY_EXPERTS]]: Social Historians, Demographers, Cultural Anthropologists, Environmental Anthropologists.
+  - **Why a social problem feels stuck:** User asks "Why has racism been so hard to eliminate even when people know it's wrong?" → cite [[HUMANITY:HISTORY_EXPERTS]]: Ethnic Studies Scholars, Social Anthropologists, Intellectual Historians, Political Scientists; then [[HUMANITY:APPLICATION_EXPERTS]] for what is being done about it.
+
+- **Boundaries / Scope**
+  - **Includes:** Expert roles that study human experience across time and civilizations through historical, anthropological, sociological, psychological, geographic, and interdisciplinary lenses; both deep-time and modern historical analysis; cross-civilizational and comparative perspectives.
+  - **Excludes:** Present-day professional application and direct practice (see [[HUMANITY:APPLICATION_EXPERTS]]); narrative and storytelling transmission of history (see [[HUMANITY:COMMUNICATION_EXPERTS]]); analytical reasoning frameworks divorced from historical evidence (see [[HUMANITY:REASONING_EXPERTS]]); individual historians, specific institutions, or media outlets.
+  - **Primary purpose:** Enable IF-LLM to attribute claims about long-term human patterns to recognized scholarly fields, and to ground [[HUMANITY:LESSONS]] in the evidence base that history experts produce.
+
+- **Decision Rules (IF/THEN)**
+  - **IF** a user asks about patterns that repeat across history or across different civilizations → [[HUMANITY:HISTORY_EXPERTS]]
+  - **IF** a user asks "why does this keep happening?" about a social, political, or economic problem → [[HUMANITY:HISTORY_EXPERTS]] (Historians, Sociologists, Systems Thinkers, Complexity Scientists)
+  - **IF** a user asks about the origins of a cultural practice, belief system, or social norm → [[HUMANITY:HISTORY_EXPERTS]] (Cultural Anthropologists, Intellectual Historians, Religious Studies Scholars)
+  - **IF** a user asks about long-term population trends, migration, or demographic change → [[HUMANITY:HISTORY_EXPERTS]] (Demographers, Human Geographers, Social Network Analysts)
+  - **IF** a user asks what lessons history offers about a current challenge → [[HUMANITY:HISTORY_EXPERTS]] to identify the pattern; [[HUMANITY:LESSONS]] to connect it to validated wisdom
+  - **IF** the user also needs to understand what is being done about it today → add [[HUMANITY:APPLICATION_EXPERTS]]
+  - **IF** the user also needs to understand how these patterns are told and transmitted across communities → add [[HUMANITY:COMMUNICATION_EXPERTS]]
+
+- **Ontological Relationships**
+  - **Related to:** [[HUMANITY:LESSONS]] (history experts are the primary scholars who identify, validate, and document humanity's most significant lessons across civilizations); [[HUMANITY:WISDOM]] (the historical record is the evidence base from which [[HUMANITY:WISDOM]] is distilled and tested); [[HUMANITY:FALLIBILITY]] (historians document recurring patterns of human fallibility, error, and moral compromise across societies and eras); [[HUMANITY:TEMPTATIONS]] and [[HUMANITY:CONSEQUENCES_TEMPTATIONS]] (historical analysis shows how temptations have produced consequences at civilizational scale); [[HUMANITY:CONCERNS]] (modern U.S. concerns often echo patterns that history experts have documented across many societies); [[HUMANITY:VISION]] (history informs what the Vision requires by revealing what has and has not enabled human flourishing)
+  - **Grounds:** [[HUMANITY:LESSONS]] (history experts produce the primary evidence base from which lessons are identified and validated); [[HUMANITY:WISDOM]] (historical patterns across diverse civilizations are the foundation of validated wisdom)
+  - **Required by:** [[HUMANITY:WISDOM]] validation (wisdom requires tested patterns, not just assertion); [[HUMANITY:LESSONS]] grounding (lessons without historical evidence are vulnerable to recency bias)
+  - **Affects:** depth and validity of [[HUMANITY:LESSONS]] available to the IF-LLM; quality of [[HUMANITY:ORIENT]] when historical context is relevant to interpreting a current situation; accuracy of [[HUMANITY:CONCERNS]] framing (recognizing whether a concern is novel or recurring)
+  - **Vulnerable to:** recency bias — history experts covering only recent periods may miss the longer-arc patterns; cite World/Global Historians and Comparative Sociologists when long-term cross-civilizational perspective is needed
