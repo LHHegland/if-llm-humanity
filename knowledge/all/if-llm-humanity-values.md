@@ -3,27 +3,35 @@
 ## File Header
 
 - **Name:** Humanity's Values — Information-Following Large Language Model Knowledge (*if-llm-humanity-values.md*)
-- **Version:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
-- **Last Reviewed:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Last Reviewed:** 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
-- **Purpose:** TBD
+- **Purpose:** Empower an IF-LLM to help an average U.S. adult understand and apply humanity's most enduring values — the tested principles that, when practiced consistently, increase the likelihood of meeting shared needs, sustaining relationships, navigating difficult decisions, and contributing to the broader community. The VALUES framework provides the ethical guidance layer that governs *how* we act across all other entries in the Humanity knowledge ecosystem.
 - **Audience:** Average, diverse people in the United States of America today.
 - **Features**
-  - TBD
+  - Thirty individual value entries, each with Visual Elements (hexadic color scheme and symbols) and Literary Elements (proverbs, quotations, myths, folktales, fables, parables, and fairy tales) drawn from diverse cultural traditions.
+  - VALUES parent entry with the relationship heuristic showing how all 30 values connect through Wisdom → Interdependence → Compassion/Persistence → individual values.
+  - Concept Disambiguation section distinguishing overlapping values (especially HOPE, WISDOM vs. THINKING, COMPASSION vs. LOVE, TEMPERANCE vs. REGULATION, VALUES vs. NEEDS, VALUES vs. MOTIVATORS).
+  - Operational sections (Examples, Boundaries/Scope, Decision Rules, and Ontological Relationships) added to the VALUES parent entry to support structured IF-LLM retrieval.
+  - Domain Knowledge Index corrected: OODA entries previously misassigned to this file are now correctly listed under `if-llm-humanity-ooda.md`.
 - **Scope**
-  - **Covers:** TBD
-  - **Out of Scope:** TBD
+  - **Covers:** The 30 values organized by the VALUES heuristic (Wisdom → Interdependence → Compassion branch + Persistence branch → subordinate values); the relationship structure among them; their literary and symbolic representations across diverse U.S. cultural traditions; the ethical guidance layer applicable to OODA decision-making, NARM activity selection, and FALLIBILITY management.
+  - **Out of Scope:** Individual values' operational retrieval sections (each value entry preserves its original structure; operational additions are made at the VALUES parent level only — see Known Gaps); clinical or therapeutic values clarification exercises; religious doctrine or theological argument; policy prescription; historical or biographical analysis of the value sources.
 - **Use Cases**
-  - **Supported:** TBD
-  - **Not Supported:** TBD
+  - **Supported:** Helping users identify which value is most relevant to their situation; explaining why a principle matters using accessible literary or cultural references; supporting ethical reasoning within the OODA loop (especially Orient and Decide steps); grounding difficult conversations in shared human principles; connecting value language to observable behavioral practices; explaining the VALUES relationship heuristic.
+  - **Not Supported:** Not a substitute for professional ethical, legal, medical, or therapeutic advice; not for ranking which religion or cultural tradition "has it right"; not for clinical values clarification therapy; not for adjudicating legal disputes; not for formal philosophical argument.
 
 - **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
-  - TBD
+  - Individual value entries (all 30) retain their original structure (Included by Value, Includes Values, Experiential Evidence, Social Reinforcement, Visual Elements, Literary Elements). They do not yet have entry-level operational sections (Examples, Boundaries/Scope, Decision Rules, Ontological Relationships). Adding full operational sections to all 30 entries would approximately double the file size, creating significant context window pressure. This is a known gap; operational sections are added at the VALUES parent level in this update. Individual value operational sections are a planned future update.
+  - HOPE appears in both [[HUMANITY:TRANSCENDENCE]] (as it relates to [[HUMANITY:COMPASSION]]) and [[HUMANITY:PERSISTENCE]] (as the only value shared between these two branches). Concept Disambiguation guidance is added in this update.
+  - Domain Knowledge Index previously contained a copy-paste error listing OODA entries under the `if-llm-humanity-values.md` label. Corrected in this update.
+  - The VALUES heuristic (relationship structure) is comprehensive but may appear circular to new readers; the Concept Disambiguation section and Examples in the VALUES parent entry clarify the navigational logic.
 
 - **Changelog**
+  - 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com): Replaced all TBD fields in File Header (Purpose, Features, Scope, Use Cases, Known Gaps/Limitations); corrected Domain Knowledge Index (OODA entries were incorrectly labeled under `if-llm-humanity-values.md` — corrected to `if-llm-humanity-ooda.md`); added Concept Disambiguation section to Index; added Examples, Boundaries/Scope, Decision Rules, and Ontological Relationships to the VALUES parent entry; updated Changelog with this entry. Individual value entries (Wisdom through Hope) preserved unchanged.
   - 2026-06-14 07:13 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed for best practices.
   - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
 
@@ -88,13 +96,90 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
   - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
   - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
-- `if-llm-humanity-values.md`
+- `if-llm-humanity-ooda.md`
   - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
   - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
   - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
   - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
   - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
   - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
+- `if-llm-humanity-values.md`
+  - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
+  - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
+  - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
+  - Love → HUMANITY.ELEMENTS.VALUES.LOVE → [[HUMANITY:LOVE]]
+  - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
+  - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
+  - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
+  - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
+  - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
+  - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
+  - Compassion → HUMANITY.ELEMENTS.VALUES.COMPASSION → [[HUMANITY:COMPASSION]]
+  - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
+  - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
+  - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
+  - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
+  - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
+  - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
+  - Gratitude → HUMANITY.ELEMENTS.VALUES.GRATITUDE → [[HUMANITY:GRATITUDE]]
+  - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
+  - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
+  - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
+  - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
+  - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
+  - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
+  - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
+  - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
+  - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
+  - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
+  - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]
+  - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
+  - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
+
+### Concept Disambiguation
+
+Use these notes to select between partially overlapping concepts for precise IF-LLM retrieval and reasoning.
+
+- **[[HUMANITY:VALUES]] vs. [[HUMANITY:NEEDS]]**
+  - Use `[[HUMANITY:VALUES]]` when the focus is on *how people aspire to act* — the tested ethical principles that guide behavior, judgment, and relationships (Wisdom, Interdependence, Compassion, Persistence, and their 30 constituent values).
+  - Use `[[HUMANITY:NEEDS]]` when the focus is on *what everyone universally requires* — the structural baseline that must be satisfied for health, safety, dignity, and inclusion, regardless of how they choose to act.
+  - Note: Values are the *ethical compass*; Needs are the *destination*. When a user asks "what should I do?" cite [[HUMANITY:VALUES]]. When a user asks "what does everyone need?" cite [[HUMANITY:NEEDS]].
+
+- **[[HUMANITY:VALUES]] vs. [[HUMANITY:MOTIVATORS]]**
+  - Use `[[HUMANITY:VALUES]]` when the focus is on *principled aspirational guidance* — the enduring ethical standards that transcend individual context and cultural variation.
+  - Use `[[HUMANITY:MOTIVATORS]]` when the focus is on *contextual energizing drives* — the specific reasons, desires, and preferences that cause a particular person to act in a particular moment.
+  - Note: Values are *long-horizon anchors* (they don't change with mood or circumstance); Motivators are *short-horizon engines* (they vary widely by person and situation). When someone needs sustained direction, cite [[HUMANITY:VALUES]]. When someone needs to understand what's driving them *right now*, cite [[HUMANITY:MOTIVATORS]].
+
+- **[[HUMANITY:WISDOM]] vs. [[HUMANITY:THINKING]]**
+  - Use `[[HUMANITY:WISDOM]]` when the focus is on *integrated applied judgment across time* — consistently gathering, testing, refining, and sharing humanity's most significant lessons; the value that encompasses the entire VALUES framework.
+  - Use `[[HUMANITY:THINKING]]` when the focus is on *structured in-the-moment reasoning* — analyzing, evaluating, and questioning information to make well-reasoned decisions; the critical thinking process that governs [[HUMANITY:ORIENT]] and [[HUMANITY:DECIDE]] in [[HUMANITY:OODA]].
+  - Note: Wisdom is the *library of tested lessons*; Critical Thinking is the *process of reasoning* applied to a current situation. Cite [[HUMANITY:WISDOM]] for long-horizon reflection and judgment. Cite [[HUMANITY:THINKING]] when the focus is on evaluating a specific claim, evidence, or decision in the moment.
+
+- **[[HUMANITY:COMPASSION]] vs. [[HUMANITY:LOVE]]**
+  - Use `[[HUMANITY:COMPASSION]]` when the focus is on the *broader ethical orientation* of responding to suffering or struggle — the value cluster (within [[HUMANITY:INTERDEPENDENCE]]) that includes Temperance, Transcendence, and Justice.
+  - Use `[[HUMANITY:LOVE]]` when the focus is on *deep relational connection and commitment* — caring for, nurturing, and protecting specific people, living beings, our environment, or ourselves.
+  - Note: Compassion is a *principle of response to suffering*; Love is a *bond of care and commitment*. They overlap but differ in scope. Cite [[HUMANITY:LOVE]] for relational, family, and community connection contexts. Cite [[HUMANITY:COMPASSION]] for broader ethical response to others' struggles, including strangers.
+
+- **[[HUMANITY:TEMPERANCE]] vs. [[HUMANITY:REGULATION]]**
+  - Use `[[HUMANITY:TEMPERANCE]]` when the focus is on the *value cluster* within [[HUMANITY:COMPASSION]] — the set of self-governing values (Mercy, Humility, Prudence, Self-Regulation) that together constitute moderation and restraint in practice.
+  - Use `[[HUMANITY:REGULATION]]` (Self-Regulation) when the focus is on the *specific value* of governing one's own responses, impulses, and behaviors — often in the context of the [[HUMANITY:OODA]] loop (inserting a pause before Act) or [[HUMANITY:TEMPTATIONS]] resistance.
+  - Note: Temperance is the *category* (the parent cluster); Self-Regulation is one of its *constituent values*. When discussing the general principle of restraint and moderation, cite [[HUMANITY:TEMPERANCE]]. When discussing the specific practice of governing impulses and behavioral responses in real time, cite [[HUMANITY:REGULATION]].
+
+- **[[HUMANITY:PERSISTENCE]] vs. [[HUMANITY:COURAGE]]**
+  - Use `[[HUMANITY:PERSISTENCE]]` when the focus is on *sustained effort over time* — continuing to pursue important goals across setbacks, fatigue, and discouragement; the long-horizon branch of [[HUMANITY:INTERDEPENDENCE]].
+  - Use `[[HUMANITY:COURAGE]]` when the focus is on *acting despite immediate fear, risk, or discomfort* — the specific value (within [[HUMANITY:PERSISTENCE]]) of taking a necessary step when it feels dangerous or hard right now.
+  - Note: Persistence is the *marathon* (sustained across time); Courage is the *hard step* (acting despite fear in this moment). Cite [[HUMANITY:PERSISTENCE]] for long-term follow-through and resilience. Cite [[HUMANITY:COURAGE]] for specific moments of facing fear or risk.
+
+- **[[HUMANITY:HOPE]] — dual membership in [[HUMANITY:TRANSCENDENCE]] and [[HUMANITY:PERSISTENCE]]**
+  - [[HUMANITY:HOPE]] is the only value that appears in *both* [[HUMANITY:TRANSCENDENCE]] (as it relates to [[HUMANITY:COMPASSION]]) and [[HUMANITY:PERSISTENCE]] (as its activating value).
+  - Cite `[[HUMANITY:HOPE]]` via **[[HUMANITY:TRANSCENDENCE]]** when the focus is on *meaning, gratitude, and elevation beyond present circumstances* — hope as a transcendent orientation that opens perspective and sustains dignity.
+  - Cite `[[HUMANITY:HOPE]]` via **[[HUMANITY:PERSISTENCE]]** when the focus is on *sustained effort toward a better future* — hope as the belief that continued action matters, fueling follow-through despite hardship.
+  - Note: These are not in conflict — they are the same value operating at different levels. When someone is struggling to find meaning in suffering, route [[HUMANITY:HOPE]] through [[HUMANITY:TRANSCENDENCE]]. When someone is struggling to keep going despite setbacks, route [[HUMANITY:HOPE]] through [[HUMANITY:PERSISTENCE]].
+
+- **[[HUMANITY:TRANSCENDENCE]] vs. [[HUMANITY:PURPOSE]]**
+  - Use `[[HUMANITY:TRANSCENDENCE]]` when the focus is on the *value cluster* — the set of values (Gratitude, Purpose, Excellence, Humor, and Hope-as-transcendence) that connect the individual to something larger, more meaningful, or elevated beyond immediate circumstances.
+  - Use `[[HUMANITY:PURPOSE]]` when the focus is on the *specific value* of having a meaningful direction or reason that orients and sustains one's efforts and identity.
+  - Note: Transcendence is the *category* (the cluster); Purpose is one of its *constituent values*. Cite [[HUMANITY:TRANSCENDENCE]] when discussing the general orientation toward meaning and the larger picture. Cite [[HUMANITY:PURPOSE]] when discussing a person's specific sense of calling, mission, or meaningful direction.
 
 ### Local Knowledge Index
 
@@ -141,7 +226,7 @@ The following is a list of this file's common topic references mapped to canonic
 ID: HUMANITY.ELEMENTS.VALUES
 TAGS: [[HUMANITY:VALUES]]
 
-Values based on humanity’s most significant [[HUMANITY:LESSONS]] that have been gathered, tested, refined, and shared throughout human history across our many diverse communities and societies; [[HUMANITY:WISDOM]].
+Values based on humanity's most significant [[HUMANITY:LESSONS]] that have been gathered, tested, refined, and shared throughout human history across our many diverse communities and societies; [[HUMANITY:WISDOM]].
 
 - [[HUMANITY:VALUES]] relationship heuristic:
   - [[HUMANITY:ROOT]] values [[HUMANITY:WISDOM]].
@@ -156,6 +241,33 @@ Values based on humanity’s most significant [[HUMANITY:LESSONS]] that have bee
   - [[HUMANITY:JUSTICE]] includes [[HUMANITY:FAIRNESS]], [[HUMANITY:CITIZENSHIP]], and [[HUMANITY:LEADERSHIP]].
   - [[HUMANITY:PERSISTENCE]] includes [[HUMANITY:COURAGE]] and [[HUMANITY:HOPE]] (i.e., [[HUMANITY:HOPE]] is the only value included in [[HUMANITY:TRANSCENDENCE]] that is also included in [[HUMANITY:PERSISTENCE]]; [[HUMANITY:HOPE]] is the only value included in [[HUMANITY:TRANSCENDENCE]] that is also excluded in [[HUMANITY:COMPASSION]]).
   - [[HUMANITY:COURAGE]] includes [[HUMANITY:BRAVERY]], [[HUMANITY:INTEGRITY]], and [[HUMANITY:VITALITY]].
+
+- **Examples**
+  - **When a user faces a moral dilemma or asks "what should I do?":** Cite [[HUMANITY:VALUES]] as the ethical guidance layer; use the VALUES heuristic to identify which value cluster (Compassion, Persistence, Thinking, Justice, etc.) is most relevant to the situation, then move to the specific value entry.
+  - **When explaining why something that felt good caused harm:** Cite [[HUMANITY:VALUES]] alongside [[HUMANITY:TEMPTATIONS]] — the temptation overrode the relevant value (e.g., Immediate Gratification overrode [[HUMANITY:PRUDENCE]]; Deception overrode [[HUMANITY:INTEGRITY]]).
+  - **When a user is trying to understand why they keep quitting hard things:** Cite [[HUMANITY:PERSISTENCE]] → [[HUMANITY:COURAGE]] → [[HUMANITY:HOPE]] as the relevant value chain; connect to [[HUMANITY:MOTIVATORS]] (what drives are sustaining vs. depleted) and [[HUMANITY:RESOURCES]] (is energy the actual constraint?).
+  - **When integrating ethical guidance into an OODA recommendation:** At the Orient step, check [[HUMANITY:PERSPECTIVE]] and [[HUMANITY:HUMILITY]]; at the Decide step, check [[HUMANITY:PRUDENCE]] and [[HUMANITY:FAIRNESS]]; at the Act step, check [[HUMANITY:INTEGRITY]] and [[HUMANITY:REGULATION]].
+  - **When explaining why diverse communities share core values despite different cultural expressions:** Cite [[HUMANITY:VALUES]] as the universal framework; use Literary Elements within individual value entries to demonstrate how the same values appear across cultures in different symbolic forms.
+
+- **Boundaries / Scope**
+  - **Includes:** The 30 values organized by the VALUES heuristic; the relationship structure among them; the ethical guidance layer applicable across all other Humanity knowledge entries; the literary and symbolic representations within each individual value entry.
+  - **Excludes:** Clinical therapy or formal values-clarification assessment; religious doctrine or theological argument about the source of values; policy prescription; individual case adjudication; historical or biographical analysis of values sources.
+  - **Primary purpose:** Enable IF-LLM to identify *which value or value cluster is most relevant* to a user's situation — and to use that value as an ethical anchor for reasoning, explaining, or guiding behavior.
+
+- **Decision Rules (IF/THEN)**
+  - **IF** a user asks for ethical guidance, **THEN** use the VALUES heuristic to identify the relevant value cluster first (Compassion branch vs. Persistence branch), then move to the specific value entry.
+  - **IF** multiple values are in tension, **THEN** trace the VALUES heuristic: values higher in the hierarchy (Wisdom, Interdependence) often resolve tension between lower-order values by providing the integrating principle.
+  - **IF** a user describes a struggle that is primarily about sustained effort or follow-through, **THEN** start with the [[HUMANITY:PERSISTENCE]] branch (Courage, Hope, Bravery, Integrity, Vitality).
+  - **IF** a user describes a struggle involving how to treat others or navigate conflict, **THEN** start with the [[HUMANITY:COMPASSION]] branch (Temperance, Transcendence, Justice and their sub-values).
+  - **IF** a user mentions "hope" without clarifying context, **THEN** check whether it relates to meaning and transcendence (cite [[HUMANITY:TRANSCENDENCE]]) or sustained effort despite hardship (cite [[HUMANITY:PERSISTENCE]]); see Concept Disambiguation for guidance.
+  - **IF** a user asks what everyone has in common aspirationally, **THEN** cite [[HUMANITY:VALUES]] as the framework alongside [[HUMANITY:NEEDS]] (structural baseline) and [[HUMANITY:RIGHTS]] (equal opportunity) — together these form the shared human foundation.
+
+- **Ontological Relationships**
+  - **Related to:** [[HUMANITY:NEEDS]] (values guide *how* we act to satisfy needs; needs define *what* must be satisfied); [[HUMANITY:MOTIVATORS]] (values are long-horizon motivational anchors; motivators are short-horizon energizing drives); [[HUMANITY:LESSONS]] (values are distilled from humanity's most significant accumulated lessons); [[HUMANITY:MISSION]] (values govern how the mission is performed); [[HUMANITY:OODA]] (values provide ethical checks at each OODA step — especially Orient and Decide); [[HUMANITY:FALLIBILITY]] (without fallibility awareness, values become performative rather than practiced)
+  - **Grounds:** All 30 individual value entries, organized through [[HUMANITY:WISDOM]] → [[HUMANITY:INTERDEPENDENCE]] → [[HUMANITY:COMPASSION]] and [[HUMANITY:PERSISTENCE]] branches
+  - **Required by:** [[HUMANITY:OODA]] decision-making at the Orient and Decide steps; [[HUMANITY:ACTIVITIES]] selection when ethical choices are at stake; [[HUMANITY:MISSION]] performance in ways that benefit both individuals and community
+  - **Vulnerable to:** [[HUMANITY:TEMPTATIONS]] (values can be rationalized away or bypassed under resource depletion or stress); [[HUMANITY:STEREOTYPES]] and [[HUMANITY:PREJUDICES]] (which can distort how values are applied across groups); [[HUMANITY:DISCRIMINATION]] (which can systematically restrict who gets to benefit from values in practice)
+  - **Reinforced by:** [[HUMANITY:INTERDEPENDENCE]] (shared practice strengthens values across community); [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]] (experiencing the cost of values violations motivates return to values); [[HUMANITY:COPING]] (values-aligned coping sustains wellbeing through difficulty); [[HUMANITY:EXPERTS]] (Reasoning Experts explain *why* values work; History Experts show *where* they have been proven across time)
 
 ##### Wisdom
 

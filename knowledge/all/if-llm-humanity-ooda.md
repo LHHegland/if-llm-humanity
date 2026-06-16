@@ -3,27 +3,35 @@
 ## File Header
 
 - **Name:** Humanity's Observe → Orient → Decide →  Act (OODA) Process — Information-Following Large Language Model Knowledge (*if-llm-humanity-ooda.md*)
-- **Version:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
-- **Last Reviewed:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Last Reviewed:** 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
-- **Purpose:** TBD
+- **Purpose:** Empower an IF-LLM to help an average U.S. adult understand and apply the OODA loop — a four-step repeating control cycle (Observe → Orient → Decide → Act) — to make better decisions, reduce avoidable harm, and respond more effectively to changing circumstances in everyday life, relationships, work, and safety situations.
 - **Audience:** Average, diverse people in the United States of America today.
 - **Features**
-  - TBD
+  - Six structured entries covering the OODA parent loop plus each individual step (Observe, Senses, Orient, Decide, Act), each with Examples, Procedure (Inputs/Actions/Outputs), Boundaries/Scope, Decision Rules (IF/THEN), and Ontological Relationships.
+  - Each entry also includes Examples of [[HUMANITY:FALLIBILITY]] (how the step goes wrong) and Examples of Using [[HUMANITY:VALUES]] (how to apply values to improve each step).
+  - Concept Disambiguation section distinguishes overlapping step entries (especially Observe vs. Senses, Orient vs. Decide) to guide precise IF-LLM retrieval.
+  - Ontological relationships across all entries link OODA to [[HUMANITY:NEEDS]], [[HUMANITY:RESOURCES]], [[HUMANITY:FALLIBILITY]], [[HUMANITY:TEMPTATIONS]], [[HUMANITY:VALUES]], [[HUMANITY:ACTIVITIES]], [[HUMANITY:LESSONS]], and [[HUMANITY:INTERDEPENDENCE]].
+  - Practical focus throughout: entry-level examples use everyday U.S. life contexts (driving, budgeting, parenting, health, work) at micro (seconds), meso (minutes), and macro (hours/days) loop scales.
 - **Scope**
-  - **Covers:** TBD
-  - **Out of Scope:** TBD
+  - **Covers:** The OODA loop as a universal human sense-make-act cycle; each of the four steps as distinct but interdependent sub-processes; Senses as the signal-acquisition sub-step within Observe; integration of values, fallibility, regulation, and interdependence into the loop; everyday application for U.S. adults across safety, financial, relational, health, and caregiving contexts.
+  - **Out of Scope:** Military strategy or tactical decision-making (OODA's original domain); clinical cognitive-behavioral therapy frameworks; organizational or systems-level decision modeling; formal decision theory or probability calculus; research methods; autonomous AI decision systems.
 - **Use Cases**
-  - **Supported:** TBD
-  - **Not Supported:** TBD
+  - **Supported:** Helping users make better real-time decisions; supporting sensemaking when situations are ambiguous or emotionally charged; interpreting why a person made a poor decision (which OODA step broke down); guiding reflection after a difficult situation; integrating values-based checks into daily choices; framing why slowing down under stress leads to better outcomes.
+  - **Not Supported:** Not a substitute for clinical mental health assessment or therapy; not for crisis intervention (see [[HUMANITY:COPING]]); not for legal, medical, or financial professional advice; not for evaluating institutional or policy-level decision processes.
 
 - **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-values.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
-  - TBD
+  - Entry content (Examples, Procedure, Boundaries, Decision Rules, Ontological Relationships, Fallibility examples, Values examples) was comprehensively written in a prior session (2026-06-14). File Header TBDs and Concept Disambiguation are the primary additions in this update.
+  - The Senses entry is positioned as a child of Observe in the namespace (HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES) but could also be read as a supporting resource for Observe rather than a structural step. This positioning is preserved from the original; if reclassification is needed, it should be addressed in a future changelog.
+  - The OODA loop as described here is simplified for everyday use. More complex applications (multi-person loops, institutional loops, rapid-cycle crisis response) are out of scope and would require supplemental entries.
+  - No entry addresses how to exit the OODA loop when it is cycling unproductively (rumination, analysis paralysis at scale). This is a known gap; [[HUMANITY:REGULATION]] and [[HUMANITY:COPING]] partially address this but without OODA-specific framing.
 
 - **Changelog**
+  - 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com): Replaced all TBD fields in File Header (Purpose, Features, Scope, Use Cases, Known Gaps/Limitations); added Concept Disambiguation section to Index; updated Changelog with this entry. No changes made to entry content (entries were comprehensively structured in the 2026-06-14 session).
   - 2026-06-14 07:13 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed for best practices.
   - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
 
@@ -121,6 +129,30 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
   - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
 
+### Concept Disambiguation
+
+Use these notes to select between partially overlapping concepts for precise IF-LLM retrieval and reasoning.
+
+- **[[HUMANITY:OODA]] (parent loop) vs. individual step entries ([[HUMANITY:OBSERVE]], [[HUMANITY:ORIENT]], [[HUMANITY:DECIDE]], [[HUMANITY:ACT]])**
+  - Use `[[HUMANITY:OODA]]` when the focus is on the *complete repeating cycle as a whole* — the integrated process of sense → model → choose → act → repeat, or when explaining why the cycle approach matters.
+  - Use an individual step tag when the focus is on *what happens within that specific step* — the inputs, procedure, outputs, or failure modes of that step only.
+  - Note: Diagnosing where a decision went wrong requires identifying the specific step that failed. Cite the parent [[HUMANITY:OODA]] to frame the cycle; cite the specific step entry to diagnose or repair it.
+
+- **[[HUMANITY:OBSERVE]] vs. [[HUMANITY:SENSES]]**
+  - Use `[[HUMANITY:OBSERVE]]` when the focus is on the *active practice of gathering, labeling, and quality-checking information* — the structured process of collecting signals, naming unknowns, and separating observed from inferred.
+  - Use `[[HUMANITY:SENSES]]` when the focus is on the *raw biological channels* by which signals enter awareness — the specific sensory modalities (vision, hearing, touch, interoception, proprioception) and their reliability conditions.
+  - Note: Senses are the *hardware*; Observe is the *active software process* that uses and checks the hardware. When a person misses something, cite [[HUMANITY:OBSERVE]] (they failed to collect or label it). When a person perceived something incorrectly due to physical conditions (noise, fatigue, poor light), cite [[HUMANITY:SENSES]].
+
+- **[[HUMANITY:ORIENT]] vs. [[HUMANITY:DECIDE]]**
+  - Use `[[HUMANITY:ORIENT]]` when the focus is on *interpreting what is happening* — building a working model of the situation, generating hypotheses, identifying assumptions, and labeling uncertainty. This is sensemaking.
+  - Use `[[HUMANITY:DECIDE]]` when the focus is on *choosing what to do* — selecting among feasible options, weighing tradeoffs, applying values, checking reversibility, and committing to a next step. This is action selection.
+  - Note: A person can orient correctly but decide poorly (right understanding, wrong choice) or decide well under a flawed orientation (wrong model, lucky choice). When a poor outcome traces back to a misunderstood situation, cite [[HUMANITY:ORIENT]]. When it traces to a poorly selected action under a correct model, cite [[HUMANITY:DECIDE]].
+
+- **[[HUMANITY:ORIENT]] vs. [[HUMANITY:OBSERVE]]**
+  - Use `[[HUMANITY:OBSERVE]]` when the focus is on gathering and quality-checking the *raw signals* (what happened, what was sensed, what is known vs. unknown).
+  - Use `[[HUMANITY:ORIENT]]` when the focus is on *interpreting those signals* — what they mean, what the situation is, what is likely causing it.
+  - Note: The boundary is: "what did I notice?" belongs to [[HUMANITY:OBSERVE]]; "what does it mean?" belongs to [[HUMANITY:ORIENT]]. Many everyday errors happen at this boundary — people skip [[HUMANITY:OBSERVE]] and jump directly to [[HUMANITY:ORIENT]] (interpreting before gathering), producing confident but inaccurate models.
+
 ### Local Knowledge Index
 
 The following is a list of this file's common topic references mapped to canonical handles.
@@ -147,7 +179,7 @@ TAGS: [[HUMANITY:OODA]]
   - **Driving in traffic (seconds loop):** You observe brake lights → orient (rain + merge) → decide (slow + increase following distance) → act (ease off gas) → observe again.
   - **Grocery shopping on a budget (minutes loop):** You observe prices + pantry state → orient (payday timing; cash limits) → decide (swap to store brands; prioritize staples) → act (change items; track total) → observe again.
   - **Work message that feels rude (minutes loop):** You observe wording + tone cues → orient (intent unclear; stress possible) → decide (clarify, do not escalate) → act (ask one neutral question; delay reply if needed) → observe again.
-  - **Caregiving during a kid’s public meltdown (minutes loop):** You observe cues (tired/hungry/overstimulated) → orient (safety + regulation first) → decide (step outside + snack/water) → act (move to quiet place; offer water) → observe again.
+  - **Caregiving during a kid's public meltdown (minutes loop):** You observe cues (tired/hungry/overstimulated) → orient (safety + regulation first) → decide (step outside + snack/water) → act (move to quiet place; offer water) → observe again.
   - **Severe weather alert (hours loop):** You observe warnings → orient (your location; timing; risk) → decide (charge phones; alter travel; shelter plan) → act (prepare kit; leave early/relocate if needed) → observe again.
 - **Inputs (MUST define or approximate):**
   - **Stimuli:** external signals (environment, other people, systems) + internal signals (body, emotions, thoughts).
@@ -170,7 +202,7 @@ TAGS: [[HUMANITY:OODA]]
     - **Optionally:** a captured [[HUMANITY:LESSONS]] note/checklist to improve future loops.
 - **Boundaries / Scope**
   - **Includes:** rapid micro-loops (seconds) and slower loops (hours/days) as long as the sequence remains: [[HUMANITY:OBSERVE]] → [[HUMANITY:ORIENT]] → [[HUMANITY:DECIDE]] → [[HUMANITY:ACT]] → repeat ([[HUMANITY:OBSERVE]] again)
-  - **Excludes:** one-time plans that do not update from feedback; purely “thinking” without an action; “acting” without any attempt to notice outcomes (no re-observation and no updated model); endless re-analysis that prevents a safe next step.
+  - **Excludes:** one-time plans that do not update from feedback; purely "thinking" without an action; "acting" without any attempt to notice outcomes (no re-observation and no updated model); endless re-analysis that prevents a safe next step.
   - **Primary purpose:** reduce avoidable harm and wasted effort by enforcing structured sense-making and response under changing conditions.
 - **Decision Rules**
   - **If observations are low-quality or contradictory, THEN** return to [[HUMANITY:OBSERVE]] and gather at least one more data point before deciding.
@@ -196,16 +228,16 @@ TAGS: [[HUMANITY:OODA]]
     - **Risk reduction (SHOULD):** align decisions/actions with intentional and consistent practice of [[HUMANITY:VALUES]]; use [[HUMANITY:INTERDEPENDENCE]] for high-stakes loops to reduce avoidable harm and escalation risk.
     - **Risks reduced by:** stronger observation quality, verification, regulation pauses, and feedback-based updating.
 - Examples of [[HUMANITY:FALLIBILITY]]
-  - **Observe error (missing/distorted input):** You skim a headline while tired and “observe” a false claim; every later step inherits the error.
-  - **Orient error (assumption/bias):** You interpret a stranger’s neutral face as hostile and orient toward threat; you escalate needlessly.
+  - **Observe error (missing/distorted input):** You skim a headline while tired and "observe" a false claim; every later step inherits the error.
+  - **Orient error (assumption/bias):** You interpret a stranger's neutral face as hostile and orient toward threat; you escalate needlessly.
   - **Decide error (stress impulsivity):** You feel anxious and decide too fast (send the angry text; accept a bad deal) to reduce discomfort.
   - **Act error (execution failure):** You choose the right action (pay bill, take meds) but forget because attention/energy are depleted.
   - **Update failure (stuck loop):** New evidence shows your approach is not working, but pride/fatigue keeps you repeating the same action.
 - Examples of Using [[HUMANITY:VALUES]]
-  - **Add a deliberate pause before Decide/Act (SHOULD):** Use one breath, a 10-second rule, or “draft but don’t send” for charged messages to reduce impulsive harm ([[HUMANITY:REGULATION]]; [[HUMANITY:TEMPERANCE]]).
-  - **Run an orientation humility check (SHOULD):** Ask: “What else could be true?” and “What evidence would change my mind?” to counter assumption-lock ([[HUMANITY:HUMILITY]]; [[HUMANITY:OPENNESS]]).
-  - **Use basic verification for important choices (SHOULD):** Confirm time/place/amount; check original sources; separate “observed” from “inferred” ([[HUMANITY:THINKING]]).
-  - **Close the loop with a micro after-action review (MAY):** “What happened? What did I miss? What will I change next time?” and capture one [[HUMANITY:LESSONS]] item (a checklist or rule).
+  - **Add a deliberate pause before Decide/Act (SHOULD):** Use one breath, a 10-second rule, or "draft but don't send" for charged messages to reduce impulsive harm ([[HUMANITY:REGULATION]]; [[HUMANITY:TEMPERANCE]]).
+  - **Run an orientation humility check (SHOULD):** Ask: "What else could be true?" and "What evidence would change my mind?" to counter assumption-lock ([[HUMANITY:HUMILITY]]; [[HUMANITY:OPENNESS]]).
+  - **Use basic verification for important choices (SHOULD):** Confirm time/place/amount; check original sources; separate "observed" from "inferred" ([[HUMANITY:THINKING]]).
+  - **Close the loop with a micro after-action review (MAY):** "What happened? What did I miss? What will I change next time?" and capture one [[HUMANITY:LESSONS]] item (a checklist or rule).
   - **Use [[HUMANITY:INTERDEPENDENCE]] for high-stakes decisions (SHOULD):** Ask a trusted person to sanity-check your Observe/Orient/Decide before acting; treat feedback as new observation ([[HUMANITY:INTERDEPENDENCE]]; [[HUMANITY:WISDOM]]).
 
 ##### Observe
@@ -228,7 +260,7 @@ TAGS: [[HUMANITY:OBSERVE]]
     - **Context constraints:** time available, safety risk, cost/reputation risk, cognitive load ([[HUMANITY:RESOURCES]]).
     - **Uncertainty markers:** what you do not know; what might be wrong or incomplete ([[HUMANITY:FALLIBILITY]]).
   - **Actions (DO in order):**
-    1. **Collect signals:** Write 3–7 concrete observations as facts (no interpretation words like “obvious,” “rude,” “safe”).
+    1. **Collect signals:** Write 3–7 concrete observations as facts (no interpretation words like "obvious," "rude," "safe").
     2. **Label unknowns:** List 1–3 unknowns explicitly (missing data, unclear intent, unverified numbers).
     3. **Separate observed vs inferred:** Mark what you directly perceived vs what you are guessing.
     4. **Check for distortion:** Identify one likely error source (fatigue, stress, distractions, prior beliefs, low-quality media).
@@ -238,16 +270,16 @@ TAGS: [[HUMANITY:OBSERVE]]
     6. **Hand off to [[HUMANITY:ORIENT]]:** Provide the observation list + uncertainty markers.
   - **Outputs (MUST produce at least one):**
     - **Observation set:** a short list of concrete signals (facts) + labeled unknowns.
-    - **Reliability notes:** at least one flagged distortion risk (e.g., “tired,” “angry,” “unverified source”).
-    - **Optional:** a captured [[HUMANITY:LESSONS]] note (e.g., “verify totals before checkout”).
+    - **Reliability notes:** at least one flagged distortion risk (e.g., "tired," "angry," "unverified source").
+    - **Optional:** a captured [[HUMANITY:LESSONS]] note (e.g., "verify totals before checkout").
 - **Boundaries / Scope**
   - **Includes:** internal + external sensing; quick scans and careful checks; re-observation after new events.
-  - **Excludes:** interpretation-only narratives (“they hate me”); conclusions without signals; “research” that never results in a usable observation set.
+  - **Excludes:** interpretation-only narratives ("they hate me"); conclusions without signals; "research" that never results in a usable observation set.
   - **Primary purpose:** produce **higher-quality inputs** for [[HUMANITY:ORIENT]] and reduce downstream error in the [[HUMANITY:OODA]] loop.
 - **Constraints**
   - Observation quality is limited by [[HUMANITY:RESOURCES]] (time, energy, attention) and [[HUMANITY:FALLIBILITY]].
   - Under stress, you SHOULD assume you are missing something and gather at least one additional signal before committing to a high-impact action.
-  - Observation MUST remain grounded in what is available now; do not invent data to “complete the picture.”
+  - Observation MUST remain grounded in what is available now; do not invent data to "complete the picture."
 - **Decision Rules (IF/THEN)**
   - **IF** you cannot list at least 3 concrete observations, **THEN** return to collecting signals before proceeding.
   - **IF** sources conflict or key facts are unverified, **THEN** gather one more data point or verify the most important fact.
@@ -270,16 +302,16 @@ TAGS: [[HUMANITY:OBSERVE]]
     - **Creates vulnerabilities for:** overconfidence if uncertainty is not labeled; cascading errors if bad observations feed later steps.
   - **Reduces Risks for / Risks Reduced by**
     - **Reduces risks for:** preventable mistakes from missing/false inputs; escalation from misread cues.
-    - **Risks reduced by:** verification, clear “observed vs inferred” separation, and use of [[HUMANITY:INTERDEPENDENCE]] for high-stakes checks.
+    - **Risks reduced by:** verification, clear "observed vs inferred" separation, and use of [[HUMANITY:INTERDEPENDENCE]] for high-stakes checks.
 - **Examples of [[HUMANITY:FALLIBILITY]]**
   - **Attention gaps:** You multitask (work + texts + kids) and miss a key detail (appointment time, stop sign, dosage).
   - **Stress distortion:** When anxious, you notice only threats/insults and overlook neutral facts.
   - **Low-quality inputs:** You treat a viral clip or headline as the full story and stop observing.
-  - **Confirmation filtering:** You notice “supporting” evidence and ignore signals that contradict your belief.
-  - **Body-state blind spots:** Hunger, poor sleep, pain, or burnout makes internal observation unreliable (“I’m fine” when you are not).
+  - **Confirmation filtering:** You notice "supporting" evidence and ignore signals that contradict your belief.
+  - **Body-state blind spots:** Hunger, poor sleep, pain, or burnout makes internal observation unreliable ("I'm fine" when you are not).
 - **Examples of Using [[HUMANITY:VALUES]]**
-  - **[[HUMANITY:INTEGRITY]] (reliability over convenience):** You use checklists, reminders, and “review before send” to reduce missed observations.
-  - **[[HUMANITY:HUMILITY]] (assumption-audit):** You ask “What might I be missing?” and actively look for one disconfirming signal.
+  - **[[HUMANITY:INTEGRITY]] (reliability over convenience):** You use checklists, reminders, and "review before send" to reduce missed observations.
+  - **[[HUMANITY:HUMILITY]] (assumption-audit):** You ask "What might I be missing?" and actively look for one disconfirming signal.
   - **[[HUMANITY:WISDOM]] (long-term consequences):** You slow down for high-stakes situations (sleep on it, re-check, get one more data point).
   - **[[HUMANITY:INTERDEPENDENCE]] (shared verification):** You ask a trusted person to sanity-check numbers, tone, or risk signals before acting.
   - **[[HUMANITY:TEMPERANCE]] + [[HUMANITY:REGULATION]] (impulse control):** You pause when angry or afraid, then re-observe before concluding.
@@ -289,7 +321,7 @@ TAGS: [[HUMANITY:OBSERVE]]
 ID: HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES
 TAGS: [[HUMANITY:SENSES]]
 
-**Senses** are the body’s **signal detectors** that convert **stimuli** (outside the body and inside the body) into **perceptual signals** the brain can interpret. Senses are a primary input to [[HUMANITY:OBSERVE]]. Because of [[HUMANITY:FALLIBILITY]], sensed signals are not automatically reliable; they SHOULD be checked and calibrated during [[HUMANITY:ORIENT]].
+**Senses** are the body's **signal detectors** that convert **stimuli** (outside the body and inside the body) into **perceptual signals** the brain can interpret. Senses are a primary input to [[HUMANITY:OBSERVE]]. Because of [[HUMANITY:FALLIBILITY]], sensed signals are not automatically reliable; they SHOULD be checked and calibrated during [[HUMANITY:ORIENT]].
 
 - **Examples**
   - **Cooking at home:** You smell something burning, hear a timer, feel heat from the oven, and notice hunger or nausea.
@@ -305,7 +337,7 @@ TAGS: [[HUMANITY:SENSES]]
     - **Uncertainty markers:** anything that could distort sensing (low light, loud noise, strong emotion, intoxication, illness).
   - **Actions (DO in order):**
     1. **Identify channel(s):** Name which sense(s) produced the signal (e.g., vision + interoception).
-    2. **Describe the raw signal:** State the perception in concrete terms (what you saw/heard/felt), avoiding interpretations (“dangerous,” “rude,” “fine”).
+    2. **Describe the raw signal:** State the perception in concrete terms (what you saw/heard/felt), avoiding interpretations ("dangerous," "rude," "fine").
     3. **Check for distortion:** Flag likely error sources (fatigue, stress, distraction, poor conditions, prior expectations).
     4. **Cross-check (SHOULD):** Use a second channel or tool when available:
        - Look again in better light; reduce noise; move closer/farther.
@@ -313,7 +345,7 @@ TAGS: [[HUMANITY:SENSES]]
        - Ask another person to confirm in high-stakes contexts ([[HUMANITY:INTERDEPENDENCE]]).
     5. **Hand off to [[HUMANITY:ORIENT]]:** Provide the signal + distortion flags + cross-check results.
   - **Outputs (MUST produce at least one):**
-    - **Perceptual signal statement:** “I saw/heard/felt ____.”
+    - **Perceptual signal statement:** "I saw/heard/felt ____."
     - **Channel label(s):** which senses generated the signal.
     - **Reliability note:** one short flag about conditions/distortion risk.
     - **Optional:** cross-check result or planned verification step.
@@ -351,13 +383,13 @@ TAGS: [[HUMANITY:SENSES]]
 - Examples of [[HUMANITY:FALLIBILITY]]
   - **Low-light error:** You misread a label or medication bottle at night and take the wrong item.
   - **Noise masking:** You miss an announcement or warning because of loud music or crowded space.
-  - **Expectation bias:** You “hear attitude” in a neutral tone because you expect conflict.
-  - **Stress body misread:** Anxiety feels like a heart problem (or you dismiss real symptoms as “just stress”).
+  - **Expectation bias:** You "hear attitude" in a neutral tone because you expect conflict.
+  - **Stress body misread:** Anxiety feels like a heart problem (or you dismiss real symptoms as "just stress").
   - **Motion/balance distortion:** You feel dizzy and misjudge stability, increasing fall or driving risk.
 - Examples of Using [[HUMANITY:VALUES]]
   - **[[HUMANITY:HUMILITY]]:** You treat first impressions as provisional and actively look for disconfirming signals.
   - **[[HUMANITY:WISDOM]]:** You slow down and verify when the consequence is high (health, safety, major money).
-  - **[[HUMANITY:INTEGRITY]]:** You use checklists/tools (labels, timers, measurements) instead of relying on “I’m sure.”
+  - **[[HUMANITY:INTEGRITY]]:** You use checklists/tools (labels, timers, measurements) instead of relying on "I'm sure."
   - **[[HUMANITY:INTERDEPENDENCE]]:** You ask someone else to confirm what you sensed when it matters (smoke source, child fever, confusing instructions).
   - **[[HUMANITY:TEMPERANCE]] + [[HUMANITY:REGULATION]]:** You pause when overstimulated, reduce inputs (quiet/dim), then re-check signals before acting.
 
@@ -366,7 +398,7 @@ TAGS: [[HUMANITY:SENSES]]
 ID: HUMANITY.ELEMENTS.OODA.ORIENT
 TAGS: [[HUMANITY:ORIENT]]
 
-**Orient** is the repeating step where you **interpret what you [[HUMANITY:OBSERVE]]** by fitting it into context (goals/needs, prior experience, culture, incentives, constraints, emotions, assumptions, and mental models). The purpose is to produce a **working model** of “what is happening” and “what it likely means” that is good enough to support [[HUMANITY:DECIDE]]. Because of [[HUMANITY:FALLIBILITY]], orientation MUST treat interpretations as **hypotheses**, not facts, and SHOULD use [[HUMANITY:VALUES]] (especially [[HUMANITY:THINKING]], [[HUMANITY:HUMILITY]], [[HUMANITY:PERSPECTIVE]], [[HUMANITY:WISDOM]]) to reduce error and harm.
+**Orient** is the repeating step where you **interpret what you [[HUMANITY:OBSERVE]]** by fitting it into context (goals/needs, prior experience, culture, incentives, constraints, emotions, assumptions, and mental models). The purpose is to produce a **working model** of "what is happening" and "what it likely means" that is good enough to support [[HUMANITY:DECIDE]]. Because of [[HUMANITY:FALLIBILITY]], orientation MUST treat interpretations as **hypotheses**, not facts, and SHOULD use [[HUMANITY:VALUES]] (especially [[HUMANITY:THINKING]], [[HUMANITY:HUMILITY]], [[HUMANITY:PERSPECTIVE]], [[HUMANITY:WISDOM]]) to reduce error and harm.
 
 - **Examples**
   - **Short text from a friend (minutes):** You orient by considering context (history, timing, typical tone) before assuming they are upset.
@@ -385,21 +417,21 @@ TAGS: [[HUMANITY:ORIENT]]
     1. **Restate observations:** Repeat the key facts in neutral language; keep interpretation separate.
     2. **Generate a primary hypothesis:** Write the most likely explanation of what is happening.
     3. **Generate alternatives (MUST):** Write 1–2 plausible alternatives (including a benign/neutral explanation when appropriate).
-    4. **List assumptions:** Identify what you are assuming (intent, causality, base rates, “typical” behavior).
+    4. **List assumptions:** Identify what you are assuming (intent, causality, base rates, "typical" behavior).
     5. **Bias and harm check (SHOULD):**
        - Check for [[HUMANITY:STEREOTYPES]] or [[HUMANITY:PREJUDICES]] shaping interpretation.
-       - Ask: “Would I interpret this the same way if the person were from a different group?”
+       - Ask: "Would I interpret this the same way if the person were from a different group?"
     6. **Evidence check (SHOULD):**
        - Identify one missing data point that would most reduce uncertainty.
        - If feasible, gather it now (ask a question, check a source, measure).
     7. **Select a working model:** Choose the model that best fits evidence and constraints; label confidence (high/medium/low).
     8. **Hand off to [[HUMANITY:DECIDE]]:** Provide (a) working model, (b) alternatives, (c) top assumption, (d) key uncertainty, (e) suggested verification step.
   - **Outputs (MUST produce at least one):**
-    - **Working model:** “What is happening” + “why it might be happening” (hypothesis, not certainty).
+    - **Working model:** "What is happening" + "why it might be happening" (hypothesis, not certainty).
     - **Alternative models:** 1–2 plausible alternatives.
     - **Assumption list:** at least one explicit assumption.
     - **Confidence + uncertainty:** a short confidence rating and one key unknown.
-    - **Optional:** a [[HUMANITY:LESSONS]] note (e.g., “ask for intent before reacting”).
+    - **Optional:** a [[HUMANITY:LESSONS]] note (e.g., "ask for intent before reacting").
 - **Boundaries / Scope**
   - **Includes:** interpretation, hypothesis generation, assumption identification, bias checks, and selecting a working model based on observed signals.
   - **Excludes:** choosing the action (belongs to [[HUMANITY:DECIDE]]); executing behavior (belongs to [[HUMANITY:ACT]]).
@@ -410,10 +442,10 @@ TAGS: [[HUMANITY:ORIENT]]
   - Orientation is a common entry point for [[HUMANITY:STEREOTYPES]] and [[HUMANITY:PREJUDICES]]; you MUST include a basic bias check when people are involved.
   - If you cannot reduce uncertainty, you SHOULD choose a later decision that is lower-risk or reversible.
 - **Decision Rules (IF/THEN)**
-  - **IF** you cannot cleanly separate “observed” from “interpreted,” **THEN** return to [[HUMANITY:OBSERVE]] and restate facts.
+  - **IF** you cannot cleanly separate "observed" from "interpreted," **THEN** return to [[HUMANITY:OBSERVE]] and restate facts.
   - **IF** you feel strong emotion or depletion, **THEN** insert a regulation pause and lower confidence in your interpretation.
-  - **IF** the interpretation depends on someone’s intent, **THEN** prefer a clarifying question over a confrontational conclusion.
-  - **IF** you notice [[HUMANITY:STEREOTYPES]]-based generalizations (“those people always…”), **THEN** stop and rebuild [[HUMANITY:ORIENT]] from direct evidence and base rates.
+  - **IF** the interpretation depends on someone's intent, **THEN** prefer a clarifying question over a confrontational conclusion.
+  - **IF** you notice [[HUMANITY:STEREOTYPES]]-based generalizations ("those people always…"), **THEN** stop and rebuild [[HUMANITY:ORIENT]] from direct evidence and base rates.
   - **IF** stakes are high, **THEN** add verification and/or a second perspective ([[HUMANITY:INTERDEPENDENCE]]) before committing.
   - **IF** new evidence arrives, **THEN** update the working model immediately (do not defend the old model).
 - **Ontological Relationships**
@@ -436,11 +468,11 @@ TAGS: [[HUMANITY:ORIENT]]
 - Examples of [[HUMANITY:FALLIBILITY]]
   - **Misreading tone/intent:** You assume an overwhelmed cashier is rude to you; you escalate a neutral situation into conflict.
   - **Stress tunnel vision:** Under pressure, you orient toward threat or shame and ignore benign explanations; your perspective narrows.
-  - **Identity/tribal pull:** You interpret facts to protect group identity (“us vs. them”) instead of seeking accuracy and [[HUMANITY:FAIRNESS]].
+  - **Identity/tribal pull:** You interpret facts to protect group identity ("us vs. them") instead of seeking accuracy and [[HUMANITY:FAIRNESS]].
   - **Overconfidence from a thin sample:** One bad experience becomes a rule about a whole group, hardening into [[HUMANITY:STEREOTYPES]].
   - **Outdated mental model:** You interpret current realities using a 5–10 year old model (costs, job market, family needs), leading to bad choices.
 - Examples of Using [[HUMANITY:VALUES]]
-  - **[[HUMANITY:PERSPECTIVE]]:** You ask “What else could be true?” and “What would change my mind?” before committing to an interpretation.
+  - **[[HUMANITY:PERSPECTIVE]]:** You ask "What else could be true?" and "What would change my mind?" before committing to an interpretation.
   - **[[HUMANITY:HUMILITY]] + [[HUMANITY:INTEGRITY]]:** You assume you might be wrong, keep claims small, and repair quickly when misinterpretations occur.
   - **[[HUMANITY:THINKING]]:** You treat your first story as a hypothesis; you seek missing context and better evidence, especially online.
   - **[[HUMANITY:INTERDEPENDENCE]]:** You ask a trusted person to sanity-check your interpretation in high-stakes situations.
@@ -464,11 +496,11 @@ TAGS: [[HUMANITY:DECIDE]]
     - **Working model:** your best current interpretation + key uncertainty from [[HUMANITY:ORIENT]].
     - **Decision objective:** the primary [[HUMANITY:NEEDS]] to protect/satisfy now.
     - **Constraints:** time, money, energy, capacity ([[HUMANITY:RESOURCES]]); deadlines; safety limits.
-    - **Options:** 2–5 feasible actions, including a safe “do nothing yet” option.
+    - **Options:** 2–5 feasible actions, including a safe "do nothing yet" option.
     - **Risk and stakes:** safety, health, legal, financial, reputation, relationship impact.
     - **Influences:** [[HUMANITY:MOTIVATORS]] and [[HUMANITY:TEMPTATIONS]] currently active (comfort-seeking, status, fear, anger).
   - **Actions (DO in order):**
-    1. **List options:** Write 2–5 concrete next actions (verbs + objects + timing). Include “pause/clarify” when uncertain.
+    1. **List options:** Write 2–5 concrete next actions (verbs + objects + timing). Include "pause/clarify" when uncertain.
     2. **Check constraints:** Remove options that exceed current resources or violate safety limits.
     3. **Predict consequences (SHOULD):** For each option, note:
        - likely short-term outcome,
@@ -477,11 +509,11 @@ TAGS: [[HUMANITY:DECIDE]]
     4. **Values check (MUST):** Identify which [[HUMANITY:VALUES]] you are prioritizing (e.g., safety, fairness, honesty, compassion, prudence).
     5. **Bias and discrimination check (SHOULD when people are affected):**
        - Check for [[HUMANITY:STEREOTYPES]] / [[HUMANITY:PREJUDICES]].
-       - Ask: “Would I choose the same option if the person were from a different group?”
+       - Ask: "Would I choose the same option if the person were from a different group?"
        - If risk exists, choose a more evidence-based or reversible option.
     6. **Reversibility check (MUST):** Prefer reversible actions under uncertainty; reserve irreversible actions for high confidence or urgent safety needs.
     7. **Verification check (IF feasible):** Verify one key fact that would change the decision (time, amount, policy, symptom severity, intent).
-    8. **Choose one next action:** State it as a commitment: “I will do X by Y.”
+    8. **Choose one next action:** State it as a commitment: "I will do X by Y."
     9. **Set a review trigger:** Define what outcome/time will cause you to re-run OODA (stop/adjust condition).
   - **Outputs (MUST produce at least one):**
     - **Selected next action:** specific, time-bounded, and feasible.
@@ -495,11 +527,11 @@ TAGS: [[HUMANITY:DECIDE]]
 - **Constraints**
   - Decision quality degrades under low [[HUMANITY:RESOURCES]] (fatigue, time pressure) and strong [[HUMANITY:TEMPTATIONS]].
   - Decisions that affect people are vulnerable to [[HUMANITY:STEREOTYPES]] and [[HUMANITY:PREJUDICES]] and can result in [[HUMANITY:DISCRIMINATION]] if unchecked.
-  - You MUST not “opt out” by indefinite delay; if you cannot decide fully, decide on a safe placeholder action and a time to revisit.
+  - You MUST not "opt out" by indefinite delay; if you cannot decide fully, decide on a safe placeholder action and a time to revisit.
 - **Decision Rules (IF/THEN)**
   - **IF** stakes are high (safety, major money, legal risk, relationship rupture), **THEN** slow down: verify, consult a trusted person ([[HUMANITY:INTERDEPENDENCE]]), and prefer reversible steps.
   - **IF** you feel angry, ashamed, panicked, intoxicated, or exhausted, **THEN** delay irreversible decisions and choose a stabilizing action (pause, sleep, step away, draft-not-send).
-  - **IF** you have fewer than two viable options, **THEN** generate at least one more option (including “clarify/ask/check”) before committing.
+  - **IF** you have fewer than two viable options, **THEN** generate at least one more option (including "clarify/ask/check") before committing.
   - **IF** you cannot verify a key fact, **THEN** label uncertainty and choose a conservative or reversible action.
   - **IF** you notice stereotype-based reasoning, **THEN** stop and rebuild the decision from direct evidence and role-relevant criteria.
   - **IF** delay is itself harmful, **THEN** choose the smallest protective action now and schedule the next review.
@@ -521,8 +553,8 @@ TAGS: [[HUMANITY:DECIDE]]
     - **Reduces risks for:** avoidable harm by forcing explicit tradeoffs, reversibility, and reassessment triggers.
     - **Risks reduced by:** [[HUMANITY:PRUDENCE]] (slowing high stakes), [[HUMANITY:INTERDEPENDENCE]] (second perspective), verification, and regulation pauses.
 - Examples of [[HUMANITY:FALLIBILITY]]
-  - **Impulsive “hot” decisions:** You decide while angry/tired (send the harsh text, quit on the spot) and regret it later.
-  - **Decision paralysis:** Too many tradeoffs leads to “I’ll deal with it later,” which becomes a harmful non-decision.
+  - **Impulsive "hot" decisions:** You decide while angry/tired (send the harsh text, quit on the spot) and regret it later.
+  - **Decision paralysis:** Too many tradeoffs leads to "I'll deal with it later," which becomes a harmful non-decision.
   - **Temptation-driven choice:** You choose immediate relief (overspending, doomscrolling, lashing out) over long-term stability.
   - **Narrow perspective under low regulation:** Low [[HUMANITY:TEMPERANCE]] reduces [[HUMANITY:PERSPECTIVE]] and impairs [[HUMANITY:THINKING]].
   - **Overconfidence:** You decide from a thin sample and skip verification, creating preventable errors.
@@ -550,13 +582,13 @@ TAGS: [[HUMANITY:ACT]]
   - **Inputs (MUST define or approximate):**
     - **Selected action:** the committed next step from [[HUMANITY:DECIDE]] (who/what/when).
     - **Resources available:** time, energy, attention, tools, money, access, support ([[HUMANITY:RESOURCES]]; [[HUMANITY:CAPABILITIES]]).
-    - **Success criteria:** what “done” looks like; minimum acceptable outcome.
+    - **Success criteria:** what "done" looks like; minimum acceptable outcome.
     - **Risk controls:** safety constraints; boundaries; escalation thresholds.
     - **Follow-through supports:** reminders, checklists, accountability, environment setup (friction up/down).
   - **Actions (DO in order):**
     1. **Start the action:** take the first physical or communicative step within 60 seconds when feasible.
     2. **Make it concrete:** specify next sub-step (one small unit of work) and begin.
-    3. **Use supports (SHOULD):** apply reminders, checklists, templates, timers, or “default-to-safe” settings.
+    3. **Use supports (SHOULD):** apply reminders, checklists, templates, timers, or "default-to-safe" settings.
     4. **Monitor results (MUST):** observe immediate outcomes and side effects (errors, resistance, new info).
     5. **Adjust (SHOULD):** if results diverge from expectation, make a small correction or pause and re-run [[HUMANITY:OODA]].
     6. **Close the loop (MUST):**
@@ -581,7 +613,7 @@ TAGS: [[HUMANITY:ACT]]
   - **IF** you cannot execute the full action now, **THEN** execute a safe placeholder action (schedule, set reminder, ask for help, exit risk) and set a specific revisit time.
   - **IF** the action is safety-critical, **THEN** prioritize protective steps first (stop, slow, leave, seek help) before optimization.
   - **IF** you notice avoidance/procrastination, **THEN** reduce the action to a 2-minute starter step and begin immediately.
-  - **IF** you are emotionally “hot” (anger, panic, shame), **THEN** delay irreversible communication/actions and use regulation before acting.
+  - **IF** you are emotionally "hot" (anger, panic, shame), **THEN** delay irreversible communication/actions and use regulation before acting.
   - **IF** outcomes diverge from expectation, **THEN** stop escalating and re-run [[HUMANITY:OBSERVE]] → [[HUMANITY:ORIENT]] before continuing.
   - **IF** follow-through repeatedly fails, **THEN** add systems support (checklist, accountability, automation) rather than relying on willpower.
 - **Ontological Relationships**
@@ -597,7 +629,7 @@ TAGS: [[HUMANITY:ACT]]
     - **Affected by:** fatigue, time pressure, environment friction, social constraints, and support availability ([[HUMANITY:RESOURCES]]).
   - **Vulnerable to / Creates Vulnerabilities for**
     - **Vulnerable to:** [[HUMANITY:FALLIBILITY]] (forgetting, errors), [[HUMANITY:TEMPTATIONS]] (avoid discomfort), [[HUMANITY:RESOURCES]] scarcity, and social barriers.
-    - **Creates vulnerabilities for:** harm from unregulated “hot” actions; cascading failure if tasks are not closed or confirmed.
+    - **Creates vulnerabilities for:** harm from unregulated "hot" actions; cascading failure if tasks are not closed or confirmed.
   - **Reduces Risks for / Risks Reduced by**
     - **Reduces risks for:** preventable backlog and compounding consequences by closing loops and confirming completion.
     - **Risks reduced by:** [[HUMANITY:INTEGRITY]] (reliability + repair), [[HUMANITY:REGULATION]] (prevent impulsive harm), [[HUMANITY:PERSISTENCE]] (finish hard things), and [[HUMANITY:INTERDEPENDENCE]] (accountability/support).
