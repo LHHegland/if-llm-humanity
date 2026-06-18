@@ -3,8 +3,8 @@
 ## File Header
 
 - **Name:** Humanity's Observe → Orient → Decide →  Act (OODA) Process — Information-Following Large Language Model Knowledge (*if-llm-humanity-ooda.md*)
-- **Version:** 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com)
-- **Last Reviewed:** 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Last Reviewed:** 2026-06-15 04:56 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
 - **Purpose:** Empower an IF-LLM to help an average U.S. adult understand and apply the OODA loop — a four-step repeating control cycle (Observe → Orient → Decide → Act) — to make better decisions, reduce avoidable harm, and respond more effectively to changing circumstances in everyday life, relationships, work, and safety situations.
@@ -25,13 +25,16 @@
 - **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-values.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
-  - Entry content (Examples, Procedure, Boundaries, Decision Rules, Ontological Relationships, Fallibility examples, Values examples) was comprehensively written in a prior session (2026-06-14). File Header TBDs and Concept Disambiguation are the primary additions in this update.
-  - The Senses entry is positioned as a child of Observe in the namespace (HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES) but could also be read as a supporting resource for Observe rather than a structural step. This positioning is preserved from the original; if reclassification is needed, it should be addressed in a future changelog.
   - The OODA loop as described here is simplified for everyday use. More complex applications (multi-person loops, institutional loops, rapid-cycle crisis response) are out of scope and would require supplemental entries.
   - No entry addresses how to exit the OODA loop when it is cycling unproductively (rumination, analysis paralysis at scale). This is a known gap; [[HUMANITY:REGULATION]] and [[HUMANITY:COPING]] partially address this but without OODA-specific framing.
 
 - **Changelog**
-  - 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com): Replaced all TBD fields in File Header (Purpose, Features, Scope, Use Cases, Known Gaps/Limitations); added Concept Disambiguation section to Index; updated Changelog with this entry. No changes made to entry content (entries were comprehensively structured in the 2026-06-14 session).
+  - 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com): Updated `Index` > `Domain Knowledge Index` to reflect split of `if-llm-humanity-values.md` containing 31 entries into four separate files with roughly 550 lines each as follows:
+    - `if-llm-humanity-values-1.md` contains the 7 entries `Values` through `Open-Mindedness`
+    - `if-llm-humanity-values-2.md` contains the 7 entries  `Perspective` through `Humility`
+    - `if-llm-humanity-values-3.md` contains the 7 entries  `Prudence` through `Humor`
+    - `if-llm-humanity-values-4.md` contains the 10 entries  `Justice` through `Hope`
+  - 2026-06-15 04:56 UTC by [Lance Hegland](lance.hegland@gmail.com): Replaced all TBD fields in File Header (Purpose, Features, Scope, Use Cases, Known Gaps/Limitations); added Concept Disambiguation section to Index; updated Changelog with this entry. No changes made to entry content (entries were comprehensively structured in the 2026-06-14 session).
   - 2026-06-14 07:13 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed for best practices.
   - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
 
@@ -96,7 +99,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
   - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
   - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
-- `if-llm-humanity-values.md`
+- `if-llm-humanity-values-1.md`
   - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
   - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
   - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
@@ -104,6 +107,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
   - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
   - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
+- `if-llm-humanity-values-2.md`
   - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
   - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
   - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
@@ -111,6 +115,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
   - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
   - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
+- `if-llm-humanity-values-3.md`
   - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
   - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
   - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
@@ -118,6 +123,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
   - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
   - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
+- `if-llm-humanity-values-4.md`
   - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
   - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
   - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]

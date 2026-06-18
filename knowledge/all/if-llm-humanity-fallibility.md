@@ -3,8 +3,8 @@
 ## File Header
 
 - **Name:** Humanity's Fallibility — Information-Following Large Language Model Knowledge (*if-llm-humanity-fallibility.md*)
-- **Version:** 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com)
-- **Last Reviewed:** 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Last Reviewed:** 2026-06-15 04:56 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
 - **Purpose:** Empower an IF-LLM to help an average U.S. adult understand why humans make harmful choices, hold biased beliefs, and treat others unfairly — including themselves — and to apply that understanding without judgment to improve sensemaking, decision quality, and interpersonal fairness.
@@ -28,13 +28,17 @@
 - **Known Gaps / Limitations**
   - Temptations list is structured by observable behavioral pattern, not by underlying psychological mechanism; users seeking mechanism-level explanations should also cite [[HUMANITY:REASONING_EXPERTS]] (Behavioral Scientists, Cognitive Psychologists, Decision Scientists).
   - Consequences of Temptations (HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES) is positioned structurally under Fallibility in the heading hierarchy but is logically a sibling of Temptations, not its child. Use [[HUMANITY:CONSEQUENCES_TEMPTATIONS]] for retrieval regardless of heading depth.
-  - Stereotypes, Prejudices, and Discrimination were originally structured as dense narrative entries; structured Examples, Decision Rules, and Ontological Relationships sections are added in this update.
   - Temptation patterns listed are not exhaustive; cultural, contextual, and individual variation is significant and these descriptions are not moral verdicts.
   - This file does not address the spectrum of severity within each temptation or consequence; context and degree matter significantly in real-world applications.
   - No entry currently addresses institutional or structural forms of fallibility separately from individual-level patterns; this is a gap for future consideration.
 
 - **Changelog**
-  - 2026-06-15 UTC by [Lance Hegland](lance.hegland@gmail.com): Replaced all TBD fields in File Header (Purpose, Features, Scope, Use Cases, Known Gaps/Limitations); added Concept Disambiguation section to Index; added Examples, Boundaries/Scope, Decision Rules, and Ontological Relationships to all six entries (Fallibility, Temptations, Consequences of Temptations, Stereotypes, Prejudices, Discrimination); updated Changelog with this entry.
+  - 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com): Updated `Index` > `Domain Knowledge Index` to reflect split of `if-llm-humanity-values.md` containing 31 entries into four separate files with roughly 550 lines each as follows:
+    - `if-llm-humanity-values-1.md` contains the 7 entries `Values` through `Open-Mindedness`
+    - `if-llm-humanity-values-2.md` contains the 7 entries  `Perspective` through `Humility`
+    - `if-llm-humanity-values-3.md` contains the 7 entries  `Prudence` through `Humor`
+    - `if-llm-humanity-values-4.md` contains the 10 entries  `Justice` through `Hope`
+  - 2026-06-15 04:56 UTC by [Lance Hegland](lance.hegland@gmail.com): Replaced all TBD fields in File Header (Purpose, Features, Scope, Use Cases, Known Gaps/Limitations); added Concept Disambiguation section to Index; added Examples, Boundaries/Scope, Decision Rules, and Ontological Relationships to all six entries (Fallibility, Temptations, Consequences of Temptations, Stereotypes, Prejudices, Discrimination); updated Changelog with this entry.
   - 2026-06-14 07:13 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed for best practices.
   - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
 
@@ -99,7 +103,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
   - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
   - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
-- `if-llm-humanity-values.md`
+- `if-llm-humanity-values-1.md`
   - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
   - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
   - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
@@ -107,6 +111,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
   - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
   - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
+- `if-llm-humanity-values-2.md`
   - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
   - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
   - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
@@ -114,6 +119,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
   - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
   - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
+- `if-llm-humanity-values-3.md`
   - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
   - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
   - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
@@ -121,6 +127,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
   - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
   - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
+- `if-llm-humanity-values-4.md`
   - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
   - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
   - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]

@@ -3,7 +3,7 @@
 ## File Header
 
 - **Name:** Humanity — Information-Following Large Language Model Knowledge (*if-llm-humanity.md*)
-- **Version:** 2026-06-13 04:15 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Last Reviewed:** 2026-06-13 02:54 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
@@ -49,6 +49,11 @@
   - Disambiguation guidance for overlapping concepts is provided in the Index; it is not yet embedded within individual supplemental file entries.
 
 - **Changelog**
+  - 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com): Updated `Index` > `Domain Knowledge Index` to reflect split of `if-llm-humanity-values.md` containing 31 entries into four separate files with roughly 550 lines each as follows:
+    - `if-llm-humanity-values-1.md` contains the 7 entries `Values` through `Open-Mindedness`
+    - `if-llm-humanity-values-2.md` contains the 7 entries  `Perspective` through `Humility`
+    - `if-llm-humanity-values-3.md` contains the 7 entries  `Prudence` through `Humor`
+    - `if-llm-humanity-values-4.md` contains the 10 entries  `Justice` through `Hope`
   - 2026-06-13 04:15 UTC by [Lance Hegland](lance.hegland@gmail.com): Improved wording for index instructions.
   - 2026-06-13 07:51 UTC by [Lance Hegland](lance.hegland@gmail.com): Added Dependencies, Stability, Known Gaps/Limitations to File Header; expanded Features (7 items) and Scope (Covers statement); expanded Not Supported (6 items); added Concept Disambiguation section to Index; annotated [[HUMANITY:CONCERNS]] category headings with [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]] and [[HUMANITY:TEMPTATIONS]] construct mappings.
   - 2026-06-13 02:54 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed, fine-tuned, expanded [[HUMANITY:LESSONS]].
@@ -113,7 +118,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
   - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
   - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
-- `if-llm-humanity-values.md`
+- `if-llm-humanity-values-1.md`
   - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
   - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
   - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
@@ -121,6 +126,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
   - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
   - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
+- `if-llm-humanity-values-2.md`
   - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
   - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
   - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
@@ -128,6 +134,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
   - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
   - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
+- `if-llm-humanity-values-3.md`
   - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
   - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
   - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
@@ -135,6 +142,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
   - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
   - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
+- `if-llm-humanity-values-4.md`
   - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
   - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
   - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]

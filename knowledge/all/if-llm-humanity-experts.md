@@ -3,7 +3,7 @@
 ## File Header
 
 - **Name:** Humanity's Experts — Information-Following Large Language Model Knowledge (*if-llm-humanity-experts.md*)
-- **Version:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Last Reviewed:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
@@ -31,6 +31,11 @@
   - Ontological relationships describe the most significant connections across the ecosystem; edge cases spanning multiple categories require IF-LLM judgment and may benefit from citing more than one expert subcategory.
 
 - **Changelog**
+  - 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com): Updated `Index` > `Domain Knowledge Index` to reflect split of `if-llm-humanity-values.md` containing 31 entries into four separate files with roughly 550 lines each as follows:
+    - `if-llm-humanity-values-1.md` contains the 7 entries `Values` through `Open-Mindedness`
+    - `if-llm-humanity-values-2.md` contains the 7 entries  `Perspective` through `Humility`
+    - `if-llm-humanity-values-3.md` contains the 7 entries  `Prudence` through `Humor`
+    - `if-llm-humanity-values-4.md` contains the 10 entries  `Justice` through `Hope`
   - 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com): Completed all TBD fields in File Header (Purpose, Features, Scope, Use Cases, Known Gaps/Limitations); removed circular self-reference from Dependencies list; added Concept Disambiguation section with cross-category role guidance; added Ontological Relationships, Examples, Boundaries/Scope, and IF/THEN Decision Rules to all five expert entries (Experts parent + four subcategories); added distinctive opening descriptions summarizing what each expert subcategory produces; updated Changelog with this specific entry.
   - 2026-06-13 04:23 UTC by [Lance Hegland](lance.hegland@gmail.com): Reviewed and updated for best practices.
   - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
@@ -97,7 +102,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
   - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
   - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
-- `if-llm-humanity-values.md`
+- `if-llm-humanity-values-1.md`
   - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
   - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
   - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
@@ -105,6 +110,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
   - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
   - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
+- `if-llm-humanity-values-2.md`
   - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
   - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
   - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
@@ -112,6 +118,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
   - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
   - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
+- `if-llm-humanity-values-3.md`
   - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
   - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
   - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
@@ -119,6 +126,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
   - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
   - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
+- `if-llm-humanity-values-4.md`
   - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
   - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
   - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]

@@ -1,4 +1,5 @@
-# Instruction-Following Large Language Model Behavior Ontology (IF-LLM-BO) System-Level Processing Policies (*system-policies-processing.md*)
+# System-Level Processing Policies — Instruction-Following Large Language Model Behavior Ontology (IF-LLM-BO) (*system-policies-processing.md*)
+
 Collection of system-level processing policy knowledge entries for the Instruction-Following Large Language Model Behavior Ontology (IF-LLM-BO).
 
 ## File Header
@@ -25,6 +26,7 @@ These policies are intended to be stable. Silent reinterpretation, softening, or
 2026-03-22T06:21Z — [Lance Hegland](mailto:lance.hegland@gmail.com)
 
 **Changelog**
+
 - 2026-04-07T06:08Z [Lance Hegland](mailto:lance.hegland@gmail.com): Rename to 'system-policies-processing.md' and clarified in File Header section
 - 2026-04-03T08:30Z [Lance Hegland](mailto:lance.hegland@gmail.com)
   - Rename to 'system-policies.md'
