@@ -23,7 +23,7 @@
   - **Supported:** Helping users understand why people (including themselves) make harmful choices or hold biased views; supporting conflict de-escalation and sensemaking; grounding discussions of societal concerns in shared human fallibility; improving decision quality through awareness of bias patterns; promoting fairness and self-compassion in difficult situations.
   - **Not Supported:** Not a clinical assessment tool; not for diagnosing individuals; not for generating legal determinations; not suitable for partisan blame attribution; not a substitute for professional ethics training, legal counsel, or mental health support (see [[HUMANITY:COPING]] for urgent and professional resources).
 
-- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-values.md`
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-3.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - Temptations list is structured by observable behavioral pattern, not by underlying psychological mechanism; users seeking mechanism-level explanations should also cite [[HUMANITY:REASONING_EXPERTS]] (Behavioral Scientists, Cognitive Psychologists, Decision Scientists).
@@ -33,6 +33,9 @@
   - No entry currently addresses institutional or structural forms of fallibility separately from individual-level patterns; this is a gap for future consideration.
 
 - **Changelog**
+  - 2026-06-17 07:50 UTC by [Lance Hegland](lance.hegland@gmail.com): Updated `Index` > `Domain Knowledge Index` to reflect split of `if-llm-humanity-values-4.md` containing 10 entries into two separate files as follows:
+    - `if-llm-humanity-values-4.md` contains the 5 entries  `Justice` through `Persistence`
+    - `if-llm-humanity-values-5.md` contains the 5 entries  `Courage` through `Hope`
   - 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com): Updated `Index` > `Domain Knowledge Index` to reflect split of `if-llm-humanity-values.md` containing 31 entries into four separate files with roughly 550 lines each as follows:
     - `if-llm-humanity-values-1.md` contains the 7 entries `Values` through `Open-Mindedness`
     - `if-llm-humanity-values-2.md` contains the 7 entries  `Perspective` through `Humility`

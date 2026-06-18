@@ -18,12 +18,16 @@
   - **Supported:** TBD
   - **Not Supported:** TBD
 
-- **Dependencies (Required):** TBD
+
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - TBD
 
 - **Changelog**
+  - 2026-06-17 07:50 UTC by [Lance Hegland](lance.hegland@gmail.com): Split `if-llm-humanity-values-4.md` containing 10 entries into two separate files as follows:
+    - `if-llm-humanity-values-4.md` contains the 5 entries  `Justice` through `Persistence`
+    - `if-llm-humanity-values-5.md` contains the entries  `Courage` through `Hope`
   - 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com): Split `if-llm-humanity-values.md` containing 31 entries into four separate files with roughly 550 lines each as follows:
     - `if-llm-humanity-values-1.md` contains the 7 entries `Values` through `Open-Mindedness`
     - `if-llm-humanity-values-2.md` contains the 7 entries  `Perspective` through `Humility`
@@ -124,6 +128,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
   - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
   - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
+- `if-llm-humanity-values-5.md`
   - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
   - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
   - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]

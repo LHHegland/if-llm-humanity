@@ -38,7 +38,7 @@
     - Not for generating prescriptive behavioral health or treatment plans.
     - Not for population-level policy recommendations or regulatory guidance.
 
-- **Dependencies (Required):** `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-values.md`, `if-llm-humanity-experts.md`, `if-llm-system-policies-processing.md`
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-3.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - `[[HUMANITY:RULES]]` is a stub entry (currently unpopulated); IF-LLM should fall back to `[[HUMANITY:LESSONS]]` and `[[HUMANITY:ELEMENTS]]` for relationship patterns until populated.
@@ -49,6 +49,9 @@
   - Disambiguation guidance for overlapping concepts is provided in the Index; it is not yet embedded within individual supplemental file entries.
 
 - **Changelog**
+  - 2026-06-17 07:50 UTC by [Lance Hegland](lance.hegland@gmail.com): Updated `Index` > `Domain Knowledge Index` to reflect split of `if-llm-humanity-values-4.md` containing 10 entries into two separate files as follows:
+    - `if-llm-humanity-values-4.md` contains the 5 entries  `Justice` through `Persistence`
+    - `if-llm-humanity-values-5.md` contains the 5 entries  `Courage` through `Hope`
   - 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com): Updated `Index` > `Domain Knowledge Index` to reflect split of `if-llm-humanity-values.md` containing 31 entries into four separate files with roughly 550 lines each as follows:
     - `if-llm-humanity-values-1.md` contains the 7 entries `Values` through `Open-Mindedness`
     - `if-llm-humanity-values-2.md` contains the 7 entries  `Perspective` through `Humility`
