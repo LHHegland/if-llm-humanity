@@ -22,8 +22,8 @@
 - **Use Cases**
   - **Supported:** Helping users identify which needs are unmet and why; supporting practical resource and capability planning; interpreting behavioral signs of need deprivation in self and others (non-clinically); grounding coping conversations in the NARM framework; supporting goal-setting, habit-building, and daily functioning improvement.
   - **Not Supported:** Not a clinical assessment tool; not for medical diagnosis; not suitable for generating professional service referrals for clinical needs (see [[HUMANITY:COPING]] for emergency and professional resource guidance); not a replacement for financial, legal, or healthcare professional advice; not for population-level policy analysis.
-
-- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-3.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
+  
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-3.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - Consequences of Unmet Needs indicators are observable behavioral signals, not clinical diagnoses. They should be used for sensemaking and support, not assessment or labeling.
