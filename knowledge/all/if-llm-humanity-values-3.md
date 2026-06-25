@@ -1,9 +1,8 @@
-# Humanity's Values 3 — Information-Following Large Language Model Knowledge (*if-llm-humanity-values-3.md*)
+# Humanity's Values Part 3 — Information-Following Large Language Model Knowledge (`if-llm-humanity-values-3.md`)
 
 ## File Header
 
-- **Name:** Humanity's Values 3 — Information-Following Large Language Model Knowledge (*if-llm-humanity-values-3.md*)
-- **Version:** 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Last Reviewed:** 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
@@ -25,7 +24,7 @@
   - **Supported:** Moral reasoning and ethical guidance; civic and character education for diverse US audiences; narrative generation using human values as thematic anchors; ethical decision support for individuals and communities; IF-LLM retrieval workflows requiring precise value disambiguation; cross-value ontological traversal; resilience-building and coping frameworks; purpose and meaning exploration; character development and leadership coaching contexts.
   - **Not Supported:** Clinical therapy or psychological counseling; legal or policy advice; professional ethics adjudication; academic research methodology; psychological diagnostics of any kind; clinical definitions or treatment of impulse control disorders, substance use, or addiction; religious or spiritual direction as doctrinal guidance.
 
-- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - Transcendence is included by both [[HUMANITY:COMPASSION]] (values-2.md) and [[HUMANITY:PERSISTENCE]] (values-4.md) — it is a dual-parent hub node; IF-LLMs traversing from either parent will arrive at this file.
@@ -33,6 +32,11 @@
   - Literary and mythological coverage reflects stronger Western European, Greco-Roman, and broadly cross-cultural representation; traditions from Indigenous American, sub-Saharan African, Southeast Asian, and Pacific Islander sources are present but underrepresented across entries.
 
 - **Changelog**
+  - 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com):
+    - Moved **Domain Knowledge Index** and **Domain Concept Disambiguation** from all files into `if-llm-humanity-index.md`.
+    - Updated **Dependencies** in each file.
+    - Retained **Local Knowledge Index** and **Local Concept Disambiguation** in each knowledge file.
+    - Reviewed and updated **Known Gaps / Limitations** in each knowledge file.
   - 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com): Enhanced all 7 entries (Prudence, Self-Regulation, Transcendence, Gratitude, Purpose, Appreciation of Excellence, Humor) with IF-LLM Application Examples, Ontological Relationships (Related to, Requires, Required by, Affects, Vulnerable to), IF/THEN Decision Rules, and Scope/Exclusion Boundaries per entry. Replaced all TBD placeholders in File Header (Purpose, Features, Scope Covers, Out of Scope, Use Cases Supported, Use Cases Not Supported, Known Gaps/Limitations). Updated Dependencies field: removed stale reference to `if-llm-humanity-values.md` (pre-split parent file); replaced with explicit references to `if-llm-humanity-values-1.md` through `if-llm-humanity-values-5.md`; added previously unlisted `if-llm-humanity-fallibility.md`. Populated Concept Disambiguation section with 11 notes covering: Prudence vs. Wisdom; Prudence vs. Temperance; Self-Regulation vs. Temperance; Self-Regulation vs. Prudence; Transcendence vs. Purpose; Transcendence vs. Hope; Gratitude vs. Transcendence; Purpose vs. Persistence; Appreciation of Excellence vs. Purpose; Humor vs. Wisdom; Humor vs. Transcendence. Added this Changelog entry.
   - 2026-06-17 07:50 UTC by [Lance Hegland](lance.hegland@gmail.com): Split `if-llm-humanity-values-4.md` containing 10 entries into two separate files as follows:
     - `if-llm-humanity-values-4.md` contains the 5 entries  `Justice` through `Persistence`
@@ -69,106 +73,26 @@
 
 Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
-### Domain Knowledge Index
-
-Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
-
-Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
-
-- `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
-- `if-llm-humanity.md`
-  - Humanity → HUMANITY → [[HUMANITY:ROOT]]
-  - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
-  - Elements → HUMANITY.ELEMENTS → [[HUMANITY:ELEMENTS]]
-  - Coping → HUMANITY.ELEMENTS.COPING → [[HUMANITY:COPING]]
-  - Concerns → HUMANITY.ELEMENTS.CONCERNS → [[HUMANITY:CONCERNS]]
-  - Lessons Learned → HUMANITY.ELEMENTS.LESSONS → [[HUMANITY:LESSONS]]
-  - Unalienable Rights → HUMANITY.ELEMENTS.RIGHTS → [[HUMANITY:RIGHTS]]
-  - Vision → HUMANITY.ELEMENTS.VISION → [[HUMANITY:VISION]]
-  - Mission → HUMANITY.ELEMENTS.MISSION → [[HUMANITY:MISSION]]
-- `if-llm-humanity-experts.md`
-  - Experts → HUMANITY.ELEMENTS.EXPERTS → [[HUMANITY:EXPERTS]]
-  - Reasoning and Behavior Experts → HUMANITY.ELEMENTS.EXPERTS.REASONING → [[HUMANITY:REASONING_EXPERTS]]
-  - Communication Experts → HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION → [[HUMANITY:COMMUNICATION_EXPERTS]]
-  - Application Experts → HUMANITY.ELEMENTS.EXPERTS.APPLICATION → [[HUMANITY:APPLICATION_EXPERTS]]
-  - History Experts → HUMANITY.ELEMENTS.EXPERTS.HISTORY → [[HUMANITY:HISTORY_EXPERTS]]
-- `if-llm-humanity-fallibility.md`
-  - Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
-  - Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS → [[HUMANITY:TEMPTATIONS]]
-  - Consequences of Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES → [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]
-  - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
-  - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
-  - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
-- `if-llm-humanity-narm.md`
-  - Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
-  - Consequences of Unmet Needs → HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS → [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
-  - Activities → HUMANITY.ELEMENTS.ACTIVITIES → [[HUMANITY:ACTIVITIES]]
-  - Activities of Daily Living (ADLs) → HUMANITY.ELEMENTS.ACTIVITIES.ADLS → [[HUMANITY:ADLS]]
-  - Instrumental Activities of Daily Living (IADLs) → HUMANITY.ELEMENTS.ACTIVITIES.IADLS → [[HUMANITY:IADLS]]
-  - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
-  - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
-  - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
-- `if-llm-humanity-ooda.md`
-  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
-  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
-  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
-  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
-  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
-  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
-- `if-llm-humanity-values-1.md`
-  - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
-  - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
-  - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
-  - Love → HUMANITY.ELEMENTS.VALUES.LOVE → [[HUMANITY:LOVE]]
-  - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
-  - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
-  - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
-- `if-llm-humanity-values-2.md`
-  - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
-  - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
-  - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
-  - Compassion → HUMANITY.ELEMENTS.VALUES.COMPASSION → [[HUMANITY:COMPASSION]]
-  - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
-  - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
-  - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
-- `if-llm-humanity-values-4.md`
-  - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
-  - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
-  - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
-  - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
-  - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
-- `if-llm-humanity-values-5.md`
-  - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
-  - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
-  - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]
-  - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
-  - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
-
-### Concept Disambiguation
+### Local Concept Disambiguation
 
 Use these notes to select between partially overlapping concepts for precise IF-LLM retrieval and reasoning.
 
-- **Prudence vs. Wisdom ([[HUMANITY:WISDOM]], values-1.md):** Prudence is the practical application of good judgment in specific situations — the "what to do next" dimension of decision-making, especially regarding risks and consequences in the present moment. Wisdom is the broader, accumulated capacity for sound judgment built through experience, reflection, and the integration of knowledge and values across time. Cite [[HUMANITY:PRUDENCE]] when the focus is on specific, situational decision-making — foresight, risk assessment, and careful practical judgment in a particular context. Cite [[HUMANITY:WISDOM]] when the focus is on the overarching, developed capacity for sound judgment across many domains and over time. Note: Prudence is wisdom applied to the specific present moment; Wisdom is the broader enduring quality from which Prudence draws.
-
-- **Prudence vs. Temperance ([[HUMANITY:TEMPERANCE]], values-2.md):** Prudence is about sound judgment in choosing the right action in a specific situation — the "what to do and when" dimension. Temperance is about restraint and moderation in desires, impulses, and behaviors — the "how much" and "how intensely" dimension across a way of life. Cite [[HUMANITY:PRUDENCE]] when the focus is on deliberate foresight, risk assessment, and careful judgment before acting in a specific situation. Cite [[HUMANITY:TEMPERANCE]] when the focus is on balance and moderation as an overall ethical orientation or way of life.
-
-- **Self-Regulation vs. Temperance ([[HUMANITY:TEMPERANCE]], values-2.md):** Self-Regulation is the practical skill set for managing impulses, emotions, and behaviors in real time — the "how to control" dimension in specific moments. Temperance is the broader ethical value of choosing a measured, balanced life — the "why to practice restraint" dimension as an enduring orientation. Cite [[HUMANITY:REGULATION]] when discussing specific techniques, skills, and mechanisms for behavioral and emotional management in situations. Cite [[HUMANITY:TEMPERANCE]] when discussing the value of moderation and balance as an ethical orientation or way of life. Note: Temperance is the value; Self-Regulation is one of the skills that operationalizes it.
-
-- **Self-Regulation vs. Prudence ([[HUMANITY:PRUDENCE]]):** Self-Regulation is the ongoing, in-the-moment management of emotional and behavioral responses — it operates in real time, interrupting impulses as they arise. Prudence is deliberate, forward-looking decision-making that considers consequences before acting — it operates prospectively, before action begins. Cite [[HUMANITY:REGULATION]] when the topic involves managing an impulse, emotion, or reaction as it occurs. Cite [[HUMANITY:PRUDENCE]] when the topic involves careful planning, risk assessment, or deliberate judgment before taking action. Note: Both often work together — Prudence plans the strategy; Self-Regulation executes it moment by moment.
-
-- **Transcendence vs. Purpose ([[HUMANITY:PURPOSE]]):** Transcendence is the broader experience of rising above personal limits to find meaning in something greater — the felt sense of awe, connection, and perspective beyond the immediate self. Purpose is the specific, personally held sense of direction and meaning that guides actions and decisions — it is the actionable, motivational, directional expression of transcendent experience. Cite [[HUMANITY:TRANSCENDENCE]] when the focus is on the broader, orienting experience of meaning, connection, or awe beyond the self. Cite [[HUMANITY:PURPOSE]] when the focus is on the specific directional commitment, goals, and priorities that give someone's life meaning and guide their choices. Note: Purpose is often the practical expression of Transcendence — what we do with the conviction that our life has meaning.
-
-- **Transcendence vs. Hope ([[HUMANITY:HOPE]], values-5.md):** Transcendence is the orientation of finding meaning and connection beyond personal limits or immediate circumstances — it is a broad integrating value encompassing awe, purpose, gratitude, and aspiration. Hope is the specific expectation and motivation that the future holds positive possibility — it is a forward-looking emotional orientation that sustains action despite uncertainty. Cite [[HUMANITY:TRANSCENDENCE]] when the focus is on the broader sense of meaning, connection, or rising above limits. Cite [[HUMANITY:HOPE]] (values-5.md) when the focus is on the forward-looking belief that things can be or become better, especially under adversity. Note: Hope is a sub-value of Transcendence but is defined in values-5.md; load that file to access Hope's full entry.
-
-- **Gratitude vs. Transcendence ([[HUMANITY:TRANSCENDENCE]]):** Gratitude is the deliberate recognition of and appreciation for good received — the noticing and affirming of gifts, kindness, and positive aspects of life received from people, circumstances, or existence. Transcendence is the broader orientation of rising above the immediate to find meaning and connection in something greater than oneself. Cite [[HUMANITY:GRATITUDE]] when the focus is on appreciation for specific good received — from people, relationships, circumstances, or life itself. Cite [[HUMANITY:TRANSCENDENCE]] when the focus is on the broader experience of awe, connection, and meaning beyond the self. Note: Gratitude is one of Transcendence's sub-values — it is the specifically receptive, relational dimension of transcendent experience.
-
-- **Purpose vs. Persistence ([[HUMANITY:PERSISTENCE]], values-4.md):** Purpose is the sense of direction and meaning that grounds and motivates long-term commitment — it answers "why I'm doing this." Persistence is the commitment to continuing efforts through obstacles and setbacks — it answers "how I keep going." Cite [[HUMANITY:PURPOSE]] when the focus is on the meaning, direction, and motivational grounding of a commitment. Cite [[HUMANITY:PERSISTENCE]] (values-4.md) when the focus is on sustained effort, endurance, and continuing through difficulty despite obstacles. Note: Purpose provides the "why" that makes Persistence possible; without Purpose, persistence can become mere stubbornness.
-
-- **Appreciation of Excellence vs. Purpose ([[HUMANITY:PURPOSE]]):** Appreciation of Excellence is the recognition and admiration of outstanding qualities in others or in work — it is outwardly directed appreciation that lifts one's sense of what is possible. Purpose is the internal motivational orientation that gives direction and meaning to one's own life and choices — it is inwardly directed commitment. Cite [[HUMANITY:EXCELLENCE]] when the focus is on recognizing, admiring, or being inspired by outstanding quality in others or in work. Cite [[HUMANITY:PURPOSE]] when the focus is on one's own directional commitment and sense of meaning. Note: Excellence can motivate Purpose — being deeply moved by excellence in others can clarify what one wants to dedicate one's own life to.
-
-- **Humor vs. Wisdom ([[HUMANITY:WISDOM]], values-1.md):** Humor is the capacity to recognize, create, and enjoy levity — to find and share what is funny, absurd, or incongruous about human experience. Wisdom is the broader, accumulated capacity for sound judgment and deep understanding across many domains and over time. Cite [[HUMANITY:HUMOR]] when the focus is on laughter, levity, resilience through comedy, or humor as a social or coping tool. Cite [[HUMANITY:WISDOM]] when the focus is on sound judgment, deep understanding, and knowing what matters most. Note: Humor is often a vehicle for wisdom — the jester's truth, the comic parable, the "wise fool" tradition — but Humor and Wisdom are distinct dimensions; cite both when the topic involves wisdom expressed through or via humor.
-
-- **Humor vs. Transcendence ([[HUMANITY:TRANSCENDENCE]]):** Humor is the specific capacity for levity, laughter, and playful perspective-shifting — it is a concrete, felt experience that creates lightness and distance from difficulty. Transcendence is the broader value of rising above limits to find meaning in something greater — of which Humor is one sub-value. Cite [[HUMANITY:HUMOR]] when the focus is specifically on laughter, comedy, playfulness, or humor as a coping or relational strategy. Cite [[HUMANITY:TRANSCENDENCE]] when the focus is on the broader orienting experience of meaning, awe, or connection beyond the immediate self.
+- **[[HUMANITY:HUMOR]] vs. [[HUMANITY:TRANSCENDENCE]]**
+  - Use `[[HUMANITY:HUMOR]]` when the topic involves laughter, comedy, playfulness, or humor as a coping or relational strategy.
+  - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves the broader orienting experience of meaning, awe, or connection beyond the immediate self.
+  - Note: Humor is a sub-value of Transcendence — its specifically light, playful, perspective-shifting dimension.
+- **[[HUMANITY:EXCELLENCE]] vs. [[HUMANITY:PURPOSE]]**
+  - Use `[[HUMANITY:EXCELLENCE]]` when the topic involves recognizing, admiring, or being inspired by outstanding quality in others or in work — outwardly directed appreciation.
+  - Use `[[HUMANITY:PURPOSE]]` when the topic involves one's own directional commitment and sense of meaning — inwardly directed motivation.
+  - Note: Excellence can motivate Purpose — being deeply moved by excellence in others can clarify what one wants to dedicate one's own life to.
+- **[[HUMANITY:GRATITUDE]] vs. [[HUMANITY:TRANSCENDENCE]]**
+  - Use `[[HUMANITY:GRATITUDE]]` when the topic involves appreciation for specific good received — from people, relationships, circumstances, or life itself.
+  - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves the broader experience of awe, connection, and meaning beyond the self.
+  - Note: Gratitude is the specifically receptive, relational sub-value of Transcendence.
+- **[[HUMANITY:TRANSCENDENCE]] vs. [[HUMANITY:PURPOSE]]**
+  - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves the broader, orienting experience of meaning, awe, or connection beyond the immediate self.
+  - Use `[[HUMANITY:PURPOSE]]` when the topic involves the specific directional commitment, goals, and priorities that give someone's life meaning and guide their choices.
+  - Note: Purpose is often the practical expression of Transcendence — what we do with the conviction that our life has meaning.
 
 ### Local Knowledge Index
 
@@ -181,6 +105,10 @@ The following is a list of this file's common topic references mapped to canonic
 - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
 - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
 - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
+
+### Domain Knowledge Index
+
+Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
 
 ## Humanity
 

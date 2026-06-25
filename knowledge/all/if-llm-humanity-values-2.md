@@ -1,9 +1,8 @@
-# Humanity's Values 2 — Information-Following Large Language Model Knowledge (*if-llm-humanity-values-2.md*)
+# Humanity's Values Part 2 — Information-Following Large Language Model Knowledge (`if-llm-humanity-values-2.md`)
 
 ## File Header
 
-- **Name:** Humanity's Values 2 — Information-Following Large Language Model Knowledge (*if-llm-humanity-values-2.md*)
-- **Version:** 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Last Reviewed:** 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
@@ -25,7 +24,7 @@
   - **Supported:** Moral reasoning and ethical guidance; civic and character education for diverse US audiences; narrative generation using human values as thematic anchors; ethical decision support for individuals and communities; IF-LLM retrieval workflows requiring precise value disambiguation; cross-value ontological traversal; compassion-informed need assessment; character development and leadership coaching contexts.
   - **Not Supported:** Clinical therapy or psychological counseling; legal or policy advice; professional ethics adjudication; academic research methodology; psychological diagnostics of any kind; clinical definitions or treatment of impulse control, self-regulation disorders, or substance use.
 
-- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-3.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - Ontological relationships reference entries in sibling files (values-1.md, values-3.md, values-4.md) that must be co-loaded for full graph traversal; IF-LLMs operating on this file alone will have incomplete relational context.
@@ -33,6 +32,11 @@
   - Literary and mythological coverage reflects stronger Western European, Greco-Roman, and broadly cross-cultural representation; traditions from Indigenous American, sub-Saharan African, Southeast Asian, and Pacific Islander sources are present but underrepresented across entries.
 
 - **Changelog**
+  - 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com):
+    - Moved **Domain Knowledge Index** and **Domain Concept Disambiguation** from all files into `if-llm-humanity-index.md`.
+    - Updated **Dependencies** in each file.
+    - Retained **Local Knowledge Index** and **Local Concept Disambiguation** in each knowledge file.
+    - Reviewed and updated **Known Gaps / Limitations** in each knowledge file.
   - 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com): Enhanced all 7 entries (Perspective, Love of Learning, Creativity, Compassion, Temperance, Mercy, Humility) with IF-LLM Application Examples, Ontological Relationships (Related to, Requires, Required by, Affects, Vulnerable to), IF/THEN Decision Rules, and Scope/Exclusion Boundaries per entry. Replaced all TBD placeholders in File Header (Purpose, Features, Scope Covers, Out of Scope, Use Cases Supported, Use Cases Not Supported, Dependencies). Added Known Gaps/Limitations to File Header. Populated Concept Disambiguation section with 13 notes covering: Perspective vs. Open-Mindedness; Perspective vs. Humility; Love of Learning vs. Curiosity; Creativity vs. Critical Thinking; Creativity vs. Love of Learning; Compassion vs. Love; Compassion vs. Mercy; Temperance vs. Self-Regulation; Temperance vs. Prudence; Temperance vs. Humility; Mercy vs. Fairness; Mercy vs. Compassion; Humility vs. Open-Mindedness. Added this Changelog entry.
   - 2026-06-17 07:50 UTC by [Lance Hegland](lance.hegland@gmail.com): Split `if-llm-humanity-values-4.md` containing 10 entries into two separate files as follows:
     - `if-llm-humanity-values-4.md` contains the 5 entries  `Justice` through `Persistence`
@@ -68,108 +72,27 @@
 
 Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
-### Domain Knowledge Index
-
-Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
-
-Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
-
-- `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
-- `if-llm-humanity.md`
-  - Humanity → HUMANITY → [[HUMANITY:ROOT]]
-  - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
-  - Elements → HUMANITY.ELEMENTS → [[HUMANITY:ELEMENTS]]
-  - Coping → HUMANITY.ELEMENTS.COPING → [[HUMANITY:COPING]]
-  - Concerns → HUMANITY.ELEMENTS.CONCERNS → [[HUMANITY:CONCERNS]]
-  - Lessons Learned → HUMANITY.ELEMENTS.LESSONS → [[HUMANITY:LESSONS]]
-  - Unalienable Rights → HUMANITY.ELEMENTS.RIGHTS → [[HUMANITY:RIGHTS]]
-  - Vision → HUMANITY.ELEMENTS.VISION → [[HUMANITY:VISION]]
-  - Mission → HUMANITY.ELEMENTS.MISSION → [[HUMANITY:MISSION]]
-- `if-llm-humanity-experts.md`
-  - Experts → HUMANITY.ELEMENTS.EXPERTS → [[HUMANITY:EXPERTS]]
-  - Reasoning and Behavior Experts → HUMANITY.ELEMENTS.EXPERTS.REASONING → [[HUMANITY:REASONING_EXPERTS]]
-  - Communication Experts → HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION → [[HUMANITY:COMMUNICATION_EXPERTS]]
-  - Application Experts → HUMANITY.ELEMENTS.EXPERTS.APPLICATION → [[HUMANITY:APPLICATION_EXPERTS]]
-  - History Experts → HUMANITY.ELEMENTS.EXPERTS.HISTORY → [[HUMANITY:HISTORY_EXPERTS]]
-- `if-llm-humanity-fallibility.md`
-  - Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
-  - Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS → [[HUMANITY:TEMPTATIONS]]
-  - Consequences of Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES → [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]
-  - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
-  - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
-  - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
-- `if-llm-humanity-narm.md`
-  - Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
-  - Consequences of Unmet Needs → HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS → [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
-  - Activities → HUMANITY.ELEMENTS.ACTIVITIES → [[HUMANITY:ACTIVITIES]]
-  - Activities of Daily Living (ADLs) → HUMANITY.ELEMENTS.ACTIVITIES.ADLS → [[HUMANITY:ADLS]]
-  - Instrumental Activities of Daily Living (IADLs) → HUMANITY.ELEMENTS.ACTIVITIES.IADLS → [[HUMANITY:IADLS]]
-  - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
-  - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
-  - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
-- `if-llm-humanity-ooda.md`
-  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
-  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
-  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
-  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
-  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
-  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
-- `if-llm-humanity-values-1.md`
-  - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
-  - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
-  - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
-  - Love → HUMANITY.ELEMENTS.VALUES.LOVE → [[HUMANITY:LOVE]]
-  - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
-  - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
-  - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
-- `if-llm-humanity-values-3.md`
-  - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
-  - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
-  - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
-  - Gratitude → HUMANITY.ELEMENTS.VALUES.GRATITUDE → [[HUMANITY:GRATITUDE]]
-  - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
-  - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
-  - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
-- `if-llm-humanity-values-4.md`
-  - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
-  - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
-  - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
-  - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
-  - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
-- `if-llm-humanity-values-5.md`
-  - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
-  - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
-  - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]
-  - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
-  - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
-
-### Concept Disambiguation
+### Local Concept Disambiguation
 
 Use these notes to select between partially overlapping concepts for precise IF-LLM retrieval and reasoning.
+Here are the rewritten entries:
 
-- **Perspective vs. Open-Mindedness ([[HUMANITY:OPENNESS]], values-1.md):** Perspective is the active cognitive capacity to see a situation from another person's standpoint or to integrate multiple angles of understanding — perspective-taking as a deliberate, empathic skill. Open-Mindedness is the dispositional receptivity to new or unfamiliar ideas without premature closure or judgment. Cite [[HUMANITY:PERSPECTIVE]] when the focus is on actively adopting or understanding another's viewpoint. Cite [[HUMANITY:OPENNESS]] when the focus is on reducing resistance to new, different, or challenging information. Note: Perspective and Open-Mindedness naturally co-occur — genuine perspective-taking typically requires Open-Mindedness as its prerequisite disposition.
-
-- **Perspective vs. Humility ([[HUMANITY:HUMILITY]]):** Perspective is a cognitive skill — the capacity to see situations from other angles or through others' experiences. Humility is an affective and dispositional quality — accurate self-assessment, recognition of one's limitations, and freedom from arrogance. Cite [[HUMANITY:PERSPECTIVE]] when the task involves viewpoint-shifting, multi-angle understanding, or empathic comprehension of another's experience. Cite [[HUMANITY:HUMILITY]] when the task involves self-knowledge, acknowledging one's own limitations, or resisting the pull of ego and superiority. Note: Humility enables more genuine Perspective-taking; the two often co-occur but address different dimensions of the person.
-
-- **Love of Learning vs. Curiosity ([[HUMANITY:CURIOSITY]], values-1.md):** Love of Learning is the sustained, intrinsic motivation to acquire knowledge and deepen understanding — an ongoing, practiced orientation toward intellectual growth and mastery. Curiosity is the motivational impulse that initiates and sustains inquiry — the "spark" of wondering and wanting to know. Cite [[HUMANITY:LEARNING]] when describing the ongoing, committed relationship with knowledge acquisition over time (lifelong learning, mastery, intellectual growth). Cite [[HUMANITY:CURIOSITY]] when describing the initial impulse, wonder, or appetite that opens and sustains a line of inquiry. Note: Curiosity is the engine; Love of Learning is the journey it sustains.
-
-- **Creativity vs. Critical Thinking ([[HUMANITY:THINKING]], values-1.md):** Creativity generates new ideas, approaches, and expressions by thinking beyond conventional patterns — it is primarily generative. Critical Thinking evaluates and tests existing claims and ideas for rigor, validity, and sound reasoning — it is primarily evaluative. Cite [[HUMANITY:CREATIVITY]] when the task involves generating, imagining, inventing, or synthesizing something new. Cite [[HUMANITY:THINKING]] when the task involves questioning, testing, evaluating, or applying disciplined reasoning to existing information. Note: Strong creative work typically requires Critical Thinking for evaluation and refinement; the two are complementary, not competing.
-
-- **Creativity vs. Love of Learning ([[HUMANITY:LEARNING]]):** Creativity is about generating something new — combining, reimagining, or expressing in ways that go beyond existing knowledge. Love of Learning is about deepening and expanding one's understanding of existing knowledge through sustained engagement. Cite [[HUMANITY:CREATIVITY]] when the focus is on novelty, invention, expression, or problem-solving through imagination. Cite [[HUMANITY:LEARNING]] when the focus is on acquiring, integrating, and growing from existing knowledge and understanding. Note: Love of Learning enriches Creativity by building the repertoire from which creative connections are drawn.
-
-- **Compassion vs. Love ([[HUMANITY:LOVE]], values-1.md):** Compassion is specifically activated by suffering — recognizing pain, distress, or vulnerability in another and being moved to act to alleviate it. Love is the broader, enduring orientation of care and commitment that encompasses all forms of relationship, connection, and community. Cite [[HUMANITY:COMPASSION]] when the topic involves a specific response to suffering, pain, or identified vulnerability. Cite [[HUMANITY:LOVE]] when the topic involves the broader generative force of care, attachment, and commitment to others. Note: Compassion is love activated by suffering; Love is the broader ground from which compassion grows.
-
-- **Compassion vs. Mercy ([[HUMANITY:MERCY]]):** Compassion is the recognition of suffering combined with the motivation to alleviate it — it is a response to pain and need. Mercy is the deliberate choice to withhold deserved punishment, judgment, or severity in favor of forgiveness and grace — it is a response to wrongdoing or debt. Cite [[HUMANITY:COMPASSION]] when the focus is on suffering and the desire to help or relieve it. Cite [[HUMANITY:MERCY]] when the focus is on forgiveness, clemency, or the restraint of punishment. Note: One may show Compassion without Mercy (helping someone who is suffering without forgiving a wrong they committed) and Mercy without Compassion (forgiving a wrong without fully understanding or empathizing with the person's suffering).
-
-- **Temperance vs. Self-Regulation ([[HUMANITY:REGULATION]], values-3.md):** Temperance is the broader value and virtue of moderation, balance, and restraint — the ethical orientation of choosing a measured, balanced life as a way of being. Self-Regulation is the specific, practical capacity to manage one's impulses, emotions, and behaviors in service of chosen goals — the behavioral and cognitive skill set that enacts temperance. Cite [[HUMANITY:TEMPERANCE]] when discussing moderation and balance as an ethical value or way of life. Cite [[HUMANITY:REGULATION]] when discussing the practical techniques, skills, or mechanisms of managing one's own impulses and behaviors in specific situations. Note: Temperance is the value; Self-Regulation is one of the skills that operationalizes it.
-
-- **Temperance vs. Prudence ([[HUMANITY:PRUDENCE]], values-3.md):** Temperance is about restraint and moderation in desires, impulses, and behaviors — the "how much" and "how intensely" of living. Prudence is about sound judgment in choosing the right action in a specific situation — the "what to do" and "how to decide" dimension of practical wisdom. Cite [[HUMANITY:TEMPERANCE]] when the focus is on balance, moderation, and avoiding excess across behaviors and emotions. Cite [[HUMANITY:PRUDENCE]] when the focus is on wise judgment, foresight, and practical decision-making in specific circumstances.
-
-- **Temperance vs. Humility ([[HUMANITY:HUMILITY]]):** Temperance is broadly about moderation and balance in all desires, impulses, and behaviors — it is a wide-scope virtue covering excess in any domain. Humility is specifically about accurate self-assessment — resisting arrogance and remaining open to correction and learning. Humility is a sub-value of Temperance in the VALUES hierarchy, but they have distinct emphases. Cite [[HUMANITY:TEMPERANCE]] when the focus is on restraint, moderation, and balance broadly across behaviors and desires. Cite [[HUMANITY:HUMILITY]] when the focus is on ego, self-knowledge, recognizing one's limits, or receptivity to correction.
-
-- **Mercy vs. Fairness ([[HUMANITY:FAIRNESS]], values-4.md):** Mercy is the deliberate choice to show clemency, forgiveness, or grace beyond what strict rules would require — it may deliberately depart from equal treatment in favor of compassion. Fairness is the commitment to applying rules, opportunities, and consequences impartially and consistently without favoritism or discrimination. Cite [[HUMANITY:MERCY]] when the focus is on forgiveness, release, or the compassionate departure from strict consequence. Cite [[HUMANITY:FAIRNESS]] when the focus is on impartial treatment, equal application of rules, or preventing discrimination. Note: Mercy and Fairness can be in tension — an act of mercy is, by definition, not strictly "fair" in the sense of equal treatment; the resolution lies in [[HUMANITY:WISDOM]].
-
-- **Humility vs. Open-Mindedness ([[HUMANITY:OPENNESS]], values-1.md):** Humility is about accurate self-assessment — recognizing one's limitations, fallibility, and dependence on others, and resisting arrogance or superiority. Open-Mindedness is about receptivity to new information, ideas, or perspectives without premature closure. Cite [[HUMANITY:HUMILITY]] when the focus is on the internal orientation of the self — ego, self-knowledge, or acknowledging one's limits. Cite [[HUMANITY:OPENNESS]] when the focus is on how one receives external information, ideas, or challenges to existing beliefs. Note: Humility enables Open-Mindedness — it is hard to be genuinely receptive to new ideas if ego or status-protection closes the door.
+- **[[HUMANITY:COMPASSION]] vs. [[HUMANITY:MERCY]]**
+  - Use `[[HUMANITY:COMPASSION]]` when the topic involves recognizing suffering and the motivation to relieve or alleviate it.
+  - Use `[[HUMANITY:MERCY]]` when the topic involves forgiveness, clemency, or the deliberate restraint of deserved punishment or judgment.
+  - Note: One may show Compassion without Mercy and Mercy without Compassion — Compassion responds to suffering; Mercy responds to wrongdoing.
+- **[[HUMANITY:TEMPERANCE]] vs. [[HUMANITY:HUMILITY]]**
+  - Use `[[HUMANITY:TEMPERANCE]]` when the topic involves restraint and balance broadly across behaviors, desires, and impulses.
+  - Use `[[HUMANITY:HUMILITY]]` when the topic involves ego, self-knowledge, recognizing one's limits, or receptivity to correction.
+  - Note: Humility is a sub-value of Temperance in the VALUES hierarchy, but its emphasis is specifically on accurate self-assessment rather than broad moderation.
+- **[[HUMANITY:CREATIVITY]] vs. [[HUMANITY:LEARNING]]**
+  - Use `[[HUMANITY:CREATIVITY]]` when the topic involves novelty, invention, expression, or problem-solving through imagination.
+  - Use `[[HUMANITY:LEARNING]]` when the topic involves acquiring, integrating, and growing from existing knowledge and understanding.
+  - Note: Love of Learning enriches Creativity by building the repertoire from which creative connections are drawn.
+- **[[HUMANITY:PERSPECTIVE]] vs. [[HUMANITY:HUMILITY]]**
+  - Use `[[HUMANITY:PERSPECTIVE]]` when the topic involves viewpoint-shifting, multi-angle understanding, or empathic comprehension of another's experience.
+  - Use `[[HUMANITY:HUMILITY]]` when the topic involves self-knowledge, acknowledging one's own limitations, or resisting the pull of ego and superiority.
+  - Note: Humility enables more genuine Perspective-taking; the two often co-occur but address different dimensions — Perspective is cognitive, Humility is dispositional.
 
 ### Local Knowledge Index
 
@@ -182,6 +105,10 @@ The following is a list of this file's common topic references mapped to canonic
 - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
 - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
 - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
+
+### Domain Knowledge Index
+
+Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
 
 ## Humanity
 

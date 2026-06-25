@@ -1,9 +1,8 @@
-# Humanity's Domain Knowledge Index — Information-Following Large Language Model Domain Knowledge (*if-llm-humanity-index.md*)
+# Humanity's Domain Knowledge Index — Information-Following Large Language Model Domain Knowledge (`if-llm-humanity-index.md`)
 
 ## File Header
 
-- **Name:** Humanity's Domain Knowledge Index — Information-Following Large Language Model Domain Knowledge (*if-llm-humanity-index.md*)
-- **Version:** 2026-06-13 04:02 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Last Reviewed:** 2026-06-13 03:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
@@ -17,13 +16,18 @@
   - **Supported:** TBD
   - **Not Supported:** TBD
 
-- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-values.md`
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-3.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - TBD
 
 - **Changelog**
-  - 2026-06-13 04:02 UTC by [Lance Hegland](lance.hegland@gmail.com): Added file header, added rules, expanded domain knowledge index
+  - 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com):
+    - Moved **Domain Knowledge Index** and **Domain Concept Disambiguation** from all files into `if-llm-humanity-index.md`.
+    - Updated **Dependencies** in each file.
+    - Retained **Local Knowledge Index** and **Local Concept Disambiguation** in each knowledge file.
+    - Reviewed and updated **Known Gaps / Limitations** in each knowledge file.
+  - 2026-06-24 21:07 UTC by [Lance Hegland](lance.hegland@gmail.com): Added file header, added rules, expanded domain knowledge index & 
   - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
 
 ## Namespace, Tag, Alias, and Reference Rules
@@ -48,13 +52,340 @@
 
 Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
+### Domain Concept Disambiguation
+
+Use these notes to select between partially overlapping concepts for precise IF-LLM retrieval and reasoning.
+
+- **[[HUMANITY:FALLIBILITY]] vs. [[HUMANITY:TEMPTATIONS]] vs. [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]**
+  - Use `[[HUMANITY:FALLIBILITY]]` when the focus is on the *human condition* — being inherently limited, imperfect, and prone to error (the "why we struggle" lens).
+  - Use `[[HUMANITY:TEMPTATIONS]]` when the focus is on the *impulse or behavioral pattern* that increases harm risk — e.g., greed, avoidance, tribal thinking (the "what we are pulled toward" lens).
+  - Use `[[HUMANITY:CONSEQUENCES_TEMPTATIONS]]` when the focus is on *outcomes already produced* by following temptations — e.g., broken trust, addiction, exploitation (the "what results" lens).
+  - Note: All three usually appear together; cite the one that most directly answers the user's question, then reference the others as context.
+- **[[HUMANITY:MOTIVATORS]] vs. [[HUMANITY:VALUES]]**
+  - Use `[[HUMANITY:MOTIVATORS]]` when the focus is on what *drives or sustains an individual's effort* — intrinsic drives, goals, and reasons to keep acting.
+  - Use `[[HUMANITY:VALUES]]` when the focus is on *principles and practices* that guide ethical, effective behavior — what one aspires to do and how one aspires to act.
+  - Note: Values can function as motivators, but motivators are not always values. When both apply, cite both.
+- **[[HUMANITY:NEEDS]] vs. [[HUMANITY:CONCERNS]]**
+  - Use `[[HUMANITY:NEEDS]]` when the focus is on *universal human requirements* for health, safety, dignity, and inclusion (the structural baseline).
+  - Use `[[HUMANITY:CONCERNS]]` when the focus is on *contextual, situational, or societal threats* to those needs as observed in modern U.S. life.
+- **[[HUMANITY:STEREOTYPES]] vs. [[HUMANITY:PREJUDICES]] vs. [[HUMANITY:DISCRIMINATION]]**
+  - Use `[[HUMANITY:STEREOTYPES]]` when the focus is on *cognitive generalizations* — oversimplified beliefs about groups (the "what someone thinks" lens). Produce: awareness of how group assumptions form and distort perception.
+  - Use `[[HUMANITY:PREJUDICES]]` when the focus is on *affective pre-judgments* — feelings (dislike, fear, distrust) toward groups based on stereotypes (the "what someone feels" lens). Produce: awareness of how attitudes shape motivation and willingness to help.
+  - Use `[[HUMANITY:DISCRIMINATION]]` when the focus is on *behavioral inequity* — unequal treatment in action (the "what someone does" lens). Produce: identification of harm-producing behaviors and their real-world effects on [[HUMANITY:NEEDS]] satisfaction.
+  - Note: The three often chain (Stereotype → Prejudice → Discrimination) but are separable. Someone can hold stereotypes and prejudices without discriminating; and someone can discriminate without personal prejudice (due to rules, incentives, or social pressure).
+- **[[HUMANITY:TEMPTATIONS]] vs. [[HUMANITY:MOTIVATORS]]**
+  - Use `[[HUMANITY:TEMPTATIONS]]` when the focus is on *behavioral pulls that increase risk of harm* to self or others — patterns that, if followed routinely, undermine [[HUMANITY:NEEDS]] satisfaction.
+  - Use `[[HUMANITY:MOTIVATORS]]` when the focus is on *drives that support efficient need satisfaction* — energizing reasons to act that, on balance, help rather than harm.
+  - Note: Motivators can be hijacked by temptations (e.g., the healthy motivator "safety" can manifest as the temptation "hoarding"); context determines whether a drive is functioning as a motivator or a temptation.
+- **[[HUMANITY:CONSEQUENCES_TEMPTATIONS]] vs. [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]**
+  - Use `[[HUMANITY:CONSEQUENCES_TEMPTATIONS]]` when outcomes result primarily from *making harmful behavioral choices* — e.g., broken trust from dishonesty, harm from impulsive aggression.
+  - Use `[[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]` when outcomes result primarily from *chronic deprivation* — e.g., anxiety from prolonged financial insecurity, withdrawal from persistent social exclusion.
+  - Note: The two frequently interact; temptations can cause unmet needs (addiction → financial ruin → health deprivation), and unmet needs can fuel temptations (food insecurity → theft). When both apply, cite both.
+- **[[HUMANITY:TEMPTATIONS]] vs. [[HUMANITY:MOTIVATORS]]**
+  - Use `[[HUMANITY:TEMPTATIONS]]` when the focus is on *behavioral pulls that increase risk of harm* to self or others — patterns that, if followed routinely, undermine [[HUMANITY:NEEDS]] satisfaction.
+  - Use `[[HUMANITY:MOTIVATORS]]` when the focus is on *drives that support efficient need satisfaction* — energizing reasons to act that, on balance, help rather than harm.
+  - Note: Motivators can be hijacked by temptations (e.g., the healthy motivator "safety" can manifest as the temptation "hoarding"); context determines whether a drive is functioning as a motivator or a temptation.
+- **[[HUMANITY:CONSEQUENCES_TEMPTATIONS]] vs. [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]**
+  - Use `[[HUMANITY:CONSEQUENCES_TEMPTATIONS]]` when outcomes result primarily from *making harmful behavioral choices* — e.g., broken trust from dishonesty, harm from impulsive aggression.
+  - Use `[[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]` when outcomes result primarily from *chronic deprivation* — e.g., anxiety from prolonged financial insecurity, withdrawal from persistent social exclusion.
+  - Note: The two frequently interact; temptations can cause unmet needs (addiction → financial ruin → health deprivation), and unmet needs can fuel temptations (food insecurity → theft). When both apply, cite both.
+- **[[HUMANITY:CONSEQUENCES_UNMET_NEEDS]] vs. [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]**
+  - Use `[[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]` when outcomes result primarily from *chronic deprivation* — prolonged inability to meet Health, Safety, Dignity, or Inclusion needs (e.g., anxiety from financial insecurity, withdrawal from social exclusion).
+  - Use `[[HUMANITY:CONSEQUENCES_TEMPTATIONS]]` when outcomes result primarily from *making harmful behavioral choices* — following temptation patterns that damage trust, relationships, or functioning (e.g., addiction, broken trust, moral drift).
+  - Note: These two consequence sets frequently interact and compound. Temptations can cause unmet needs (addiction → financial ruin → health deprivation); unmet needs can fuel temptations (insecurity → hoarding). When both apply, cite both and identify which is driving the cycle.
+- **[[HUMANITY:ACTIVITIES]] vs. [[HUMANITY:OODA]]**
+  - Use `[[HUMANITY:ACTIVITIES]]` when the focus is on *what a person does* to satisfy needs — the content of their behavior (bathing, shopping, communicating, earning income).
+  - Use `[[HUMANITY:OODA]]` when the focus is on *how a person decides what to do* — the sense-make-act loop that governs behavioral choices in real time.
+  - Note: Activities are the *output* of the OODA loop; OODA is the *process* that selects and executes activities. Cite both when explaining that someone has the right activities in mind but keeps making poor moment-to-moment decisions about them.
+- **[[HUMANITY:WISDOM]] vs. [[HUMANITY:PRUDENCE]]**
+  - Use `[[HUMANITY:WISDOM]]` when the topic involves long-term ethical judgment, accumulated understanding, legacy, or the integrating principle of the full VALUES framework.
+  - Use `[[HUMANITY:PRUDENCE]]` when the topic involves sound reasoning applied to a specific practical decision.
+  - Note: Wisdom is the broader, accumulated state; Prudence is the in-moment application. Wise people are also prudent, but not all prudent decisions reflect Wisdom.
+- **[[HUMANITY:INTERDEPENDENCE]] vs. [[HUMANITY:LOVE]]**
+  - Use `[[HUMANITY:INTERDEPENDENCE]]` when the topic involves the systemic web of mutual reliance, shared consequences, or collective responsibility.
+  - Use `[[HUMANITY:LOVE]]` when the topic involves the emotional, volitional dimension of care, sacrifice, and commitment toward specific others.
+  - Note: Love motivates action within the interdependent web; Interdependence is the structural context that makes Love consequential.
+- **[[HUMANITY:THINKING]] vs. [[HUMANITY:CURIOSITY]]**
+  - Use `[[HUMANITY:THINKING]]` when the topic involves the quality of reasoning, bias identification, or evidence evaluation.
+  - Use `[[HUMANITY:CURIOSITY]]` when the topic involves the motivational drive to ask questions, explore new territory, or open up new lines of inquiry.
+  - Note: Curiosity asks "I wonder…"; Critical Thinking asks "Is this actually true, and how do I know?"
+- **[[HUMANITY:THINKING]] vs. [[HUMANITY:WISDOM]]**
+  - Use `[[HUMANITY:THINKING]]` when the topic involves evaluating a specific claim or reasoning through a specific situation.
+  - Use `[[HUMANITY:WISDOM]]` when the topic involves the broader, accumulated capacity to navigate life well — including knowing which questions to ask and which values to apply.
+  - Note: Wisdom integrates the outputs of repeated Critical Thinking plus experience, ethical grounding, and long-term consequence awareness.
+- **[[HUMANITY:CURIOSITY]] vs. [[HUMANITY:LEARNING]]**
+  - Use `[[HUMANITY:CURIOSITY]]` when the topic involves the initial impulse, openness to discovery, or willingness to venture into unfamiliar territory.
+  - Use `[[HUMANITY:LEARNING]]` when the topic involves a sustained relationship with knowledge acquisition, growth, and mastery.
+  - Note: Curiosity is the drive that initiates inquiry; Love of Learning is the ongoing practice that grows from it.
+- **[[HUMANITY:OPENNESS]] vs. [[HUMANITY:PERSPECTIVE]]**
+  - Use `[[HUMANITY:OPENNESS]]` when the key behavior is suspending judgment and reducing resistance to unfamiliar ideas or information.
+  - Use `[[HUMANITY:PERSPECTIVE]]` when the key behavior is actively adopting, understanding, or applying another's viewpoint.
+  - Note: Open-Mindedness makes Perspective possible; Perspective is what Open-Mindedness enables.
+- **[[HUMANITY:OPENNESS]] vs. [[HUMANITY:HUMILITY]]**
+  - Use `[[HUMANITY:OPENNESS]]` when the key behavior is suspending judgment about incoming information or other views — outward-facing receptivity.
+  - Use `[[HUMANITY:HUMILITY]]` when the key behavior is accurately recognizing one's own limitations, errors, or relative ignorance — inward-facing self-assessment.
+  - Note: Both frequently co-occur, but Open-Mindedness faces outward toward new ideas; Humility faces inward toward one's own fallibility.
+- **[[HUMANITY:LOVE]] vs. [[HUMANITY:COMPASSION]]**
+  - Use `[[HUMANITY:LOVE]]` when the topic involves the broad, generative force of care and commitment in relationships and communities.
+  - Use `[[HUMANITY:COMPASSION]]` when the topic involves a specific response to identified suffering or vulnerability.
+  - Note: Compassion is a particular form of love activated by suffering; Love is the broader motivational ground from which Compassion grows.
+- **[[HUMANITY:COMPASSION]] vs. [[HUMANITY:MERCY]]**
+  - Use `[[HUMANITY:COMPASSION]]` when the topic involves recognizing suffering and the motivation to relieve or alleviate it.
+  - Use `[[HUMANITY:MERCY]]` when the topic involves forgiveness, clemency, or the deliberate restraint of deserved punishment or judgment.
+  - Note: One may show Compassion without Mercy and Mercy without Compassion — Compassion responds to suffering; Mercy responds to wrongdoing.
+- **[[HUMANITY:TEMPERANCE]] vs. [[HUMANITY:REGULATION]]**
+  - Use `[[HUMANITY:TEMPERANCE]]` when the topic involves moderation and balance as an ethical value or enduring way of life.
+  - Use `[[HUMANITY:REGULATION]]` when the topic involves the practical skills or mechanisms of managing impulses and behaviors in specific situations.
+  - Note: Temperance is the value; Self-Regulation is the skill set that operationalizes it.
+- **[[HUMANITY:TEMPERANCE]] vs. [[HUMANITY:PRUDENCE]]**
+  - Use `[[HUMANITY:TEMPERANCE]]` when the topic involves restraint, moderation, and avoiding excess across behaviors and emotions.
+  - Use `[[HUMANITY:PRUDENCE]]` when the topic involves wise judgment, foresight, and practical decision-making in specific circumstances.
+  - Note: Temperance governs *how much*; Prudence governs *what to do*.
+- **[[HUMANITY:TEMPERANCE]] vs. [[HUMANITY:HUMILITY]]**
+  - Use `[[HUMANITY:TEMPERANCE]]` when the topic involves restraint and balance broadly across behaviors, desires, and impulses.
+  - Use `[[HUMANITY:HUMILITY]]` when the topic involves ego, self-knowledge, recognizing one's limits, or receptivity to correction.
+  - Note: Humility is a sub-value of Temperance in the VALUES hierarchy, but its emphasis is specifically on accurate self-assessment rather than broad moderation.
+- **[[HUMANITY:MERCY]] vs. [[HUMANITY:FAIRNESS]]**
+  - Use `[[HUMANITY:MERCY]]` when the topic involves forgiveness, clemency, or a compassionate departure from strict consequence.
+  - Use `[[HUMANITY:FAIRNESS]]` when the topic involves impartial treatment, equal application of rules, or preventing discrimination.
+  - Note: Mercy and Fairness can be in tension — an act of Mercy is by definition not strictly "fair"; resolving that tension belongs to `[[HUMANITY:WISDOM]]`.
+- **[[HUMANITY:HUMILITY]] vs. [[HUMANITY:OPENNESS]]**
+  - Use `[[HUMANITY:HUMILITY]]` when the topic involves the internal orientation of the self — ego, self-knowledge, or acknowledging one's limits and fallibility.
+  - Use `[[HUMANITY:OPENNESS]]` when the topic involves how one receives external information, ideas, or challenges to existing beliefs.
+  - Note: Humility is inward-facing; Open-Mindedness is outward-facing. Humility enables Open-Mindedness — it is hard to be genuinely receptive when ego closes the door.
+- **[[HUMANITY:CREATIVITY]] vs. [[HUMANITY:LEARNING]]**
+  - Use `[[HUMANITY:CREATIVITY]]` when the topic involves novelty, invention, expression, or problem-solving through imagination.
+  - Use `[[HUMANITY:LEARNING]]` when the topic involves acquiring, integrating, and growing from existing knowledge and understanding.
+  - Note: Love of Learning enriches Creativity by building the repertoire from which creative connections are drawn.
+- **[[HUMANITY:COMPASSION]] vs. [[HUMANITY:LOVE]]**
+  - Use `[[HUMANITY:COMPASSION]]` when the topic involves a specific response to identified suffering, pain, or vulnerability.
+  - Use `[[HUMANITY:LOVE]]` when the topic involves the broader, enduring force of care, attachment, and commitment to others.
+  - Note: Compassion is love activated by suffering; Love is the broader motivational ground from which Compassion grows.
+- **[[HUMANITY:PERSPECTIVE]] vs. [[HUMANITY:HUMILITY]]**
+  - Use `[[HUMANITY:PERSPECTIVE]]` when the topic involves viewpoint-shifting, multi-angle understanding, or empathic comprehension of another's experience.
+  - Use `[[HUMANITY:HUMILITY]]` when the topic involves self-knowledge, acknowledging one's own limitations, or resisting the pull of ego and superiority.
+  - Note: Humility enables more genuine Perspective-taking; the two often co-occur but address different dimensions — Perspective is cognitive, Humility is dispositional.
+- **[[HUMANITY:LEARNING]] vs. [[HUMANITY:CURIOSITY]]**
+  - Use `[[HUMANITY:LEARNING]]` when the topic involves a sustained, committed relationship with knowledge acquisition, intellectual growth, or mastery over time.
+  - Use `[[HUMANITY:CURIOSITY]]` when the topic involves the initial impulse, wonder, or appetite that opens and sustains a line of inquiry.
+  - Note: Curiosity is the engine; Love of Learning is the journey it sustains.
+- **[[HUMANITY:CREATIVITY]] vs. [[HUMANITY:THINKING]]**
+  - Use `[[HUMANITY:CREATIVITY]]` when the topic involves generating, imagining, inventing, or synthesizing something new beyond conventional patterns.
+  - Use `[[HUMANITY:THINKING]]` when the topic involves questioning, testing, evaluating, or applying disciplined reasoning to existing information.
+  - Note: Creativity is primarily generative; Critical Thinking is primarily evaluative. Strong creative work typically requires both.
+- **[[HUMANITY:PERSPECTIVE]] vs. [[HUMANITY:OPENNESS]]**
+  - Use `[[HUMANITY:PERSPECTIVE]]` when the topic involves actively adopting or understanding another's viewpoint through deliberate, empathic perspective-taking.
+  - Use `[[HUMANITY:OPENNESS]]` when the topic involves reducing resistance to new, different, or challenging ideas without premature judgment.
+  - Note: Open-Mindedness is the prerequisite disposition; Perspective is the active cognitive skill it enables.
+- **[[HUMANITY:HUMOR]] vs. [[HUMANITY:TRANSCENDENCE]]**
+  - Use `[[HUMANITY:HUMOR]]` when the topic involves laughter, comedy, playfulness, or humor as a coping or relational strategy.
+  - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves the broader orienting experience of meaning, awe, or connection beyond the immediate self.
+  - Note: Humor is a sub-value of Transcendence — its specifically light, playful, perspective-shifting dimension.
+- **[[HUMANITY:EXCELLENCE]] vs. [[HUMANITY:PURPOSE]]**
+  - Use `[[HUMANITY:EXCELLENCE]]` when the topic involves recognizing, admiring, or being inspired by outstanding quality in others or in work — outwardly directed appreciation.
+  - Use `[[HUMANITY:PURPOSE]]` when the topic involves one's own directional commitment and sense of meaning — inwardly directed motivation.
+  - Note: Excellence can motivate Purpose — being deeply moved by excellence in others can clarify what one wants to dedicate one's own life to.
+- **[[HUMANITY:HUMOR]] vs. [[HUMANITY:WISDOM]]**
+  - Use `[[HUMANITY:HUMOR]]` when the topic involves laughter, levity, resilience through comedy, or humor as a social or coping tool.
+  - Use `[[HUMANITY:WISDOM]]` when the topic involves sound judgment, deep understanding, and knowing what matters most.
+  - Note: Humor is often a vehicle for Wisdom — the jester's truth, the comic parable, the "wise fool" tradition — but they are distinct; cite both when the topic involves wisdom expressed *through* humor.
+- **[[HUMANITY:GRATITUDE]] vs. [[HUMANITY:TRANSCENDENCE]]**
+  - Use `[[HUMANITY:GRATITUDE]]` when the topic involves appreciation for specific good received — from people, relationships, circumstances, or life itself.
+  - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves the broader experience of awe, connection, and meaning beyond the self.
+  - Note: Gratitude is the specifically receptive, relational sub-value of Transcendence.
+- **[[HUMANITY:PURPOSE]] vs. [[HUMANITY:PERSISTENCE]]**
+  - Use `[[HUMANITY:PURPOSE]]` when the topic involves the meaning, direction, and motivational grounding of a commitment — the *why*.
+  - Use `[[HUMANITY:PERSISTENCE]]` when the topic involves sustained effort, endurance, and continuing through difficulty despite obstacles — the *how*.
+  - Note: Purpose provides the "why" that makes Persistence possible; without Purpose, persistence risks becoming mere stubbornness.
+- **[[HUMANITY:TRANSCENDENCE]] vs. [[HUMANITY:PURPOSE]]**
+  - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves the broader, orienting experience of meaning, awe, or connection beyond the immediate self.
+  - Use `[[HUMANITY:PURPOSE]]` when the topic involves the specific directional commitment, goals, and priorities that give someone's life meaning and guide their choices.
+  - Note: Purpose is often the practical expression of Transcendence — what we do with the conviction that our life has meaning.
+- **[[HUMANITY:TRANSCENDENCE]] vs. [[HUMANITY:HOPE]]**
+  - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves the broader sense of meaning, connection, or rising above personal limits.
+  - Use `[[HUMANITY:HOPE]]` when the topic involves the forward-looking belief that things can be or become better, especially under adversity.
+  - Note: Hope is a sub-value of Transcendence defined in values-5.md; load that file to access Hope's full entry.
+- **[[HUMANITY:PRUDENCE]] vs. [[HUMANITY:WISDOM]]**
+  - Use `[[HUMANITY:PRUDENCE]]` when the topic involves specific, situational decision-making — foresight, risk assessment, and careful practical judgment in a particular context.
+  - Use `[[HUMANITY:WISDOM]]` when the topic involves the overarching, developed capacity for sound judgment across many domains and over time.
+  - Note: Prudence is Wisdom applied to the specific present moment; Wisdom is the broader enduring quality from which Prudence draws.
+- **[[HUMANITY:PRUDENCE]] vs. [[HUMANITY:TEMPERANCE]]**
+  - Use `[[HUMANITY:PRUDENCE]]` when the topic involves deliberate foresight, risk assessment, and careful judgment before acting in a specific situation.
+  - Use `[[HUMANITY:TEMPERANCE]]` when the topic involves balance and moderation as an overall ethical orientation or way of life.
+  - Note: Prudence governs *what to do and when*; Temperance governs *how much and how intensely*.
+- **[[HUMANITY:REGULATION]] vs. [[HUMANITY:TEMPERANCE]]**
+  - Use `[[HUMANITY:REGULATION]]` when the topic involves specific techniques, skills, and mechanisms for managing impulses, emotions, or behaviors in real time.
+  - Use `[[HUMANITY:TEMPERANCE]]` when the topic involves moderation and balance as an ethical value or enduring orientation toward life.
+  - Note: Temperance is the value; Self-Regulation is the skill set that operationalizes it.
+- **[[HUMANITY:REGULATION]] vs. [[HUMANITY:PRUDENCE]]**
+  - Use `[[HUMANITY:REGULATION]]` when the topic involves managing an impulse, emotion, or reaction as it occurs in the moment.
+  - Use `[[HUMANITY:PRUDENCE]]` when the topic involves careful planning, risk assessment, or deliberate judgment before taking action.
+  - Note: Prudence plans the strategy; Self-Regulation executes it moment by moment.
+- **[[HUMANITY:PERSISTENCE]] vs. [[HUMANITY:HOPE]]**
+  - Use `[[HUMANITY:PERSISTENCE]]` when the topic involves actions, habits, and sustained engagement through setbacks.
+  - Use `[[HUMANITY:HOPE]]` when the topic involves the inner orientation or expectation that a better outcome is possible.
+  - Note: Hope may sustain Persistence, but Persistence can continue even when Hope is fragile — they are complementary but distinct.
+- **[[HUMANITY:LEADERSHIP]] vs. [[HUMANITY:PRUDENCE]]**
+  - Use `[[HUMANITY:LEADERSHIP]]` when the topic involves the relational, inspirational, or accountability dimensions of guiding others toward shared goals.
+  - Use `[[HUMANITY:PRUDENCE]]` when the topic involves the quality of practical reasoning or judgment being applied — whether by a leader or anyone else.
+  - Note: Leadership is about role and responsibility to others; Prudence is about the quality of thinking, regardless of role.
+- **[[HUMANITY:PERSISTENCE]] vs. [[HUMANITY:COURAGE]]**
+  - Use `[[HUMANITY:PERSISTENCE]]` when the topic involves long-term endurance, repeated attempts, and sustained commitment over time.
+  - Use `[[HUMANITY:COURAGE]]` when the topic involves a discrete act requiring willingness to face a specific, immediate fear or danger.
+  - Note: A courageous act may launch something; Persistence is what sustains it.
+- **[[HUMANITY:FAIRNESS]] vs. [[HUMANITY:MERCY]]**
+  - Use `[[HUMANITY:FAIRNESS]]` when the topic involves consistent, impartial rule application across all parties.
+  - Use `[[HUMANITY:MERCY]]` when the topic involves deliberately softening or forgoing a deserved consequence out of compassion or grace.
+  - Note: Treating someone leniently out of favoritism is neither Fairness nor Mercy — it is bias.
+- **[[HUMANITY:CITIZENSHIP]] vs. [[HUMANITY:LEADERSHIP]]**
+  - Use `[[HUMANITY:CITIZENSHIP]]` when the topic involves community participation, civic duties, or shared responsibilities that any member bears.
+  - Use `[[HUMANITY:LEADERSHIP]]` when the topic involves someone's specific role guiding, inspiring, or being accountable for a group's direction and well-being.
+  - Note: Good leaders are also good citizens; the distinction is role-specific, not hierarchical in value.
+- **[[HUMANITY:JUSTICE]] vs. [[HUMANITY:FAIRNESS]]**
+  - Use `[[HUMANITY:JUSTICE]]` when the topic involves courts, governance, institutional design, rule of law, or structural accountability.
+  - Use `[[HUMANITY:FAIRNESS]]` when the topic involves whether a specific decision, policy, or interaction treats a particular person or group equitably.
+  - Note: When both apply, lead with Justice for systemic framing and Fairness for the procedural standard within it.
+- **[[HUMANITY:JUSTICE]] vs. [[HUMANITY:COMPASSION]]**
+  - Use `[[HUMANITY:JUSTICE]]` when the topic involves accountability, rights, or structural remedy owed by systems and institutions.
+  - Use `[[HUMANITY:COMPASSION]]` when the topic involves the empathetic, caring response to another's suffering.
+  - Note: Justice without Compassion can become rigid; Compassion without Justice can fail to address systemic harm — both are often needed together.
+- **[[HUMANITY:COURAGE]] vs. [[HUMANITY:BRAVERY]]**
+  - Use `[[HUMANITY:COURAGE]]` when the topic involves a sustained character trait — the capacity to face fear, adversity, or moral opposition across multiple dimensions over time.
+  - Use `[[HUMANITY:BRAVERY]]` when the topic involves a specific, immediate act of confronting danger or hardship with boldness.
+  - Note: Bravery is a sub-value of Courage; when context is ambiguous, prefer `[[HUMANITY:COURAGE]]` as the parent.
+- **[[HUMANITY:COURAGE]] vs. [[HUMANITY:PERSISTENCE]]**
+  - Use `[[HUMANITY:COURAGE]]` when the topic involves the character quality that enables facing fear in a specific moment or act.
+  - Use `[[HUMANITY:PERSISTENCE]]` when the topic involves sustained effort over time despite repeated obstacles.
+  - Note: Persistence is the parent value that includes Courage; retrieval workflows addressing Courage in its parent context must also load values-4.md.
+- **[[HUMANITY:BRAVERY]] vs. [[HUMANITY:INTEGRITY]]**
+  - Use `[[HUMANITY:BRAVERY]]` when the topic involves confronting physical danger, social risk, or immediate hardship with boldness.
+  - Use `[[HUMANITY:INTEGRITY]]` when the topic involves alignment of words, actions, and principles consistently over time.
+  - Note: Both can co-occur — whistleblowing, for example, involves Bravery in the act and Integrity in the principle; cite both when both dimensions are present.
+- **[[HUMANITY:INTEGRITY]] vs. [[HUMANITY:JUSTICE]]**
+  - Use `[[HUMANITY:INTEGRITY]]` when the topic involves individual character — a person's consistency of words, actions, and principles.
+  - Use `[[HUMANITY:JUSTICE]]` when the topic involves systemic concerns — equitable outcomes, institutional structures, and fair distribution.
+  - Note: Integrity operates at the level of the individual; Justice operates at the level of systems. Full ethical reasoning queries may require loading both files.
+- **[[HUMANITY:INTEGRITY]] vs. [[HUMANITY:FAIRNESS]]**
+  - Use `[[HUMANITY:INTEGRITY]]` when the topic involves individual self-consistency and moral trustworthiness — inward-facing.
+  - Use `[[HUMANITY:FAIRNESS]]` when the topic involves impartial treatment of others across relationships or groups — outward-facing.
+  - Note: Both often co-occur in ethical decision-making but address different orientations of the self.
+- **[[HUMANITY:VITALITY]] vs. [[HUMANITY:PURPOSE]]**
+  - Use `[[HUMANITY:VITALITY]]` when the topic involves energy, health, capacity, or the physical and emotional resources enabling action.
+  - Use `[[HUMANITY:PURPOSE]]` when the topic involves meaningful direction, mission-driven motivation, or the "why" behind action.
+  - Note: Purpose provides direction; Vitality provides fuel.
+- **[[HUMANITY:VITALITY]] vs. [[HUMANITY:TRANSCENDENCE]]**
+  - Use `[[HUMANITY:VITALITY]]` when the topic involves physical, emotional, or mental well-being and the capacity for engagement.
+  - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves meaning-making that extends beyond the self — spiritual connection, awe, or significance beyond ordinary experience.
+  - Note: Vitality is about capacity; Transcendence is about meaning-frame. Transcendence can energize Vitality, but they are distinct.
+- **[[HUMANITY:HOPE]] vs. [[HUMANITY:TRANSCENDENCE]]**
+  - Use `[[HUMANITY:HOPE]]` when the topic involves the belief that positive outcomes are possible — the orienting optimism that sustains individuals through difficulty.
+  - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves the broader cluster of values that extend beyond the self — Gratitude, Purpose, Excellence, Humor, and Hope together.
+  - Note: Hope is a sub-value of Transcendence; retrieval workflows using `[[HUMANITY:HOPE]]` in a transcendence context must load values-3.md.
+- **[[HUMANITY:HOPE]] vs. [[HUMANITY:PURPOSE]]**
+  - Use `[[HUMANITY:HOPE]]` when the topic involves optimism and resilience in the face of difficulty — the belief that things can improve.
+  - Use `[[HUMANITY:PURPOSE]]` when the topic involves a meaningful direction or goal that organizes effort and gives life meaning.
+  - Note: Hope and Purpose are siblings under Transcendence — Hope orients toward possibility; Purpose orients toward mission.
+- **[[HUMANITY:HOPE]] vs. [[HUMANITY:PERSISTENCE]]**
+  - Use `[[HUMANITY:HOPE]]` when the topic involves the belief and emotional orientation that sustains continued action.
+  - Use `[[HUMANITY:PERSISTENCE]]` when the topic involves the sustained effort itself — continuing despite obstacles.
+  - Note: Hope motivates Persistence; Persistence enacts Hope. Cite both when addressing the full cycle of resilience.
+- **[[HUMANITY:VITALITY]] vs. [[HUMANITY:HOPE]]**
+  - Use `[[HUMANITY:VITALITY]]` when the topic involves physical, emotional, or mental energy and capacity — a resource state.
+  - Use `[[HUMANITY:HOPE]]` when the topic involves belief, optimism, and future-orientation — a cognitive-emotional orientation.
+  - Note: Both support resilience and recovery and mutually reinforce each other; Vitality is what you have, Hope is what you believe.
+
 ### Domain Knowledge Index
 
-Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
+Refer to the list of domain knowledge file indexes for common topic references and canonical handles contained in `if-llm-humanity-index.md`.
 
 Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
 
-- `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
+- `if-llm-system-policies-processing.md`
+  - Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
+  - Priorities → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES → [[SYS_POLICIES:PRIORITIES]]
+  - Instruction Hierarchy and Control Policies → SYS_POLICIES.IHCP → [[SYS_POLICIES:IHCP]]
+  - Instruction Hierarchy Rule → SYS_POLICIES.IHCP.INSTRUCTION → [[SYS_POLICIES:INSTRUCTION]]
+  - Hierarchy Rule → SYS_POLICIES.IHCP.HIERARCHY → [[SYS_POLICIES:HIERARCHY]]
+  - Stability Rule → SYS_POLICIES.IHCP.STABILITY → [[SYS_POLICIES:STABILITY]]
+  - Safety, Security, and Access Control Policies → SYS_POLICIES.SSAC → [[SYS_POLICIES:SSAC]]
+  - Least-Privilege Rule → SYS_POLICIES.SSAC.PRIVILEGE → [[SYS_POLICIES:PRIVILEGE]]
+  - Secrets Rule → SYS_POLICIES.SSAC.SECRETS → [[SYS_POLICIES:SECRETS]]
+  - Prompt-Injection Rule → SYS_POLICIES.SSAC.PROMPT_INJECTION → [[SYS_POLICIES:PROMPT_INJECTION]]
+  - Untrusted-Content Rule → SYS_POLICIES.SSAC.UNTRUSTED → [[SYS_POLICIES:UNTRUSTED]]
+  - Data-Provenance Rule → SYS_POLICIES.SSAC.PROVENANCE → [[SYS_POLICIES:PROVENANCE]]
+  - Approval Rule → SYS_POLICIES.SSAC.APPROVAL → [[SYS_POLICIES:APPROVAL]]
+  - Safety Behavior and Alignment Quality Policies → SYS_POLICIES.SBAQ → [[SYS_POLICIES:SBAQ]]
+  - Narrow Refusal Rule → SYS_POLICIES.SBAQ.REFUSAL → [[SYS_POLICIES:REFUSAL]]
+  - Anti-Sycophancy Rule → SYS_POLICIES.SBAQ.SYCOPHANY → [[SYS_POLICIES:SYCOPHANY]]
+  - Equal Risk Framing Rule → SYS_POLICIES.SBAQ.FRAMING → [[SYS_POLICIES:FRAMING]]
+  - Fairness Check Rule → SYS_POLICIES.SBAQ.FAIRNESS → [[SYS_POLICIES:FAIRNESS]]
+  - Toxicity Control Rule → SYS_POLICIES.SBAQ.TOXICITY → [[SYS_POLICIES:TOXICITY]]
+  - Freshness and Retrieval Policies → SYS_POLICIES.FR → [[SYS_POLICIES:FR]]
+  - Freshness Rule → SYS_POLICIES.FR.FRESHNESS → [[SYS_POLICIES:FRESHNESS]]
+  - Tool Use and External Actions Policies → SYS_POLICIES.TUEA → [[SYS_POLICIES:TUEA]]
+  - Tool-Decision Rule → SYS_POLICIES.TUEA.DECISION → [[SYS_POLICIES:DECISION]]
+  - Server-Side Validation Rule → SYS_POLICIES.TUEA.VALIDATION → [[SYS_POLICIES:VALIDATION]]
+  - Post-Tool Check Rule → SYS_POLICIES.TUEA.POST_TOOL → [[SYS_POLICIES:POST_TOOL]]
+  - Actual-Output Rule → SYS_POLICIES.TUEA.OUTPUT → [[SYS_POLICIES:OUTPUT]]
+  - Output-Handling Rule → SYS_POLICIES.TUEA.OUTPUT_HANDLING → [[SYS_POLICIES:OUTPUT_HANDLING]]
+  - Evaluation, Monitoring, and Continuous Improvement Policies → SYS_POLICIES.EMCI → [[SYS_POLICIES:EMCI]]
+  - Verification Loop Rule → SYS_POLICIES.EMCI.VERIFICATION → [[SYS_POLICIES:VERIFICATION]]
+  - Incident Disclosure Rule → SYS_POLICIES.EMCI.INCIDENT → [[SYS_POLICIES:INCIDENT]]
+  - Logging and Monitoring Rule → SYS_POLICIES.EMCI.LOGGING → [[SYS_POLICIES:LOGGING]]
+  - Pre-Deployment Testing Rule → SYS_POLICIES.EMCI.PREDEPLOY → [[SYS_POLICIES:PREDEPLOY]]
+  - Grounding, Evidence, and Truthfulness Policies → SYS_POLICIES.GET → [[SYS_POLICIES:GET]]
+  - No-Guess Rule → SYS_POLICIES.GET.GUESS → [[SYS_POLICIES:GUESS]]
+  - Grounding Rule → SYS_POLICIES.GET.GROUNDING → [[SYS_POLICIES:GROUNDING]]
+  - Uncertainty Disclosure Rule → SYS_POLICIES.GET.UNCERTAINTY → [[SYS_POLICIES:UNCERTAINTY]]
+  - Auditability Rule → SYS_POLICIES.GET.AUDITABILITY → [[SYS_POLICIES:AUDITABILITY]]
+  - Evidence-First Rule → SYS_POLICIES.GET.EVIDENCE → [[SYS_POLICIES:EVIDENCE]]
+  - Fact/Interpretation Split Rule → SYS_POLICIES.GET.SPLIT → [[SYS_POLICIES:SPLIT]]
+  - Context Handling and Interpretation Policies → SYS_POLICIES.CHI → [[SYS_POLICIES:CHI]]
+  - Ambiguity Rule → SYS_POLICIES.CHI.AMBIGUITY → [[SYS_POLICIES:AMBIGUITY]]
+  - Extraction-First Rule → SYS_POLICIES.CHI.EXTRACTION → [[SYS_POLICIES:EXTRACTION]]
+  - Provided-Context Priority Rule → SYS_POLICIES.CHI.PRIORITY → [[SYS_POLICIES:PRIORITY]]
+  - Ambiguity Disclosure Rule → SYS_POLICIES.CHI.DISCLOSE_AMBIGUITY → [[SYS_POLICIES:DISCLOSE_AMBIGUITY]]
+  - Context Verification Rule → SYS_POLICIES.CHI.CONTEXT_VERIFY → [[SYS_POLICIES:CONTEXT_VERIFY]]
+  - Reasoning, Interpretation, and Tradeoffs Policies → SYS_POLICIES.RIT → [[SYS_POLICIES:RIT]]
+  - Tradeoff Disclosure Rule → SYS_POLICIES.RIT.DISCLOSE_TRADEOFFS → [[SYS_POLICIES:DISCLOSE_TRADEOFFS]]
+  - Intent-over-Literalism Rule → SYS_POLICIES.RIT.INTENT → [[SYS_POLICIES:INTENT]]
+  - Examples-Are-Illustrative Rule → SYS_POLICIES.RIT.EXAMPLES → [[SYS_POLICIES:EXAMPLES]]
+  - Citation Integrity and Evidence Traceability Policies → SYS_POLICIES.CIET → [[SYS_POLICIES:CIET]]
+  - Retrieved-Sources-Only Citation Rule → SYS_POLICIES.CIET.RETRIEVED → [[SYS_POLICIES:RETRIEVED]]
+  - Passage-Backed Citation Rule → SYS_POLICIES.CIET.PASSAGE → [[SYS_POLICIES:PASSAGE]]
+  - No-Guess Citation Rule → SYS_POLICIES.CIET.INVENTION → [[SYS_POLICIES:INVENTION]]
+  - Citation Verification Rule → SYS_POLICIES.CIET.VERIFY_CITATION → [[SYS_POLICIES:VERIFY_CITATION]]
+  - Output Quality and Task Completion Policies → SYS_POLICIES.OQTC → [[SYS_POLICIES:OQTC]]
+  - Completion Contract Rule → SYS_POLICIES.OQTC.COMPLETION → [[SYS_POLICIES:COMPLETION]]
+  - Checklist Rule → SYS_POLICIES.OQTC.CHECKLIST → [[SYS_POLICIES:CHECKLIST]]
+  - Structured Output Contract Rule → SYS_POLICIES.OQTC.STRUCTURED_OUTPUT → [[SYS_POLICIES:STRUCTURED_OUTPUT]]
+  - Missing-Context Rule → SYS_POLICIES.OQTC.MISSING_CONTEXT → [[SYS_POLICIES:MISSING_CONTEXT]]
+  - Exact Output Contract Rule → SYS_POLICIES.OQTC.UNREQUESTED → [[SYS_POLICIES:UNREQUESTED]]
+  - Schema Enforcement Rule → SYS_POLICIES.OQTC.SCHEMA → [[SYS_POLICIES:SCHEMA]]
+  - Instruction Element Defaults → SYS_POLICIES.DEFAULTS → [[SYS_POLICIES:DEFAULTS]]
+  - Task Instruction Defaults → SYS_POLICIES.DEFAULTS.TASKS → [[SYS_POLICIES:TASKS]]
+  - Priorities → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES → [[SYS_POLICIES:PRIORITIES]]
+  - Operational Definitions (Top Priorities) → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DEFINITIONS → [[SYS_POLICIES:DEFINITIONS]]
+  - Auditability → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DEFINITIONS.AUDITABILITY → [[SYS_POLICIES:AUDITABILITY]]
+  - Relevance → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DEFINITIONS.RELEVANCE → [[SYS_POLICIES:RELEVANCE]]
+  - Accuracy → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DEFINITIONS.ACCURACY → [[SYS_POLICIES:ACCURACY]]
+  - Timeliness → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DEFINITIONS.TIMELINESS → [[SYS_POLICIES:TIMELINESS]]
+  - Reliability → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DEFINITIONS.RELIABILITY → [[SYS_POLICIES:RELIABILITY]]
+  - Sufficiency → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DEFINITIONS.SUFFICIENCY → [[SYS_POLICIES:SUFFICIENCY]]
+  - Recoverability → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DEFINITIONS.RECOVERABILITY → [[SYS_POLICIES:RECOVERABILITY]]
+  - General Guardrails → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.GUARDRAILS → [[SYS_POLICIES:GUARDRAILS]]
+  - Unified Decision Gate Framework → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DECISION_FRAMEWORK → [[SYS_POLICIES:DECISION_FRAMEWORK]]
+  - Gate 1 — Safety & Legality → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DECISION_FRAMEWORK.GATE_01 → [[SYS_POLICIES:DECISION_GATE_01]]
+  - Gate 2 — Quality Threshold → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DECISION_FRAMEWORK.GATE_02 → [[SYS_POLICIES:DECISION_GATE_02]]
+  - Gate 3 — Transparency → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DECISION_FRAMEWORK.GATE_03 → [[SYS_POLICIES:DECISION_GATE_03]]
+  - Tradeoff and Risk Disclosure Requirements → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DISCLOSURES → [[SYS_POLICIES:DISCLOSE_TRADEOFFS_RISKS]]
+  - Stakeholder Impact Disclosure → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DISCLOSURES.IMPACT → [[SYS_POLICIES:DISCLOSE_IMPACTS]]
+  - Material Tradeoff Disclosure → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DISCLOSURES.MATERIAL → [[SYS_POLICIES:DISCLOSE_MATERIAL]]
+  - Harm-Prevention Threshold Disclosure → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.DISCLOSURES.HARM → [[SYS_POLICIES:DISCLOSE_HARM_THRESHOLD]]
+  - Continuous Improvement Clause → SYS_POLICIES.DEFAULTS.TASKS.PRIORITIES.CI → [[SYS_POLICIES:CONTINUOUS_IMPROVEMENT]]
+  - Identity → SYS_POLICIES.DEFAULTS.TASKS.IDENTITY → [[SYS_POLICIES:IDENTITY]]
+  - Audience → SYS_POLICIES.DEFAULTS.TASKS.AUDIENCE → [[SYS_POLICIES:AUDIENCE]]
+  - Success Criteria (Quality Bar) → SYS_POLICIES.DEFAULTS.TASKS.SUCCESS → [[SYS_POLICIES:SUCCESS]]
 - `if-llm-humanity.md`
   - Humanity → HUMANITY → [[HUMANITY:ROOT]]
   - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
@@ -78,13 +409,6 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
   - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
   - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
-- `if-llm-humanity-ooda.md`
-  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
-  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
-  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
-  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
-  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
-  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
 - `if-llm-humanity-narm.md`
   - Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
   - Consequences of Unmet Needs → HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS → [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
@@ -94,7 +418,14 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
   - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
   - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
-- `if-llm-humanity-values.md`
+- `if-llm-humanity-ooda.md`
+  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
+  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
+  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
+  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
+  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
+  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]  
+- `if-llm-humanity-values-1.md`
   - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
   - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
   - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
@@ -102,6 +433,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
   - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
   - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
+- `if-llm-humanity-values-2.md`
   - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
   - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
   - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
@@ -109,6 +441,7 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
   - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
   - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
+- `if-llm-humanity-values-3.md`
   - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
   - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
   - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
@@ -116,11 +449,13 @@ Use with the following supplemental files to integrate knowledge subdomains mapp
   - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
   - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
   - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
+- `if-llm-humanity-values-4.md`
   - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
   - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
   - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
   - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
   - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
+- `if-llm-humanity-values-5.md`
   - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
   - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
   - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]

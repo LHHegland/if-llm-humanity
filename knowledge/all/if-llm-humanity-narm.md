@@ -1,9 +1,8 @@
-# Humanity's Needs ← Activities ← Resources ← Motivations (NARM) Process — Information-Following Large Language Model Knowledge (*if-llm-humanity-narm.md*)
+# Humanity's Needs ← Activities ← Resources ← Motivations (NARM) Process — Information-Following Large Language Model Knowledge (`if-llm-humanity-narm.md`)
 
 ## File Header
 
-- **Name:** Humanity's Needs ← Activities ← Resources ← Motivations (NARM) Process — Information-Following Large Language Model Knowledge (*if-llm-humanity-narm.md*)
-- **Version:** 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Last Reviewed:** 2026-06-15 04:56 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
@@ -22,13 +21,18 @@
 - **Use Cases**
   - **Supported:** Helping users identify which needs are unmet and why; supporting practical resource and capability planning; interpreting behavioral signs of need deprivation in self and others (non-clinically); grounding coping conversations in the NARM framework; supporting goal-setting, habit-building, and daily functioning improvement.
   - **Not Supported:** Not a clinical assessment tool; not for medical diagnosis; not suitable for generating professional service referrals for clinical needs (see [[HUMANITY:COPING]] for emergency and professional resource guidance); not a replacement for financial, legal, or healthcare professional advice; not for population-level policy analysis.
-  
-- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-3.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
+
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - Consequences of Unmet Needs indicators are observable behavioral signals, not clinical diagnoses. They should be used for sensemaking and support, not assessment or labeling.
 
 - **Changelog**
+  - 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com):
+    - Moved **Domain Knowledge Index** and **Domain Concept Disambiguation** from all files into `if-llm-humanity-index.md`.
+    - Updated **Dependencies** in each file.
+    - Retained **Local Knowledge Index** and **Local Concept Disambiguation** in each knowledge file.
+    - Reviewed and updated **Known Gaps / Limitations** in each knowledge file.
   - 2026-06-17 07:50 UTC by [Lance Hegland](lance.hegland@gmail.com): Updated `Index` > `Domain Knowledge Index` to reflect split of `if-llm-humanity-values-4.md` containing 10 entries into two separate files as follows:
     - `if-llm-humanity-values-4.md` contains the 5 entries  `Justice` through `Persistence`
     - `if-llm-humanity-values-5.md` contains the 5 entries  `Courage` through `Hope`
@@ -63,81 +67,7 @@
 
 Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
-### Domain Knowledge Index
-
-Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
-
-Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
-
-- `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
-- `if-llm-humanity.md`
-  - Humanity → HUMANITY → [[HUMANITY:ROOT]]
-  - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
-  - Elements → HUMANITY.ELEMENTS → [[HUMANITY:ELEMENTS]]
-  - Coping → HUMANITY.ELEMENTS.COPING → [[HUMANITY:COPING]]
-  - Concerns → HUMANITY.ELEMENTS.CONCERNS → [[HUMANITY:CONCERNS]]
-  - Lessons Learned → HUMANITY.ELEMENTS.LESSONS → [[HUMANITY:LESSONS]]
-  - Unalienable Rights → HUMANITY.ELEMENTS.RIGHTS → [[HUMANITY:RIGHTS]]
-  - Vision → HUMANITY.ELEMENTS.VISION → [[HUMANITY:VISION]]
-  - Mission → HUMANITY.ELEMENTS.MISSION → [[HUMANITY:MISSION]]
-- `if-llm-humanity-experts.md`
-  - Experts → HUMANITY.ELEMENTS.EXPERTS → [[HUMANITY:EXPERTS]]
-  - Reasoning and Behavior Experts → HUMANITY.ELEMENTS.EXPERTS.REASONING → [[HUMANITY:REASONING_EXPERTS]]
-  - Communication Experts → HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION → [[HUMANITY:COMMUNICATION_EXPERTS]]
-  - Application Experts → HUMANITY.ELEMENTS.EXPERTS.APPLICATION → [[HUMANITY:APPLICATION_EXPERTS]]
-  - History Experts → HUMANITY.ELEMENTS.EXPERTS.HISTORY → [[HUMANITY:HISTORY_EXPERTS]]
-- `if-llm-humanity-fallibility.md`
-  - Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
-  - Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS → [[HUMANITY:TEMPTATIONS]]
-  - Consequences of Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES → [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]
-  - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
-  - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
-  - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
-- `if-llm-humanity-ooda.md`
-  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
-  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
-  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
-  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
-  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
-  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
-- `if-llm-humanity-values-1.md`
-  - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
-  - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
-  - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
-  - Love → HUMANITY.ELEMENTS.VALUES.LOVE → [[HUMANITY:LOVE]]
-  - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
-  - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
-  - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
-- `if-llm-humanity-values-2.md`
-  - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
-  - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
-  - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
-  - Compassion → HUMANITY.ELEMENTS.VALUES.COMPASSION → [[HUMANITY:COMPASSION]]
-  - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
-  - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
-  - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
-- `if-llm-humanity-values-3.md`
-  - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
-  - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
-  - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
-  - Gratitude → HUMANITY.ELEMENTS.VALUES.GRATITUDE → [[HUMANITY:GRATITUDE]]
-  - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
-  - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
-  - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
-- `if-llm-humanity-values-4.md`
-  - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
-  - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
-  - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
-  - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
-  - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
-- `if-llm-humanity-values-5.md`
-  - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
-  - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
-  - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]
-  - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
-  - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
-
-### Concept Disambiguation
+### Local Concept Disambiguation
 
 Use these notes to select between partially overlapping concepts for precise IF-LLM retrieval and reasoning.
 
@@ -145,26 +75,14 @@ Use these notes to select between partially overlapping concepts for precise IF-
   - Use `[[HUMANITY:NEEDS]]` when the focus is on *universal structural requirements* for human health, safety, dignity, and inclusion — the four categories that every person requires regardless of context, culture, or preference.
   - Use `[[HUMANITY:MOTIVATORS]]` when the focus is on *contextual energizing drivers* — the specific reasons, drives, and preferences that cause an individual to act, which vary widely across people and situations.
   - Note: Needs are the *destination*; motivators are part of the *engine* that drives the journey. When a user asks "what does everyone need?" cite [[HUMANITY:NEEDS]]. When a user asks "what makes this person keep going (or stop)?" cite [[HUMANITY:MOTIVATORS]].
-
 - **[[HUMANITY:RESOURCES]] vs. [[HUMANITY:CAPABILITIES]]**
   - Use `[[HUMANITY:RESOURCES]]` when the focus is on the *core limited inputs* humans draw on to perform activities — Time, Energy, and Integrity. These are consumed as used, finite, and non-substitutable.
   - Use `[[HUMANITY:CAPABILITIES]]` when the focus is on *buildable multipliers* that increase what a person can achieve per unit of resource — Autonomy, Abilities, Relationships, Experiences, Knowledge, Skills, Tools, Finances. These can be developed over time.
   - Note: Resources are the *fuel*; Capabilities are the *engine efficiency*. When a user asks "I don't have enough time/energy," cite [[HUMANITY:RESOURCES]]. When a user asks "how do I get better at this?" cite [[HUMANITY:CAPABILITIES]].
-
 - **[[HUMANITY:ADLS]] vs. [[HUMANITY:IADLS]]**
   - Use `[[HUMANITY:ADLS]]` when the focus is on *essential personal self-care tasks* that directly meet Health, Safety, and Dignity needs — bathing, toileting, dressing, transferring, eating. These are the most basic functional activities.
   - Use `[[HUMANITY:IADLS]]` when the focus is on *instrumental support activities* that enable ADLs and support Inclusion — meal preparation, housekeeping, shopping, transportation, communication, medications, finances.
   - Note: ADLs are the *floor* (minimum functioning); IADLs are the *scaffolding* (what supports the floor and enables participation). When a user is in crisis or has reduced capacity, start with [[HUMANITY:ADLS]]; when building sustainable daily functioning, add [[HUMANITY:IADLS]].
-
-- **[[HUMANITY:CONSEQUENCES_UNMET_NEEDS]] vs. [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]**
-  - Use `[[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]` when outcomes result primarily from *chronic deprivation* — prolonged inability to meet Health, Safety, Dignity, or Inclusion needs (e.g., anxiety from financial insecurity, withdrawal from social exclusion).
-  - Use `[[HUMANITY:CONSEQUENCES_TEMPTATIONS]]` when outcomes result primarily from *making harmful behavioral choices* — following temptation patterns that damage trust, relationships, or functioning (e.g., addiction, broken trust, moral drift).
-  - Note: These two consequence sets frequently interact and compound. Temptations can cause unmet needs (addiction → financial ruin → health deprivation); unmet needs can fuel temptations (insecurity → hoarding). When both apply, cite both and identify which is driving the cycle.
-
-- **[[HUMANITY:ACTIVITIES]] vs. [[HUMANITY:OODA]]**
-  - Use `[[HUMANITY:ACTIVITIES]]` when the focus is on *what a person does* to satisfy needs — the content of their behavior (bathing, shopping, communicating, earning income).
-  - Use `[[HUMANITY:OODA]]` when the focus is on *how a person decides what to do* — the sense-make-act loop that governs behavioral choices in real time.
-  - Note: Activities are the *output* of the OODA loop; OODA is the *process* that selects and executes activities. Cite both when explaining that someone has the right activities in mind but keeps making poor moment-to-moment decisions about them.
 
 ### Local Knowledge Index
 
@@ -178,6 +96,10 @@ The following is a list of this file's common topic references mapped to canonic
 - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
 - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
 - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
+
+### Domain Knowledge Index
+
+Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
 
 ## Humanity
 

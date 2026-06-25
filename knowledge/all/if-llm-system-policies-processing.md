@@ -31,7 +31,6 @@ These policies are intended to be stable. Silent reinterpretation, softening, or
 - 2026-04-03T08:30Z [Lance Hegland](mailto:lance.hegland@gmail.com)
   - Rename to 'system-policies.md'
   - Replace `PROCESSING_` with `SYS_`
-- 2026-03-23T02:38Z — [Lance Hegland](mailto:lance.hegland@gmail.com): 
 - 2026-03-23T02:38Z — [Lance Hegland](mailto:lance.hegland@gmail.com): improved system-level policies and knowledge entries based on evaluation (Pass 1; Issue #131)
 - 2026-03-22T06:21Z — [Lance Hegland](mailto:lance.hegland@gmail.com): updated to add system-level anti-failure policies plus include IDs and tags for existing policies
 - 2026-02-21T07:32Z — [Lance Hegland](mailto:lance.hegland@gmail.com): updated processing priorities ( PROCESSING_POLICIES.DEFAULTS.TASKS.PRIORITIES  ) for iterative evaluation recommendations

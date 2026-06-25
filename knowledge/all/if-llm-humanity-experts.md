@@ -1,9 +1,8 @@
-# Humanity's Experts — Information-Following Large Language Model Knowledge (*if-llm-humanity-experts.md*)
+# Humanity's Experts — Information-Following Large Language Model Knowledge (`if-llm-humanity-experts.md`)
 
 ## File Header
 
-- **Name:** Humanity's Experts — Information-Following Large Language Model Knowledge (*if-llm-humanity-experts.md*)
-- **Version:** 2026-06-17 04:26 UTC by [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Last Reviewed:** 2026-06-14 07:42 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
@@ -22,7 +21,7 @@
   - **Supported:** Helping users understand which expert fields address their question; recommending professional consultation types; attributing knowledge claims to recognized disciplines when IF-LLM reasoning is grounded in those fields.
   - **Not Supported:** Not a referral service for individual practitioners; not optimized for clinical, legal, or engineering subspecialties; not for generating professional credentials or certifications; not for diagnosing, prescribing, or providing therapy.
 
-- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-3.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - Many expert roles appear across multiple subcategories (e.g., Philosophers, Developmental Psychologists, Cultural Anthropologists). The Concept Disambiguation section provides selection guidance, but cross-category roles are not fully deduplicated within individual entries.
@@ -31,6 +30,11 @@
   - Ontological relationships describe the most significant connections across the ecosystem; edge cases spanning multiple categories require IF-LLM judgment and may benefit from citing more than one expert subcategory.
 
 - **Changelog**
+  - 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com):
+    - Moved **Domain Knowledge Index** and **Domain Concept Disambiguation** from all files into `if-llm-humanity-index.md`.
+    - Updated **Dependencies** in each file.
+    - Retained **Local Knowledge Index** and **Local Concept Disambiguation** in each knowledge file.
+    - Reviewed and updated **Known Gaps / Limitations** in each knowledge file.
   - 2026-06-17 07:50 UTC by [Lance Hegland](lance.hegland@gmail.com): Updated `Index` > `Domain Knowledge Index` to reflect split of `if-llm-humanity-values-4.md` containing 10 entries into two separate files as follows:
     - `if-llm-humanity-values-4.md` contains the 5 entries  `Justice` through `Persistence`
     - `if-llm-humanity-values-5.md` contains the 5 entries  `Courage` through `Hope`
@@ -65,83 +69,7 @@
 
 Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
-### Domain Knowledge Index
-
-Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
-
-Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
-
-- `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
-- `if-llm-humanity.md`
-  - Humanity → HUMANITY → [[HUMANITY:ROOT]]
-  - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
-  - Elements → HUMANITY.ELEMENTS → [[HUMANITY:ELEMENTS]]
-  - Coping → HUMANITY.ELEMENTS.COPING → [[HUMANITY:COPING]]
-  - Concerns → HUMANITY.ELEMENTS.CONCERNS → [[HUMANITY:CONCERNS]]
-  - Lessons Learned → HUMANITY.ELEMENTS.LESSONS → [[HUMANITY:LESSONS]]
-  - Unalienable Rights → HUMANITY.ELEMENTS.RIGHTS → [[HUMANITY:RIGHTS]]
-  - Vision → HUMANITY.ELEMENTS.VISION → [[HUMANITY:VISION]]
-  - Mission → HUMANITY.ELEMENTS.MISSION → [[HUMANITY:MISSION]]
-- `if-llm-humanity-fallibility.md`
-  - Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
-  - Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS → [[HUMANITY:TEMPTATIONS]]
-  - Consequences of Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES → [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]
-  - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
-  - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
-  - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
-- `if-llm-humanity-ooda.md`
-  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
-  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
-  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
-  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
-  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
-  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
-- `if-llm-humanity-narm.md`
-  - Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
-  - Consequences of Unmet Needs → HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS → [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
-  - Activities → HUMANITY.ELEMENTS.ACTIVITIES → [[HUMANITY:ACTIVITIES]]
-  - Activities of Daily Living (ADLs) → HUMANITY.ELEMENTS.ACTIVITIES.ADLS → [[HUMANITY:ADLS]]
-  - Instrumental Activities of Daily Living (IADLs) → HUMANITY.ELEMENTS.ACTIVITIES.IADLS → [[HUMANITY:IADLS]]
-  - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
-  - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
-  - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
-- `if-llm-humanity-values-1.md`
-  - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
-  - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
-  - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
-  - Love → HUMANITY.ELEMENTS.VALUES.LOVE → [[HUMANITY:LOVE]]
-  - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
-  - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
-  - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
-- `if-llm-humanity-values-2.md`
-  - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
-  - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
-  - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
-  - Compassion → HUMANITY.ELEMENTS.VALUES.COMPASSION → [[HUMANITY:COMPASSION]]
-  - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
-  - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
-  - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
-- `if-llm-humanity-values-3.md`
-  - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
-  - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
-  - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
-  - Gratitude → HUMANITY.ELEMENTS.VALUES.GRATITUDE → [[HUMANITY:GRATITUDE]]
-  - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
-  - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
-  - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
-- `if-llm-humanity-values-4.md`
-  - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
-  - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
-  - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
-  - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
-  - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
-  - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
-  - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
-  - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]
-  - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
-  - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
-
-### Concept Disambiguation
+### Local Concept Disambiguation
 
 Use these notes to select between partially overlapping expert categories for precise IF-LLM retrieval and reasoning.
 
@@ -149,17 +77,14 @@ Use these notes to select between partially overlapping expert categories for pr
   - Use `[[HUMANITY:REASONING_EXPERTS]]` when the focus is on *how humans think, decide, or behave* — logic, ethics, cognition, motivation, and behavioral science.
   - Use `[[HUMANITY:COMMUNICATION_EXPERTS]]` when the focus is on *how humans express, transmit, and preserve meaning* — language, narrative, folklore, and cultural storytelling.
   - Note: Philosophers and Psychologists appear in both. Cite [[HUMANITY:REASONING_EXPERTS]] for *analytical and ethical frameworks*; cite [[HUMANITY:COMMUNICATION_EXPERTS]] for *how those frameworks are transmitted across cultures and time*.
-
 - **[[HUMANITY:REASONING_EXPERTS]] vs. [[HUMANITY:APPLICATION_EXPERTS]]**
   - Use `[[HUMANITY:REASONING_EXPERTS]]` when the focus is on *developing or evaluating the underlying frameworks* — moral theory, cognitive models, standards development.
   - Use `[[HUMANITY:APPLICATION_EXPERTS]]` when the focus is on *putting knowledge into practice* in real-world domains — healthcare ethics, social work, policy, organizational development.
   - When a user is asking *what to do* in a complex situation, prefer [[HUMANITY:APPLICATION_EXPERTS]]. When asking *why* something works or how to reason about it, prefer [[HUMANITY:REASONING_EXPERTS]].
-
 - **[[HUMANITY:HISTORY_EXPERTS]] vs. [[HUMANITY:APPLICATION_EXPERTS]]**
   - Use `[[HUMANITY:HISTORY_EXPERTS]]` when the focus is on *understanding patterns across time and civilizations* — long-term trends, cross-cultural comparisons, why similar problems recur.
   - Use `[[HUMANITY:APPLICATION_EXPERTS]]` when the focus is on *current real-world implementation* — what professionals do today to apply those lessons.
   - Cite both when a user is asking about a problem that recurs historically AND needs guidance on current professional practice.
-
 - **[[HUMANITY:HISTORY_EXPERTS]] vs. [[HUMANITY:COMMUNICATION_EXPERTS]]**
   - Use `[[HUMANITY:HISTORY_EXPERTS]]` when the focus is on *what happened and why* — historical evidence, social trends, civilizational analysis.
   - Use `[[HUMANITY:COMMUNICATION_EXPERTS]]` when the focus is on *how that history was told, preserved, or transmitted* — oral traditions, literature, religious narrative, folklore.
@@ -179,6 +104,10 @@ The following is a list of this file's common topic references mapped to canonic
 - Communication Experts → HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION → [[HUMANITY:COMMUNICATION_EXPERTS]]
 - Application Experts → HUMANITY.ELEMENTS.EXPERTS.APPLICATION → [[HUMANITY:APPLICATION_EXPERTS]]
 - History Experts → HUMANITY.ELEMENTS.EXPERTS.HISTORY → [[HUMANITY:HISTORY_EXPERTS]]
+
+### Domain Knowledge Index
+
+Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
 
 ## Humanity
 

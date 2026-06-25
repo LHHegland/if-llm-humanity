@@ -1,9 +1,8 @@
-# Humanity's Values 5 — Information-Following Large Language Model Knowledge (*if-llm-humanity-values-5.md*)
+# Humanity's Values Part 5 — Information-Following Large Language Model Knowledge (`if-llm-humanity-values-5.md`)
 
 ## File Header
 
-- **Name:** Humanity's Values 5 — Information-Following Large Language Model Knowledge (*if-llm-humanity-values-5.md*)
-- **Version:** 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Last Reviewed:** 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
@@ -24,7 +23,7 @@
   - **Supported:** IF-LLM retrieval of Persistence-branch sub-values; disambiguation between Courage and Bravery, Integrity and Justice/Fairness, Hope and Transcendence/Purpose; value-aligned response generation for audiences navigating fear, adversity, ethical decisions, energy, or difficult circumstances; cross-file ontological navigation for structured retrieval workflows
   - **Not Supported:** Cross-file parent-value workflows without also loading values-1.md, values-3.md, and values-4.md; clinical assessment or treatment; standalone moral philosophy reasoning without additional context; legal compliance interpretation
 
-- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values-1.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-3.md`, `if-llm-humanity-values-4.md`
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - **Hope's dual-branch position:** Hope is a sub-value of [[HUMANITY:TRANSCENDENCE]] (values-3.md) but also functionally supports the Persistence branch through [[HUMANITY:COURAGE]] and [[HUMANITY:PERSISTENCE]] (values-4.md). Retrieval workflows loading values-5.md for Hope must also load values-3.md for full Transcendence context.
@@ -33,6 +32,11 @@
   - **Integrity-Justice-Fairness triangle:** Integrity (individual consistency), Justice (systemic structure), and Fairness (interpersonal equity) form a closely related cluster. Full ethical reasoning queries require loading values-4.md alongside values-5.md.
 
 - **Changelog**
+  - 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com):
+    - Moved **Domain Knowledge Index** and **Domain Concept Disambiguation** from all files into `if-llm-humanity-index.md`.
+    - Updated **Dependencies** in each file.
+    - Retained **Local Knowledge Index** and **Local Concept Disambiguation** in each knowledge file.
+    - Reviewed and updated **Known Gaps / Limitations** in each knowledge file.
   - 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com): Structural enhancement pass — (1) Replaced all TBD fields in File Header with meaningful descriptions (Purpose, Features, Scope Covers, Scope Out of Scope, Use Cases Supported, Use Cases Not Supported, Known Gaps/Limitations); (2) Corrected Dependencies field — removed stale `if-llm-humanity-values.md` pre-split parent reference, added missing `if-llm-humanity-fallibility.md`; (3) Replaced Concept Disambiguation TBD with 11 cross-entry and cross-file disambiguation notes covering Courage/Bravery, Courage/Persistence, Bravery/Integrity, Integrity/Justice, Integrity/Fairness, Vitality/Purpose, Vitality/Transcendence, Hope/Transcendence, Hope/Purpose, Hope/Persistence, and Vitality/Hope; (4) Added IF-LLM Application Example, Ontological Relationships, IF/THEN Decision Rules, and Scope/Exclusion Boundaries blocks to all 5 entries (Courage, Bravery, Integrity, Vitality, Hope), placed after the entry definition paragraph and before the Included by Value line.
   - 2026-06-17 07:50 UTC by [Lance Hegland](lance.hegland@gmail.com): Split `if-llm-humanity-values-4.md` containing 10 entries into two separate files as follows:
     - `if-llm-humanity-values-4.md` contains the 5 entries  `Justice` through `Persistence`
@@ -68,108 +72,22 @@
 
 Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
-### Domain Knowledge Index
-
-Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
-
-Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
-
-- `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
-- `if-llm-humanity.md`
-  - Humanity → HUMANITY → [[HUMANITY:ROOT]]
-  - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
-  - Elements → HUMANITY.ELEMENTS → [[HUMANITY:ELEMENTS]]
-  - Coping → HUMANITY.ELEMENTS.COPING → [[HUMANITY:COPING]]
-  - Concerns → HUMANITY.ELEMENTS.CONCERNS → [[HUMANITY:CONCERNS]]
-  - Lessons Learned → HUMANITY.ELEMENTS.LESSONS → [[HUMANITY:LESSONS]]
-  - Unalienable Rights → HUMANITY.ELEMENTS.RIGHTS → [[HUMANITY:RIGHTS]]
-  - Vision → HUMANITY.ELEMENTS.VISION → [[HUMANITY:VISION]]
-  - Mission → HUMANITY.ELEMENTS.MISSION → [[HUMANITY:MISSION]]
-- `if-llm-humanity-experts.md`
-  - Experts → HUMANITY.ELEMENTS.EXPERTS → [[HUMANITY:EXPERTS]]
-  - Reasoning and Behavior Experts → HUMANITY.ELEMENTS.EXPERTS.REASONING → [[HUMANITY:REASONING_EXPERTS]]
-  - Communication Experts → HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION → [[HUMANITY:COMMUNICATION_EXPERTS]]
-  - Application Experts → HUMANITY.ELEMENTS.EXPERTS.APPLICATION → [[HUMANITY:APPLICATION_EXPERTS]]
-  - History Experts → HUMANITY.ELEMENTS.EXPERTS.HISTORY → [[HUMANITY:HISTORY_EXPERTS]]
-- `if-llm-humanity-fallibility.md`
-  - Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
-  - Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS → [[HUMANITY:TEMPTATIONS]]
-  - Consequences of Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES → [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]
-  - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
-  - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
-  - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
-- `if-llm-humanity-narm.md`
-  - Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
-  - Consequences of Unmet Needs → HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS → [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
-  - Activities → HUMANITY.ELEMENTS.ACTIVITIES → [[HUMANITY:ACTIVITIES]]
-  - Activities of Daily Living (ADLs) → HUMANITY.ELEMENTS.ACTIVITIES.ADLS → [[HUMANITY:ADLS]]
-  - Instrumental Activities of Daily Living (IADLs) → HUMANITY.ELEMENTS.ACTIVITIES.IADLS → [[HUMANITY:IADLS]]
-  - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
-  - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
-  - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
-- `if-llm-humanity-ooda.md`
-  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
-  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
-  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
-  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
-  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
-  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
-- `if-llm-humanity-values-1.md`
-  - Values → HUMANITY.ELEMENTS.VALUES → [[HUMANITY:VALUES]]
-  - Wisdom → HUMANITY.ELEMENTS.VALUES.WISDOM → [[HUMANITY:WISDOM]]
-  - Interdependence → HUMANITY.ELEMENTS.VALUES.INTERDEPENDENCE → [[HUMANITY:INTERDEPENDENCE]]
-  - Love → HUMANITY.ELEMENTS.VALUES.LOVE → [[HUMANITY:LOVE]]
-  - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
-  - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
-  - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
-- `if-llm-humanity-values-2.md`
-  - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
-  - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
-  - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
-  - Compassion → HUMANITY.ELEMENTS.VALUES.COMPASSION → [[HUMANITY:COMPASSION]]
-  - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
-  - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
-  - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
-- `if-llm-humanity-values-3.md`
-  - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
-  - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
-  - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
-  - Gratitude → HUMANITY.ELEMENTS.VALUES.GRATITUDE → [[HUMANITY:GRATITUDE]]
-  - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
-  - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
-  - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
-- `if-llm-humanity-values-4.md`
-  - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
-  - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
-  - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
-  - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
-  - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
-
-### Concept Disambiguation
+### Local Concept Disambiguation
 
 Use these notes to select between partially overlapping concepts for precise IF-LLM retrieval and reasoning.
 
-- **Courage vs. Bravery ([[HUMANITY:COURAGE]], [[HUMANITY:BRAVERY]], this file):** Cite [[HUMANITY:COURAGE]] when the context involves a sustained character trait — the capacity to face fear, adversity, or moral opposition across multiple dimensions (physical, emotional, moral). Cite [[HUMANITY:BRAVERY]] when the focus is a specific, immediate act of confronting danger or hardship with boldness. Note: Bravery is a sub-value of Courage; when context is ambiguous, prefer [[HUMANITY:COURAGE]] as the parent.
-
-- **Courage vs. Persistence ([[HUMANITY:COURAGE]], this file; [[HUMANITY:PERSISTENCE]], values-4.md):** Cite [[HUMANITY:COURAGE]] when the character quality enabling the act of facing fear is central. Cite [[HUMANITY:PERSISTENCE]] when sustained effort over time despite obstacles is the focus. Note: Persistence is the parent value that includes Courage; retrieval workflows addressing Courage in its parent context must also load values-4.md.
-
-- **Bravery vs. Integrity ([[HUMANITY:BRAVERY]], [[HUMANITY:INTEGRITY]], this file):** Cite [[HUMANITY:BRAVERY]] when the context involves confronting physical danger, social risk, or immediate hardship with boldness. Cite [[HUMANITY:INTEGRITY]] when the focus is on alignment of words, actions, and principles over time. Note: Both can co-occur (e.g., whistleblowing involves bravery in the act and integrity in the principle); cite both when both dimensions are present.
-
-- **Integrity vs. Justice ([[HUMANITY:INTEGRITY]], this file; [[HUMANITY:JUSTICE]], values-4.md):** Cite [[HUMANITY:INTEGRITY]] when the focus is individual character — a person's consistency of words, actions, and principles. Cite [[HUMANITY:JUSTICE]] when the focus is systemic — equitable outcomes, institutional structures, and fair distribution. Note: Personal integrity supports just systems, but the two operate at different levels of analysis; full ethical reasoning queries require loading both files.
-
-- **Integrity vs. Fairness ([[HUMANITY:INTEGRITY]], this file; [[HUMANITY:FAIRNESS]], values-4.md):** Cite [[HUMANITY:INTEGRITY]] when addressing individual self-consistency and moral trustworthiness. Cite [[HUMANITY:FAIRNESS]] when addressing impartial treatment of others across relationships or groups. Note: Integrity is inward-facing (self); Fairness is outward-facing (others). They often co-occur in ethical decision-making.
-
-- **Vitality vs. Purpose ([[HUMANITY:VITALITY]], this file; [[HUMANITY:PURPOSE]], values-3.md):** Cite [[HUMANITY:VITALITY]] when the focus is energy, health, capacity, or the physical and emotional resources enabling action. Cite [[HUMANITY:PURPOSE]] when the focus is meaningful direction, mission-driven motivation, or the "why" behind action. Note: Vitality and Purpose are complementary — Purpose provides direction; Vitality provides fuel.
-
-- **Vitality vs. Transcendence ([[HUMANITY:VITALITY]], this file; [[HUMANITY:TRANSCENDENCE]], values-3.md):** Cite [[HUMANITY:VITALITY]] for physical, emotional, and mental well-being and the capacity for engagement. Cite [[HUMANITY:TRANSCENDENCE]] for meaning-making that extends beyond the self — spiritual connection, awe, or significance beyond ordinary experience. Note: Transcendence can energize vitality, but the two are distinct; vitality is about capacity, transcendence is about meaning-frame.
-
-- **Hope vs. Transcendence ([[HUMANITY:HOPE]], this file; [[HUMANITY:TRANSCENDENCE]], values-3.md):** Cite [[HUMANITY:HOPE]] specifically when addressing belief that positive outcomes are possible — the orienting optimism that sustains individuals through difficulty. Cite [[HUMANITY:TRANSCENDENCE]] when addressing the broader cluster of values that extend beyond self (Gratitude, Purpose, Excellence, Humor, Hope). Note: Hope is a sub-value of Transcendence; retrieval workflows using [[HUMANITY:HOPE]] in a transcendence context must load values-3.md.
-
-- **Hope vs. Purpose ([[HUMANITY:HOPE]], this file; [[HUMANITY:PURPOSE]], values-3.md):** Cite [[HUMANITY:HOPE]] when the focus is on optimism and resilience in the face of difficulty — the belief that things can improve. Cite [[HUMANITY:PURPOSE]] when the focus is on a meaningful direction or goal that organizes effort. Note: Hope and Purpose are siblings under Transcendence; hope orients toward possibility, purpose orients toward mission.
-
-- **Hope vs. Persistence ([[HUMANITY:HOPE]], this file; [[HUMANITY:PERSISTENCE]], values-4.md):** Cite [[HUMANITY:HOPE]] when the focus is on the belief and emotional orientation that sustains continued action. Cite [[HUMANITY:PERSISTENCE]] when the focus is on the sustained effort itself — continuing despite obstacles. Note: Hope motivates persistence; persistence enacts hope. Cite both when addressing the full cycle of resilience.
-
-- **Vitality vs. Hope ([[HUMANITY:VITALITY]], [[HUMANITY:HOPE]], this file):** Cite [[HUMANITY:VITALITY]] when the context is physical, emotional, or mental energy and capacity. Cite [[HUMANITY:HOPE]] when the context is belief, optimism, and future-orientation. Note: Both support resilience and recovery; they mutually reinforce each other and can co-occur, but vitality is a resource state and hope is a cognitive-emotional orientation.
+- **[[HUMANITY:COURAGE]] vs. [[HUMANITY:BRAVERY]]**
+  - Use `[[HUMANITY:COURAGE]]` when the topic involves a sustained character trait — the capacity to face fear, adversity, or moral opposition across multiple dimensions over time.
+  - Use `[[HUMANITY:BRAVERY]]` when the topic involves a specific, immediate act of confronting danger or hardship with boldness.
+  - Note: Bravery is a sub-value of Courage; when context is ambiguous, prefer `[[HUMANITY:COURAGE]]` as the parent.
+- **[[HUMANITY:BRAVERY]] vs. [[HUMANITY:INTEGRITY]]**
+  - Use `[[HUMANITY:BRAVERY]]` when the topic involves confronting physical danger, social risk, or immediate hardship with boldness.
+  - Use `[[HUMANITY:INTEGRITY]]` when the topic involves alignment of words, actions, and principles consistently over time.
+  - Note: Both can co-occur — whistleblowing, for example, involves Bravery in the act and Integrity in the principle; cite both when both dimensions are present.
+- **[[HUMANITY:VITALITY]] vs. [[HUMANITY:HOPE]]**
+  - Use `[[HUMANITY:VITALITY]]` when the topic involves physical, emotional, or mental energy and capacity — a resource state.
+  - Use `[[HUMANITY:HOPE]]` when the topic involves belief, optimism, and future-orientation — a cognitive-emotional orientation.
+  - Note: Both support resilience and recovery and mutually reinforce each other; Vitality is what you have, Hope is what you believe.
 
 ### Local Knowledge Index
 
@@ -180,6 +98,10 @@ The following is a list of this file's common topic references mapped to canonic
 - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]
 - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
 - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
+
+### Domain Knowledge Index
+
+Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
 
 ## Humanity
 

@@ -1,9 +1,8 @@
-# Humanity's Values 1 — Information-Following Large Language Model Knowledge (*if-llm-humanity-values-1.md*)
+# Humanity's Values Part 1 — Information-Following Large Language Model Knowledge (`if-llm-humanity-values-1.md`)
 
 ## File Header
 
-- **Name:** Humanity's Values 1 — Information-Following Large Language Model Knowledge (*if-llm-humanity-values-1.md*)
-- **Version:** 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com)
+- **Version:** 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com)
 - **Last Reviewed:** 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com)
 - **Owner:** [Lance Hegland](lance.hegland@gmail.com)
 
@@ -26,7 +25,7 @@
   - **Supported:** Moral reasoning scaffolding for diverse audiences; civic and character education content; narrative and creative content generation grounded in foundational human values; ethical decision support using the VALUES heuristic; value-chain navigation from Wisdom through all sub-values; IF-LLM retrieval workflows requiring precise entry selection between overlapping foundational values
   - **Not Supported:** Clinical therapy or formal values-clarification assessment; legal advice or compliance determinations; religious or theological instruction; psychological diagnosis; formal academic epistemology or philosophy of mind; policy advocacy or partisan framing
 
-- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`, `if-llm-humanity.md`, `if-llm-humanity-experts.md`, `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, `if-llm-humanity-ooda.md`, `if-llm-humanity-values-2.md`, `if-llm-humanity-values-3.md`, `if-llm-humanity-values-4.md`, `if-llm-humanity-values-5.md`
+- **Dependencies (Required):** `if-llm-system-policies-processing.md`, `if-llm-humanity-index.md`
 - **Stability:** Stable. Core entries, tag assignments, and namespace rules are intended to remain consistent across sessions. Silent reinterpretation of entries, tag reassignment, or scope expansion without an explicit Changelog entry is prohibited.
 - **Known Gaps / Limitations**
   - Ontological relationships reference entries in sibling files (values-2 through values-5, plus `if-llm-humanity-fallibility.md`, `if-llm-humanity-narm.md`, and `if-llm-humanity-ooda.md`) that must be loaded for full graph traversal; partial-file loading will produce incomplete relationship chains.
@@ -36,6 +35,11 @@
   - Concept disambiguation between this file's entries and sibling-file entries (especially Curiosity vs. Love of Learning, Open-Mindedness vs. Perspective, Wisdom vs. Prudence) is most precise when sibling files are loaded alongside this one.
 
 - **Changelog**
+  - 2026-06-25 04:54 UTC by [Lance Hegland](lance.hegland@gmail.com):
+    - Moved **Domain Knowledge Index** and **Domain Concept Disambiguation** from all files into `if-llm-humanity-index.md`.
+    - Updated **Dependencies** in each file.
+    - Retained **Local Knowledge Index** and **Local Concept Disambiguation** in each knowledge file.
+    - Reviewed and updated **Known Gaps / Limitations** in each knowledge file.
   - 2026-06-22 23:13 UTC by Claude (Anthropic) on behalf of [Lance Hegland](lance.hegland@gmail.com): Comprehensive structural enhancement of all six individual entries and the File Header. Specifically:
     - **File Header:** Replaced all TBD fields — Purpose, Features, Scope (Covers, Out of Scope), Use Cases (Supported, Not Supported), and Dependencies — with complete, meaningful descriptions.
     - **File Header:** Added Known Gaps/Limitations statement covering cross-file dependency requirements, Love entry granularity gap, literary coverage unevenness, Critical Thinking scope boundaries, sibling-file disambiguation dependency, and the uniqueness of the Wisdom entry's Experiential Evidence and Social Reinforcement sections.
@@ -76,100 +80,26 @@
 
 Domain's common topic references mapped to canonical handles (i.e., IDs and namespaced tags). Use canonical tags in prompts (e.g., [[HUMANITY:RESOURCES]]).
 
-### Domain Knowledge Index
-
-Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
-
-Use with the following supplemental files to integrate knowledge subdomains mapped to the following common topic references and canonical handles (i.e., IDs and namespaced tags):
-
-- `if-llm-system-policies-processing.md` → Processing Policies → SYS_POLICIES → [[SYS_POLICIES:ROOT]]
-- `if-llm-humanity.md`
-  - Humanity → HUMANITY → [[HUMANITY:ROOT]]
-  - Rules → HUMANITY.RULES → [[HUMANITY:RULES]]
-  - Elements → HUMANITY.ELEMENTS → [[HUMANITY:ELEMENTS]]
-  - Coping → HUMANITY.ELEMENTS.COPING → [[HUMANITY:COPING]]
-  - Concerns → HUMANITY.ELEMENTS.CONCERNS → [[HUMANITY:CONCERNS]]
-  - Lessons Learned → HUMANITY.ELEMENTS.LESSONS → [[HUMANITY:LESSONS]]
-  - Unalienable Rights → HUMANITY.ELEMENTS.RIGHTS → [[HUMANITY:RIGHTS]]
-  - Vision → HUMANITY.ELEMENTS.VISION → [[HUMANITY:VISION]]
-  - Mission → HUMANITY.ELEMENTS.MISSION → [[HUMANITY:MISSION]]
-- `if-llm-humanity-experts.md`
-  - Experts → HUMANITY.ELEMENTS.EXPERTS → [[HUMANITY:EXPERTS]]
-  - Reasoning and Behavior Experts → HUMANITY.ELEMENTS.EXPERTS.REASONING → [[HUMANITY:REASONING_EXPERTS]]
-  - Communication Experts → HUMANITY.ELEMENTS.EXPERTS.COMMUNICATION → [[HUMANITY:COMMUNICATION_EXPERTS]]
-  - Application Experts → HUMANITY.ELEMENTS.EXPERTS.APPLICATION → [[HUMANITY:APPLICATION_EXPERTS]]
-  - History Experts → HUMANITY.ELEMENTS.EXPERTS.HISTORY → [[HUMANITY:HISTORY_EXPERTS]]
-- `if-llm-humanity-fallibility.md`
-  - Fallibility → HUMANITY.ELEMENTS.FALLIBILITY → [[HUMANITY:FALLIBILITY]]
-  - Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS → [[HUMANITY:TEMPTATIONS]]
-  - Consequences of Temptations → HUMANITY.ELEMENTS.FALLIBILITY.TEMPTATIONS.CONSEQUENCES → [[HUMANITY:CONSEQUENCES_TEMPTATIONS]]
-  - Stereotypes → HUMANITY.ELEMENTS.FALLIBILITY.STEREOTYPES → [[HUMANITY:STEREOTYPES]]
-  - Prejudices → HUMANITY.ELEMENTS.FALLIBILITY.PREJUDICES → [[HUMANITY:PREJUDICES]]
-  - Discrimination → HUMANITY.ELEMENTS.FALLIBILITY.DISCRIMINATION → [[HUMANITY:DISCRIMINATION]]
-- `if-llm-humanity-narm.md`
-  - Needs → HUMANITY.ELEMENTS.NEEDS → [[HUMANITY:NEEDS]]
-  - Consequences of Unmet Needs → HUMANITY.ELEMENTS.CONSEQUENCES_UNMET_NEEDS → [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]
-  - Activities → HUMANITY.ELEMENTS.ACTIVITIES → [[HUMANITY:ACTIVITIES]]
-  - Activities of Daily Living (ADLs) → HUMANITY.ELEMENTS.ACTIVITIES.ADLS → [[HUMANITY:ADLS]]
-  - Instrumental Activities of Daily Living (IADLs) → HUMANITY.ELEMENTS.ACTIVITIES.IADLS → [[HUMANITY:IADLS]]
-  - Limited Available Resources → HUMANITY.ELEMENTS.RESOURCES → [[HUMANITY:RESOURCES]]
-  - Capabilities → HUMANITY.ELEMENTS.RESOURCES.CAPABILITIES → [[HUMANITY:CAPABILITIES]]
-  - Motivators → HUMANITY.ELEMENTS.MOTIVATORS → [[HUMANITY:MOTIVATORS]]
-- `if-llm-humanity-ooda.md`
-  - Processing (OODA: Observe → Orient → Decide →  Act) → HUMANITY.ELEMENTS.OODA → [[HUMANITY:OODA]]
-  - Observe → HUMANITY.ELEMENTS.OODA.OBSERVE → [[HUMANITY:OBSERVE]]
-  - Senses → HUMANITY.ELEMENTS.OODA.OBSERVE.SENSES → [[HUMANITY:SENSES]]
-  - Orient → HUMANITY.ELEMENTS.OODA.ORIENT → [[HUMANITY:ORIENT]]
-  - Decide → HUMANITY.ELEMENTS.OODA.DECIDE →  [[HUMANITY:DECIDE]]
-  - Act → HUMANITY.ELEMENTS.OODA.ACT → [[HUMANITY:ACT]]
-- `if-llm-humanity-values-2.md`
-  - Perspective → HUMANITY.ELEMENTS.VALUES.PERSPECTIVE → [[HUMANITY:PERSPECTIVE]]
-  - Love of Learning → HUMANITY.ELEMENTS.VALUES.LEARNING → [[HUMANITY:LEARNING]]
-  - Creativity → HUMANITY.ELEMENTS.VALUES.CREATIVITY → [[HUMANITY:CREATIVITY]]
-  - Compassion → HUMANITY.ELEMENTS.VALUES.COMPASSION → [[HUMANITY:COMPASSION]]
-  - Temperance → HUMANITY.ELEMENTS.VALUES.TEMPERANCE → [[HUMANITY:TEMPERANCE]]
-  - Mercy → HUMANITY.ELEMENTS.VALUES.MERCY → [[HUMANITY:MERCY]]
-  - Humility → HUMANITY.ELEMENTS.VALUES.HUMILITY → [[HUMANITY:HUMILITY]]
-- `if-llm-humanity-values-3.md`
-  - Prudence → HUMANITY.ELEMENTS.VALUES.PRUDENCE → [[HUMANITY:PRUDENCE]]
-  - Self-Regulation → HUMANITY.ELEMENTS.VALUES.REGULATION → [[HUMANITY:REGULATION]]
-  - Transcendence → HUMANITY.ELEMENTS.VALUES.TRANSCENDENCE → [[HUMANITY:TRANSCENDENCE]]
-  - Gratitude → HUMANITY.ELEMENTS.VALUES.GRATITUDE → [[HUMANITY:GRATITUDE]]
-  - Purpose → HUMANITY.ELEMENTS.VALUES.PURPOSE → [[HUMANITY:PURPOSE]]
-  - Appreciation of Excellence → HUMANITY.ELEMENTS.VALUES.EXCELLENCE → [[HUMANITY:EXCELLENCE]]
-  - Humor → HUMANITY.ELEMENTS.VALUES.HUMOR → [[HUMANITY:HUMOR]]
-- `if-llm-humanity-values-4.md`
-  - Justice → HUMANITY.ELEMENTS.VALUES.JUSTICE → [[HUMANITY:JUSTICE]]
-  - Fairness → HUMANITY.ELEMENTS.VALUES.FAIRNESS → [[HUMANITY:FAIRNESS]]
-  - Citizenship → HUMANITY.ELEMENTS.VALUES.CITIZENSHIP → [[HUMANITY:CITIZENSHIP]]
-  - Leadership → HUMANITY.ELEMENTS.VALUES.LEADERSHIP → [[HUMANITY:LEADERSHIP]]
-  - Persistence → HUMANITY.ELEMENTS.VALUES.PERSISTENCE → [[HUMANITY:PERSISTENCE]]
-- `if-llm-humanity-values-5.md`
-  - Courage → HUMANITY.ELEMENTS.VALUES.COURAGE → [[HUMANITY:COURAGE]]
-  - Bravery → HUMANITY.ELEMENTS.VALUES.BRAVERY → [[HUMANITY:BRAVERY]]
-  - Integrity → HUMANITY.ELEMENTS.VALUES.INTEGRITY → [[HUMANITY:INTEGRITY]]
-  - Vitality → HUMANITY.ELEMENTS.VALUES.VITALITY → [[HUMANITY:VITALITY]]
-  - Hope → HUMANITY.ELEMENTS.VALUES.HOPE → [[HUMANITY:HOPE]]
-
-### Concept Disambiguation
+### Local Concept Disambiguation
 
 Use these notes to select between partially overlapping concepts for precise IF-LLM retrieval and reasoning.
 
-- **Wisdom vs. Prudence (`if-llm-humanity-values-3.md`):** Wisdom is the apex value of the entire VALUES hierarchy — the overarching, long-horizon capacity to integrate lessons, values, and experience into ethical, consequence-aware judgment across life and community. Prudence ([[HUMANITY:PRUDENCE]]) is a practical, decision-specific capacity to reason carefully in a particular context or moment. Cite [[HUMANITY:WISDOM]] when the topic involves long-term ethical judgment, accumulated understanding, legacy, or the integrating principle of the full VALUES framework. Cite [[HUMANITY:PRUDENCE]] when the topic involves sound reasoning applied to a specific practical decision. Note: Wise people are also prudent, but Wisdom is the broader, accumulated state; Prudence is the in-moment application.
-
-- **Interdependence vs. Love:** Interdependence is the structural, systemic recognition that all things are mutually connected and reliant — it is about the *architecture* of connection across people, beings, and environment. Love is the motivational, affective expression of care, commitment, and willingness to act for others' well-being *within* that connected system. Cite [[HUMANITY:INTERDEPENDENCE]] when describing the systemic web of mutual reliance, shared consequences, or collective responsibility. Cite [[HUMANITY:LOVE]] when the focus is on the emotional, volitional dimension of care, sacrifice, and commitment toward specific others. Note: Love motivates action within the interdependent web; Interdependence is the structural context that makes love consequential.
-
-- **Critical Thinking vs. Curiosity:** Critical Thinking ([[HUMANITY:THINKING]]) is the disciplined, structured process of analyzing, evaluating, and questioning information to reach well-reasoned conclusions — it emphasizes method, evidence, and rigor. Curiosity ([[HUMANITY:CURIOSITY]]) is the motivational desire to explore and understand — it energizes and initiates inquiry. Cite [[HUMANITY:THINKING]] when the focus is on the quality of reasoning, bias identification, or evidence evaluation. Cite [[HUMANITY:CURIOSITY]] when the focus is on the motivational drive to ask questions, explore new territory, or open up new lines of inquiry. Note: Curiosity asks "I wonder..."; Critical Thinking asks "Is this actually true, and how do I know?"
-
-- **Critical Thinking vs. Wisdom:** Critical Thinking is an analytical process applied to evaluate specific claims, arguments, or situations. Wisdom integrates the outputs of repeated critical thinking — plus experience, ethical grounding, and long-term consequence awareness — into broad, principled judgment over time. Cite [[HUMANITY:THINKING]] for the mechanics of evaluating a specific claim or reasoning through a specific situation. Cite [[HUMANITY:WISDOM]] for the broader, accumulated capacity to navigate life well, including knowing which questions to ask and which values to apply.
-
-- **Curiosity vs. Love of Learning (`if-llm-humanity-values-2.md`):** Curiosity is the motivational impulse to explore and understand — the *drive* that initiates inquiry and opens perception. Love of Learning ([[HUMANITY:LEARNING]]) is the sustained pleasure, habit, and commitment to acquiring and integrating new knowledge — the *ongoing practice* that develops from and is sustained by curiosity. Cite [[HUMANITY:CURIOSITY]] when describing the initial impulse, openness to discovery, or willingness to venture into unfamiliar territory. Cite [[HUMANITY:LEARNING]] when describing the sustained relationship with knowledge acquisition, growth, and mastery.
-
-- **Open-Mindedness vs. Perspective (`if-llm-humanity-values-2.md`):** Open-Mindedness is the *disposition* to receive and consider new ideas, information, or viewpoints without premature judgment or closure. Perspective ([[HUMANITY:PERSPECTIVE]]) is the *active capacity* to see a situation from another person's standpoint or through multiple angles — it is perspective-taking as a cognitive and empathic skill. Cite [[HUMANITY:OPENNESS]] when the key behavior is suspending judgment and reducing resistance to the unfamiliar. Cite [[HUMANITY:PERSPECTIVE]] when the key behavior is actively adopting, understanding, or applying another's viewpoint. Note: Open-Mindedness makes Perspective possible; Perspective is what Open-Mindedness enables.
-
-- **Open-Mindedness vs. Humility (`if-llm-humanity-values-2.md`):** Open-Mindedness is receptivity to new information, ideas, and perspectives — it is outward-facing. Humility ([[HUMANITY:HUMILITY]]) is accurate, non-defensive self-assessment — freedom from arrogance, accurate acknowledgment of one's own limits and fallibility — it is inward-facing. Both frequently occur together, but: cite [[HUMANITY:OPENNESS]] when the key behavior is suspending judgment about incoming information or other views; cite [[HUMANITY:HUMILITY]] when the key behavior is accurately recognizing one's own limitations, errors, or relative ignorance.
-
-- **Love vs. Compassion (`if-llm-humanity-values-2.md`):** Love is the broad, enduring orientation of care, commitment, and willingness to act for the well-being of others — it includes familial, civic, communal, and self-directed forms. Compassion ([[HUMANITY:COMPASSION]]) is the specific response to suffering: recognizing another's pain and being motivated to relieve it. Cite [[HUMANITY:LOVE]] when the topic involves the broad, generative force of care and commitment in relationships and communities. Cite [[HUMANITY:COMPASSION]] when the topic involves a specific response to identified suffering or vulnerability. Note: Compassion is a particular form of love activated by suffering; Love is the broader motivational ground from which Compassion grows.
+- **[[HUMANITY:WISDOM]] vs. [[HUMANITY:PRUDENCE]]**
+  - Use [[HUMANITY:WISDOM]] when the topic involves long-term ethical judgment, accumulated understanding, legacy, or the integrating principle of the full VALUES framework.
+  - Use [[HUMANITY:PRUDENCE]] when the topic involves sound reasoning applied to a specific practical decision.
+  - Note: Wisdom is the broader, accumulated state; Prudence is the in-moment application. Wise people are also prudent, but not all prudent decisions reflect Wisdom.
+- **[[HUMANITY:INTERDEPENDENCE]] vs. [[HUMANITY:LOVE]]**
+  - Use [[HUMANITY:INTERDEPENDENCE]] when the topic involves the systemic web of mutual reliance, shared consequences, or collective responsibility.
+  - Use [[HUMANITY:LOVE]] when the topic involves the emotional, volitional dimension of care, sacrifice, and commitment toward specific others.
+  - Note: Love motivates action within the interdependent web; Interdependence is the structural context that makes Love consequential.
+- **[[HUMANITY:THINKING]] vs. [[HUMANITY:CURIOSITY]]**
+  - Use [[HUMANITY:THINKING]] when the topic involves the quality of reasoning, bias identification, or evidence evaluation.
+  - Use [[HUMANITY:CURIOSITY]] when the topic involves the motivational drive to ask questions, explore new territory, or open up new lines of inquiry.
+  - Note: Curiosity asks "I wonder…"; Critical Thinking asks "Is this actually true, and how do I know?"
+- **[[HUMANITY:THINKING]] vs. [[HUMANITY:WISDOM]]**
+  - Use [[HUMANITY:THINKING]] when the topic involves evaluating a specific claim or reasoning through a specific situation.
+  - Use [[HUMANITY:WISDOM]] when the topic involves the broader, accumulated capacity to navigate life well — including knowing which questions to ask and which values to apply.
+  - Note: Wisdom integrates the outputs of repeated Critical Thinking plus experience, ethical grounding, and long-term consequence awareness.
 
 ### Local Knowledge Index
 
@@ -182,6 +112,10 @@ The following is a list of this file's common topic references mapped to canonic
 - Critical Thinking → HUMANITY.ELEMENTS.VALUES.THINKING → [[HUMANITY:THINKING]]
 - Curiosity → HUMANITY.ELEMENTS.VALUES.CURIOSITY → [[HUMANITY:CURIOSITY]]
 - Open-Mindedness → HUMANITY.ELEMENTS.VALUES.OPENNESS → [[HUMANITY:OPENNESS]]
+
+### Domain Knowledge Index
+
+Refer to `if-llm-humanity-index.md` for the list of domain knowledge file indexes for common topic references and canonical handles.
 
 ## Humanity
 
