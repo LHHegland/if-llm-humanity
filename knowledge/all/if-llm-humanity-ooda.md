@@ -512,7 +512,7 @@ TAGS: [[HUMANITY:ACT]]
 **Act** is the repeating step where you **execute the selected decision** in the real world (behavior and communication), using [[HUMANITY:RESOURCES]] to perform [[HUMANITY:ACTIVITIES]]. Act includes **follow-through**, **monitoring immediate results**, and **making small adjustments** to stay aligned with [[HUMANITY:NEEDS]] and [[HUMANITY:VALUES]]. Act also produces feedback that supports [[HUMANITY:LESSONS]] and improves future [[HUMANITY:ORIENT]] and performance.
 
 - **Examples**
-  - **Paying bills / managing finances:** You log in, pay the bill, set reminders/autopay, and confirm it posted (an [[HUMANITY:IADL]]).
+  - **Paying bills / managing finances:** You log in, pay the bill, set reminders/autopay, and confirm it posted (an [[HUMANITY:IADLS]]).
   - **Health follow-through:** You fill the prescription, take meds as directed, hydrate/eat, and contact the clinic if symptoms worsen.
   - **Work execution:** You send the email, complete the task, double-check it, and communicate status to others.
   - **Parenting/caregiving:** You set the boundary, enforce it consistently, and repair if you overreact.

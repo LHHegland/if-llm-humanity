@@ -27,7 +27,7 @@
     - Updated **Dependencies** in each file.
     - Retained **Local Knowledge Index** and **Local Concept Disambiguation** in each knowledge file.
     - Reviewed and updated **Known Gaps / Limitations** in each knowledge file.
-  - 2026-06-24 21:07 UTC by [Lance Hegland](lance.hegland@gmail.com): Added file header, added rules, expanded domain knowledge index & 
+  - 2026-06-24 21:07 UTC by [Lance Hegland](lance.hegland@gmail.com): Added file header, added rules, expanded domain knowledge index
   - 2026-01-31 06:03 UTC by [Lance Hegland](lance.hegland@gmail.com): Created
 
 ## Namespace, Tag, Alias, and Reference Rules
@@ -73,14 +73,6 @@ Use these notes to select between partially overlapping concepts for precise IF-
   - Use `[[HUMANITY:PREJUDICES]]` when the focus is on *affective pre-judgments* — feelings (dislike, fear, distrust) toward groups based on stereotypes (the "what someone feels" lens). Produce: awareness of how attitudes shape motivation and willingness to help.
   - Use `[[HUMANITY:DISCRIMINATION]]` when the focus is on *behavioral inequity* — unequal treatment in action (the "what someone does" lens). Produce: identification of harm-producing behaviors and their real-world effects on [[HUMANITY:NEEDS]] satisfaction.
   - Note: The three often chain (Stereotype → Prejudice → Discrimination) but are separable. Someone can hold stereotypes and prejudices without discriminating; and someone can discriminate without personal prejudice (due to rules, incentives, or social pressure).
-- **[[HUMANITY:TEMPTATIONS]] vs. [[HUMANITY:MOTIVATORS]]**
-  - Use `[[HUMANITY:TEMPTATIONS]]` when the focus is on *behavioral pulls that increase risk of harm* to self or others — patterns that, if followed routinely, undermine [[HUMANITY:NEEDS]] satisfaction.
-  - Use `[[HUMANITY:MOTIVATORS]]` when the focus is on *drives that support efficient need satisfaction* — energizing reasons to act that, on balance, help rather than harm.
-  - Note: Motivators can be hijacked by temptations (e.g., the healthy motivator "safety" can manifest as the temptation "hoarding"); context determines whether a drive is functioning as a motivator or a temptation.
-- **[[HUMANITY:CONSEQUENCES_TEMPTATIONS]] vs. [[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]**
-  - Use `[[HUMANITY:CONSEQUENCES_TEMPTATIONS]]` when outcomes result primarily from *making harmful behavioral choices* — e.g., broken trust from dishonesty, harm from impulsive aggression.
-  - Use `[[HUMANITY:CONSEQUENCES_UNMET_NEEDS]]` when outcomes result primarily from *chronic deprivation* — e.g., anxiety from prolonged financial insecurity, withdrawal from persistent social exclusion.
-  - Note: The two frequently interact; temptations can cause unmet needs (addiction → financial ruin → health deprivation), and unmet needs can fuel temptations (food insecurity → theft). When both apply, cite both.
 - **[[HUMANITY:TEMPTATIONS]] vs. [[HUMANITY:MOTIVATORS]]**
   - Use `[[HUMANITY:TEMPTATIONS]]` when the focus is on *behavioral pulls that increase risk of harm* to self or others — patterns that, if followed routinely, undermine [[HUMANITY:NEEDS]] satisfaction.
   - Use `[[HUMANITY:MOTIVATORS]]` when the focus is on *drives that support efficient need satisfaction* — energizing reasons to act that, on balance, help rather than harm.
@@ -204,7 +196,7 @@ Use these notes to select between partially overlapping concepts for precise IF-
 - **[[HUMANITY:TRANSCENDENCE]] vs. [[HUMANITY:HOPE]]**
   - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves the broader sense of meaning, connection, or rising above personal limits.
   - Use `[[HUMANITY:HOPE]]` when the topic involves the forward-looking belief that things can be or become better, especially under adversity.
-  - Note: Hope is a sub-value of Transcendence defined in values-5.md; load that file to access Hope's full entry.
+  - Note: Hope is a sub-value of Transcendence; load `[[HUMANITY:HOPE]]` to access Hope's full entry.
 - **[[HUMANITY:PRUDENCE]] vs. [[HUMANITY:WISDOM]]**
   - Use `[[HUMANITY:PRUDENCE]]` when the topic involves specific, situational decision-making — foresight, risk assessment, and careful practical judgment in a particular context.
   - Use `[[HUMANITY:WISDOM]]` when the topic involves the overarching, developed capacity for sound judgment across many domains and over time.
@@ -256,7 +248,7 @@ Use these notes to select between partially overlapping concepts for precise IF-
 - **[[HUMANITY:COURAGE]] vs. [[HUMANITY:PERSISTENCE]]**
   - Use `[[HUMANITY:COURAGE]]` when the topic involves the character quality that enables facing fear in a specific moment or act.
   - Use `[[HUMANITY:PERSISTENCE]]` when the topic involves sustained effort over time despite repeated obstacles.
-  - Note: Persistence is the parent value that includes Courage; retrieval workflows addressing Courage in its parent context must also load values-4.md.
+  - Note: Persistence is the parent value that includes Courage; retrieval workflows addressing Courage in its parent context must also load `[[HUMANITY:COURAGE]]`.
 - **[[HUMANITY:BRAVERY]] vs. [[HUMANITY:INTEGRITY]]**
   - Use `[[HUMANITY:BRAVERY]]` when the topic involves confronting physical danger, social risk, or immediate hardship with boldness.
   - Use `[[HUMANITY:INTEGRITY]]` when the topic involves alignment of words, actions, and principles consistently over time.
@@ -280,7 +272,7 @@ Use these notes to select between partially overlapping concepts for precise IF-
 - **[[HUMANITY:HOPE]] vs. [[HUMANITY:TRANSCENDENCE]]**
   - Use `[[HUMANITY:HOPE]]` when the topic involves the belief that positive outcomes are possible — the orienting optimism that sustains individuals through difficulty.
   - Use `[[HUMANITY:TRANSCENDENCE]]` when the topic involves the broader cluster of values that extend beyond the self — Gratitude, Purpose, Excellence, Humor, and Hope together.
-  - Note: Hope is a sub-value of Transcendence; retrieval workflows using `[[HUMANITY:HOPE]]` in a transcendence context must load values-3.md.
+  - Note: Hope is a sub-value of Transcendence; retrieval workflows using `[[HUMANITY:HOPE]]` in a transcendence context must load `[[HUMANITY:TRANSCENDENCE]]`.
 - **[[HUMANITY:HOPE]] vs. [[HUMANITY:PURPOSE]]**
   - Use `[[HUMANITY:HOPE]]` when the topic involves optimism and resilience in the face of difficulty — the belief that things can improve.
   - Use `[[HUMANITY:PURPOSE]]` when the topic involves a meaningful direction or goal that organizes effort and gives life meaning.
